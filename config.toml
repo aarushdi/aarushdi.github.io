@@ -1,0 +1,65 @@
+baseURL = "aarushdi.github.io"
+languageCode = "en-us"
+title = "Ahmad Rushdi"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Ahmad A. Rushdi"
+    info = "Research Scientist | Sandia National Laboratories"
+    description = "Ahmad Rushdi's personal website"
+    keywords = "blog,developer,personal"
+    avatarurl = "images/avatar.jpg"
+
+    favicon_32 = "/img/favicon-32x32.png"
+    favicon_16 = "/img/favicon-16x16.png"
+
+    footercontent = "Selflessness and freedom go hand in hand. Only a humble person can be free. -unknown"
+
+    hidecredits = false
+    hidecopyright = false
+
+    rtl = false
+
+    math = true
+    custom_css = ["css/custom.css"]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/aarushdi/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/"
+
+# Menu links
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    url  = ""
+[[menu.main]]
+    name = "Publications"
+    weight = 2
+    url = "/publications/"
+[[menu.main]]
+    name = "Talks"
+    weight = 3
+    url = "/talks/"
+[[menu.main]]
+    name = "Contact"
+    weight = 4
+    url = "/contact/"
