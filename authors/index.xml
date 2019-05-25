@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on RUSHDI</title>
+    <link>aarushdi.github.io/authors/</link>
+    <description>Recent content in Authors on RUSHDI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="aarushdi.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>aarushdi.github.io/authors/admin/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>aarushdi.github.io/authors/admin/</guid>
+      <description>I am a research scientist at the Center for Computing Research of Sandia National Laboratories.</description>
+    </item>
+    
+    <item>
+      <title>Eric T Phipps</title>
+      <link>aarushdi.github.io/authors/eric-t-phipps/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>aarushdi.github.io/authors/eric-t-phipps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laura P. Swiler</title>
+      <link>aarushdi.github.io/authors/laura-p.-swiler/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>aarushdi.github.io/authors/laura-p.-swiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marta D&#39;Elia</title>
+      <link>aarushdi.github.io/authors/marta-delia/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>aarushdi.github.io/authors/marta-delia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mohamed S. Ebeida</title>
+      <link>aarushdi.github.io/authors/mohamed-s.-ebeida/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>aarushdi.github.io/authors/mohamed-s.-ebeida/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
