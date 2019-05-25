@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Overview on RUSHDI</title>
+    <title>Overview on AHMAD</title>
     <link>aarushdi.github.io/courses/example/</link>
-    <description>Recent content in Overview on RUSHDI</description>
+    <description>Recent content in Overview on AHMAD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
     <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="aarushdi.github.io/courses/example/index.xml" rel="self" type="application/rss+xml" />
