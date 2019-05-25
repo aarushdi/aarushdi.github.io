@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on AHMAD</title>
-    <link>aarushdi.github.io/authors/</link>
+    <link>/authors/</link>
     <description>Recent content in Authors on AHMAD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
     <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="aarushdi.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>aarushdi.github.io/authors/admin/</link>
+      <link>/authors/admin/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/authors/admin/</guid>
+      <guid>/authors/admin/</guid>
       <description>I am a research scientist at the Center for Computing Research of Sandia National Laboratories.</description>
     </item>
     
     <item>
       <title>Eric T Phipps</title>
-      <link>aarushdi.github.io/authors/eric-t-phipps/</link>
+      <link>/authors/eric-t-phipps/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/authors/eric-t-phipps/</guid>
+      <guid>/authors/eric-t-phipps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Laura P. Swiler</title>
-      <link>aarushdi.github.io/authors/laura-p.-swiler/</link>
+      <link>/authors/laura-p.-swiler/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/authors/laura-p.-swiler/</guid>
+      <guid>/authors/laura-p.-swiler/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marta D&#39;Elia</title>
-      <link>aarushdi.github.io/authors/marta-delia/</link>
+      <link>/authors/marta-delia/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/authors/marta-delia/</guid>
+      <guid>/authors/marta-delia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mohamed S. Ebeida</title>
-      <link>aarushdi.github.io/authors/mohamed-s.-ebeida/</link>
+      <link>/authors/mohamed-s.-ebeida/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/authors/mohamed-s.-ebeida/</guid>
+      <guid>/authors/mohamed-s.-ebeida/</guid>
       <description></description>
     </item>
     

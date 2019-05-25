@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Courses on AHMAD</title>
-    <link>aarushdi.github.io/courses/</link>
+    <link>/courses/</link>
     <description>Recent content in Courses on AHMAD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
     
-	<atom:link href="aarushdi.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

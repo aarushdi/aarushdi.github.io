@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on AHMAD</title>
-    <link>aarushdi.github.io/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on AHMAD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
     <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="aarushdi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Display Jupyter Notebooks with Academic</title>
-      <link>aarushdi.github.io/post/jupyter/</link>
+      <link>/post/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/post/jupyter/</guid>
+      <guid>/post/jupyter/</guid>
       <description>Learn how to blog in Academic using Jupyter notebooks</description>
     </item>
     
     <item>
       <title>Academic: the website builder for Hugo</title>
-      <link>aarushdi.github.io/post/getting-started/</link>
+      <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/post/getting-started/</guid>
+      <guid>/post/getting-started/</guid>
       <description>Create a beautifully simple website in under 10 minutes.</description>
     </item>
     

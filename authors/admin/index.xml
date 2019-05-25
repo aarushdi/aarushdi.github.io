@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AHMAD</title>
-    <link>aarushdi.github.io/authors/admin/</link>
+    <link>/authors/admin/</link>
     <description>Recent content on AHMAD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
     <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="aarushdi.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Display Jupyter Notebooks with Academic</title>
-      <link>aarushdi.github.io/post/jupyter/</link>
+      <link>/post/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/post/jupyter/</guid>
+      <guid>/post/jupyter/</guid>
       <description>Learn how to blog in Academic using Jupyter notebooks</description>
     </item>
     
     <item>
       <title>VPS: Voronoi piecewise surrogate models for high-dimensional data fitting</title>
-      <link>aarushdi.github.io/publication/journal-article/</link>
+      <link>/publication/journal-article/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/publication/journal-article/</guid>
+      <guid>/publication/journal-article/</guid>
       <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
     </item>
     
     <item>
       <title>Academic: the website builder for Hugo</title>
-      <link>aarushdi.github.io/post/getting-started/</link>
+      <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/post/getting-started/</guid>
+      <guid>/post/getting-started/</guid>
       <description>Create a beautifully simple website in under 10 minutes.</description>
     </item>
     
     <item>
       <title></title>
-      <link>aarushdi.github.io/authors/admin/</link>
+      <link>/authors/admin/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>aarushdi.github.io/authors/admin/</guid>
+      <guid>/authors/admin/</guid>
       <description>I am a research scientist at the Center for Computing Research of Sandia National Laboratories.</description>
     </item>
     
