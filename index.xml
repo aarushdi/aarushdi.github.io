@@ -7,7 +7,7 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
-    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -82,6 +82,24 @@
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Deep Learning Techniques for the Detection of DNA Regulatory Motifs</title>
+      <link>/talk/2019-sandiamldl-motifs/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019-sandiamldl-motifs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fusing Machine Learning and Uncertainty Quantification Methods</title>
+      <link>/talk/2019-sandiamldl-mluq/</link>
+      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019-sandiamldl-mluq/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -285,20 +303,11 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Deep Learning Techniques for the Detection of DNA Regulatory Motifs</title>
-      <link>/talk/2019-sandiamldl-motifs/</link>
-      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      <title>Beyond Images: Extending Deep Learning into Emerging Data-Driven Applications</title>
+      <link>/talk/2018-sandia-interview/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/2019-sandiamldl-motifs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fusing Machine Learning and Uncertainty Quantification Methods</title>
-      <link>/talk/2019-sandiamldl-mluq/</link>
-      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/2019-sandiamldl-mluq/</guid>
+      <guid>/talk/2018-sandia-interview/</guid>
       <description></description>
     </item>
     
@@ -308,6 +317,24 @@ $$&lt;/p&gt;
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/2017-vps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Ensemble Grouping Framework Based on Voronoi Piecewise Surrogate Models</title>
+      <link>/talk/2017-siam-cse/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017-siam-cse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local Active Subspaces for Dimension Reduction</title>
+      <link>/talk/2017-siam-dr/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017-siam-dr/</guid>
       <description></description>
     </item>
     

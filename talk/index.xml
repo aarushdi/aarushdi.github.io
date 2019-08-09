@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
-    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Deep Learning Techniques for the Detection of DNA Regulatory Motifs</title>
       <link>/talk/2019-sandiamldl-motifs/</link>
-      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/talk/2019-sandiamldl-motifs/</guid>
       <description></description>
@@ -24,9 +24,36 @@
     <item>
       <title>Fusing Machine Learning and Uncertainty Quantification Methods</title>
       <link>/talk/2019-sandiamldl-mluq/</link>
-      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/talk/2019-sandiamldl-mluq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond Images: Extending Deep Learning into Emerging Data-Driven Applications</title>
+      <link>/talk/2018-sandia-interview/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018-sandia-interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Ensemble Grouping Framework Based on Voronoi Piecewise Surrogate Models</title>
+      <link>/talk/2017-siam-cse/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017-siam-cse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local Active Subspaces for Dimension Reduction</title>
+      <link>/talk/2017-siam-dr/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017-siam-dr/</guid>
       <description></description>
     </item>
     
