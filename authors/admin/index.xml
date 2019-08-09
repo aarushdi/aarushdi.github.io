@@ -1,51 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>.:. Ahmad .:.</title>
+    <title>.: Ahmad :.</title>
     <link>/authors/admin/</link>
-    <description>Recent content on .:. Ahmad .:.</description>
+    <description>Recent content on .: Ahmad :.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Attending USC MLUQ and SIGGRAPH</title>
+      <link>/post/2019-7-conferences/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/jupyter/</guid>
-      <description>Learn how to blog in Academic using Jupyter notebooks</description>
+      <guid>/post/2019-7-conferences/</guid>
+      <description>Los Angeles, CA</description>
+    </item>
+    
+    <item>
+      <title>New adventure: back to computing research!</title>
+      <link>/post/2019-sandia-job/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-sandia-job/</guid>
+      <description>Started a new job at Sandia National Laboratories in Albuquerque, New Mexico.</description>
     </item>
     
     <item>
       <title>VPS: Voronoi piecewise surrogate models for high-dimensional data fitting</title>
-      <link>/publication/journal-article/</link>
+      <link>/publication/2017-vps/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/journal-article/</guid>
+      <guid>/publication/2017-vps/</guid>
       <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
     </item>
     
     <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Northrop Grumman: Data Science R&amp;D Manager</title>
+      <link>/post/2017-ng-manager/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/getting-started/</guid>
-      <description>Create a beautifully simple website in under 10 minutes.</description>
+      <guid>/post/2017-ng-manager/</guid>
+      <description>Leading an interdisciplinary IRAD team on data and behavioral research.</description>
+    </item>
+    
+    <item>
+      <title>Map-invariant spectral analysis for the identification of DNA periodicities</title>
+      <link>/publication/2012-spectral/</link>
+      <pubDate>Mon, 15 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012-spectral/</guid>
+      <description>A novel algebraic approach to the periodicity detection problem is presented.</description>
     </item>
     
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/authors/admin/</guid>
-      <description>I am a research scientist at the Center for Computing Research of Sandia National Laboratories.</description>
+      <description>I am a Senior Member of Technical Staff at the Center for Computing Research of Sandia National Laboratories, in Albuquerque, New Mexico, working on computational and data science research problems, as part of the Dakota team.
+I have previously held R&amp;amp;D and management positions at Northrop Grumman Corporation in Albuquerque NM, the Department of Electrical and Computer Engineering of UC Davis in Davis CA, the Computational Visualization Center under Oden Institute for Computational Engineering and Sciences at UT Austin in Austin TX, and Cisco Systems in San Jose CA.</description>
     </item>
     
   </channel>

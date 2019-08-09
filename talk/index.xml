@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on .:. Ahmad .:.</title>
+    <title>Recent &amp; Upcoming Talks on .: Ahmad :.</title>
     <link>/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on .:. Ahmad .:.</description>
+    <description>Recent content in Recent &amp; Upcoming Talks on .: Ahmad :.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
-    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <title>Deep Learning Techniques for the Detection of DNA Regulatory Motifs</title>
+      <link>/talk/2019-sandiamldl-motifs/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/example/</guid>
-      <description>An example talk using Academic&amp;rsquo;s Markdown slides feature.</description>
+      <guid>/talk/2019-sandiamldl-motifs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fusing Machine Learning and Uncertainty Quantification Methods</title>
+      <link>/talk/2019-sandiamldl-mluq/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019-sandiamldl-mluq/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mohamed S. Ebeida on .:. Ahmad .:.</title>
+    <title>Mohamed S. Ebeida on .: Ahmad :.</title>
     <link>/authors/mohamed-s.-ebeida/</link>
-    <description>Recent content in Mohamed S. Ebeida on .:. Ahmad .:.</description>
+    <description>Recent content in Mohamed S. Ebeida on .: Ahmad :.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
@@ -14,10 +14,10 @@
     
     <item>
       <title>VPS: Voronoi piecewise surrogate models for high-dimensional data fitting</title>
-      <link>/publication/journal-article/</link>
+      <link>/publication/2017-vps/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/journal-article/</guid>
+      <guid>/publication/2017-vps/</guid>
       <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
     </item>
     

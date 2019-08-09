@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on .:. Ahmad .:.</title>
+    <title>Publications on .: Ahmad :.</title>
     <link>/publication/</link>
-    <description>Recent content in Publications on .:. Ahmad .:.</description>
+    <description>Recent content in Publications on .: Ahmad :.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
@@ -14,11 +14,20 @@
     
     <item>
       <title>VPS: Voronoi piecewise surrogate models for high-dimensional data fitting</title>
-      <link>/publication/journal-article/</link>
+      <link>/publication/2017-vps/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/journal-article/</guid>
+      <guid>/publication/2017-vps/</guid>
       <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
+    </item>
+    
+    <item>
+      <title>Map-invariant spectral analysis for the identification of DNA periodicities</title>
+      <link>/publication/2012-spectral/</link>
+      <pubDate>Mon, 15 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012-spectral/</guid>
+      <description>A novel algebraic approach to the periodicity detection problem is presented.</description>
     </item>
     
   </channel>

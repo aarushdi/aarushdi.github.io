@@ -1,24 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic on .:. Ahmad .:.</title>
+    <title>Academic on .: Ahmad :.</title>
     <link>/tags/academic/</link>
-    <description>Recent content in Academic on .:. Ahmad .:.</description>
+    <description>Recent content in Academic on .: Ahmad :.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Attending USC MLUQ and SIGGRAPH</title>
+      <link>/post/2019-7-conferences/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/getting-started/</guid>
-      <description>Create a beautifully simple website in under 10 minutes.</description>
+      <guid>/post/2019-7-conferences/</guid>
+      <description>Los Angeles, CA</description>
+    </item>
+    
+    <item>
+      <title>New adventure: back to computing research!</title>
+      <link>/post/2019-sandia-job/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-sandia-job/</guid>
+      <description>Started a new job at Sandia National Laboratories in Albuquerque, New Mexico.</description>
+    </item>
+    
+    <item>
+      <title>Northrop Grumman: Data Science R&amp;D Manager</title>
+      <link>/post/2017-ng-manager/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-ng-manager/</guid>
+      <description>Leading an interdisciplinary IRAD team on data and behavioral research.</description>
     </item>
     
   </channel>
