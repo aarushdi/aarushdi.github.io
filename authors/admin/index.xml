@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Attending USC MLUQ workshop and SIGGRAPH 2019</title>
+      <title>I will be attending USC MLUQ workshop and SIGGRAPH 2019, isA</title>
       <link>/post/2019-7-conferences/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -36,7 +36,7 @@
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/2017-vps/</guid>
-      <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
+      <description>A new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
     </item>
     
     <item>
@@ -49,12 +49,21 @@
     </item>
     
     <item>
+      <title>Robust All-quad Meshing of Domains with Connected Regions</title>
+      <link>/publication/2015-all-quad/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-all-quad/</guid>
+      <description>A new algorithm for all-quad meshing of non-convex domains, with connected regions.</description>
+    </item>
+    
+    <item>
       <title>Map-invariant spectral analysis for the identification of DNA periodicities</title>
       <link>/publication/2012-spectral/</link>
       <pubDate>Mon, 15 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>/publication/2012-spectral/</guid>
-      <description>A novel algebraic approach to the periodicity detection problem is presented.</description>
+      <description>A novel algebraic approach to the DNA periodicity detection problem.</description>
     </item>
     
     <item>

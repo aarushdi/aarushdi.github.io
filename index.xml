@@ -103,7 +103,7 @@
     </item>
     
     <item>
-      <title>Attending USC MLUQ workshop and SIGGRAPH 2019</title>
+      <title>I will be attending USC MLUQ workshop and SIGGRAPH 2019, isA</title>
       <link>/post/2019-7-conferences/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -348,6 +348,15 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Mesh Improvement via Constrained Resampling: A Comprehensive Approach</title>
+      <link>/talk/2016-lanl/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2016-lanl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -372,6 +381,24 @@ $$&lt;/p&gt;
 
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Recursive k-d Darts Sampling for Exploring High-Dimensional Spaces</title>
+      <link>/talk/2016-siam-uq/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2016-siam-uq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust All-quad Meshing of Domains with Connected Regions</title>
+      <link>/publication/2015-all-quad/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-all-quad/</guid>
+      <description></description>
     </item>
     
     <item>

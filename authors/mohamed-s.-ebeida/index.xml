@@ -18,7 +18,16 @@
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/2017-vps/</guid>
-      <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
+      <description>A new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
+    </item>
+    
+    <item>
+      <title>Robust All-quad Meshing of Domains with Connected Regions</title>
+      <link>/publication/2015-all-quad/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-all-quad/</guid>
+      <description>A new algorithm for all-quad meshing of non-convex domains, with connected regions.</description>
     </item>
     
   </channel>

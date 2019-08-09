@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scott A. Mitchell on .: Ahmad :.</title>
+    <link>/authors/scott-a.-mitchell/</link>
+    <description>Recent content in Scott A. Mitchell on .: Ahmad :.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/scott-a.-mitchell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Robust All-quad Meshing of Domains with Connected Regions</title>
+      <link>/publication/2015-all-quad/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015-all-quad/</guid>
+      <description>A new algorithm for all-quad meshing of non-convex domains, with connected regions.</description>
+    </item>
+    
+  </channel>
+</rss>

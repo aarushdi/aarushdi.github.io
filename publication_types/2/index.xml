@@ -18,7 +18,7 @@
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/publication/2017-vps/</guid>
-      <description>We introduce a new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
+      <description>A new method to construct credible global surrogates with local accuracy, without dictating where to sample.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Mon, 15 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>/publication/2012-spectral/</guid>
-      <description>A novel algebraic approach to the periodicity detection problem is presented.</description>
+      <description>A novel algebraic approach to the DNA periodicity detection problem.</description>
     </item>
     
   </channel>
