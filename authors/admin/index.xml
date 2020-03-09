@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Ahmad Rushdi {year}</copyright>
-    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data-driven problems at CoDA 2020!</title>
+      <link>/post/2020-coda/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-coda/</guid>
+      <description>Presented on uncertainties in neural networks and had many good discussions around Scientific Machine Learning (SciML) applications.</description>
+    </item>
     
     <item>
       <title>I will be attending USC MLUQ workshop and SIGGRAPH 2019, isA</title>
@@ -28,15 +37,6 @@
       
       <guid>/post/2019-sandia-job/</guid>
       <description>Started a new research adventure at Sandia National Laboratories.</description>
-    </item>
-    
-    <item>
-      <title>Data-driven problems at CoDA 2020!</title>
-      <link>/post/2020-coda/</link>
-      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2020-coda/</guid>
-      <description>Presented on uncertainties in neural networks and had many good discussions around Scientific Machine Learning (SciML) applications.</description>
     </item>
     
     <item>
@@ -78,7 +78,7 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/authors/admin/</guid>
       <description>I am a Senior Member of Technical Staff at the Center for Computing Research of Sandia National Laboratories, in Albuquerque, New Mexico, where I work on computational and data science research problems, as part of the Dakota team.
