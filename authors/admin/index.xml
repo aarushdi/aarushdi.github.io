@@ -31,6 +31,15 @@
     </item>
     
     <item>
+      <title>Data-driven problems at CoDA 2020!</title>
+      <link>/post/2020-coda/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-coda/</guid>
+      <description>Presented on uncertainties in neural networks and had many good discussions around Scientific Machine Learning (SciML) applications.</description>
+    </item>
+    
+    <item>
       <title>VPS: Voronoi piecewise surrogate models for high-dimensional data fitting</title>
       <link>/publication/2017-vps/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
