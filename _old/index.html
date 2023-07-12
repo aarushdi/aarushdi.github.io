@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<!-- *********************************************************** -->
+
+<head>
+  <meta charset="utf-8">
+  <title>.: Ahmad A. Rushdi :.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> <!-- Google fonts -->
+  <link rel="shortcut icon" href="favicon.ico"> <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+a:link { color: blue; background-color: transparent; text-decoration: none; }
+a:visited { color: blue; background-color: transparent; text-decoration: none; }
+a:hover { color: red; background-color: transparent; text-decoration: underline; }
+a:active { color: yellow; background-color: transparent; text-decoration: underline; }
+
+.leftcol {
+  background-color: #D0E1F9;
+  float: left;
+  width: 20%;
+  margin-right: 1%;
+  height: 100%;
+  text-align: center;
+}
+
+.rightcol {
+  margin-left: 21%;
+}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Nunito';
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #4D648D;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  height: 100%;
+  font-family: 'Nunito';
+}
+
+.tablink:hover {
+  background-color: #283655;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#Publications {background-color: white;}
+#Talks {background-color: white;}
+#Visualization {background-color: white;}
+
+img {
+  padding: 2px;
+}
+
+img.rounded-corners {
+  border-radius: 50%;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-figure-item {
+  padding: 5px;
+  margin-top: 10px;
+  line-height: 10px;
+  font-weight: bold;
+  font-size: 0.75em;
+  display: flex;           /* NEW */
+  flex-direction: column;  /* NEW */
+  width: 200px;            /* NEW */
+}
+figcaption {
+  color: black;
+  text-align: center;
+}
+
+.video {width:80px; 
+  outline:none;
+  padding: 10px;
+}
+
+.video_teaser {width:200px; 
+  outline:none;
+  padding: 10px;
+}
+
+footer {
+  font-size: 0.75em; /* 14px/16=0.875em */
+}
+
+</style>
+
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140825202-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'TRACKING_ID');
+</script>
+
+</head>
+
+<!-- *********************************************************** -->
+
+<body>
+  <!-- <h1 style="background-color:rgb(1, 14, 107);color: rgb(9, 0, 53);"> . </h1> -->
+
+    <div class="leftcol">
+
+      <!--<p> <a href="https://aarushdi.github.io/"> <img src="viz/icon.png" alt="" width="50px"> </a> </p> -->
+
+      <p> <h1 style="background-color: #D0E1F9; color: #D0E1F9;"> . </h1> </p>
+
+      <img id="main-profile-pic"; width="150px"; src="./viz/Ahmad_web_bw.png" alt="Ahmad Rushdi" class="rounded-corners">
+
+      <h2>Ahmad A. Rushdi</h2>
+      <h2> أحْمَد رُشْدِي </h2>
+      <p style="margin: 0">Research Scientist</p>
+      <p style="margin: 0">Sr. Research Manager</p>
+      <p style="margin: 0"><a href="https://hai.stanford.edu/">Institute for Human-Centered AI</a></p>
+      <p style="margin: 0"><a href="https://www.stanford.edu/">Stanford University</a></p>
+      <p> <a href = "mailto: rushdi@stanford.edu"><i class="fa fa-envelope"></i></a>
+        <a href = "https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en"><i class="fa fa-google"></i></a>
+        <a href = "https://www.linkedin.com/in/ahmadrushdi/"><i class="fa fa-linkedin"></i></a>
+        <a href = "https://github.com/aarushdi"><i class="fa fa-github"></i></a>     
+      </p>
+    </div>
+
+    <!--------------------------------------------------------------------->
+    <div class="rightcol">
+
+        <button class="tablink" onclick="openPage('Home', this, '#1E1F26')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('Publications', this, '#1E1F26')">Publications</button>
+        <button class="tablink" onclick="openPage('Talks', this, '#1E1F26')">Talks</button>
+        <button class="tablink" onclick="openPage('Visualization', this, '#1E1F26')">Visualization</button>
+        
+        <div id="Home" class="tabcontent">
+
+          <div class="flex-container">
+            <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase4.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase3.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+          </div>
+          <div class="flex-container">
+            <p style="color:#D0E1F9;" style="font-size:50px;" margin-top="-10px"> Will they collide? Experiments with magnitude and phase for collision avoidance</p>
+          </div>
+          
+          <div>
+            <h2>Biography</h2>
+            <p> Thank you for visiting my webpage. I am a research scientist, interested in the broad areas of signal processing, uncertainty quantification, and machine learning. Currently, I am a Senior Research Manager at <a href="https://www.stanford.edu/">Stanford University</a>’s <a href="https://hai.stanford.edu/">Institute for Human-Centered Artificial Intelligence</a> (HAI), working with diverse AI communities (e.g., ML/DL, XAI, HCI, generative AI, NLP/LLMs, and CV) across Stanford and the corporate world (e.g., Google and IBM), in order to envision, build, and maintain new bridges around cutting-edge research for a variety of domain applications. </p>
+            <p> Prior to joining Stanford, I was a research scientist at the <a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/index.cfm">Center for Computing Research</a> of <a href="https://www.sandia.gov/">Sandia National Laboratories</a>, where I worked with the <a href="https://dakota.sandia.gov/">Dakota</a> team and PI'd a number of projects on UQ/ML. Before Sandia, I was an R&D manager of data science at <a href="https://www.northropgrumman.com/">Northrop Grumman Corporation</a>, a research fellow at the <a href="https://ece.ucdavis.edu/">Department of Electrical and Computer Engineering</a> of <a href="https://www.ucdavis.edu/">UC Davis</a> and the <a href="https://cvcweb.oden.utexas.edu/cvcwp/">Computational Visualization Center</a> under <a href="https://oden.utexas.edu/">Oden Institute for Computational Engineering and Sciences</a> at <a href="https://www.utexas.edu/">UT Austin</a>, and an R&D engineer at <a href="https://www.cisco.com/">Cisco Systems</a>. I hold a Ph.D. degree in <a href="https://ece.ucdavis.edu/">Electrical and Computer Engineering</a> (with a minor in Applied Math) from the <a href="https://www.ucdavis.edu/">University of California, Davis</a>, and MS.c./BS.c. degrees in <a href="http://eece.cu.edu.eg/">Electronics and Electrical Communications Engineering</a> from <a href="https://cu.edu.eg/Home">Cairo University</a>, Egypt. I am a senior member of IEEE and a member of ACM and SIAM.</p>
+
+            <!--
+              <ul class="list_no_dot">
+                <li>Ph.D., <a href="https://ece.ucdavis.edu/">Electrical and Computer Engineering</a>, <a href="https://www.ucdavis.edu/">University of California</a>, Davis CA </li>
+                <li>M.Sc., <a href="http://eece.cu.edu.eg/">Electronics and Electrical Communications Engineering</a>, <a href="https://cu.edu.eg/Home">Cairo University</a>, Egypt </li>
+                <li>B.Sc., <a href="http://eece.cu.edu.eg/">Electronics and Electrical Communications Engineering</a>, <a href="https://cu.edu.eg/Home">Cairo University</a>, Egypt </li>
+              </ul>
+            -->
+      <p> Please feel free to reach out if you have any questions! </p>
+    </div>
+    <hr>
+    <!--------------------------------------------------------------------->
+    <div>
+      <h2>Recent Activities</h2>
+      <ul class="list_no_dot">
+          <li> [12/2023] Co-organizing Stanford's HAI/AIMI AI+Health Conference, in Palo Alto CA </li>
+          <li> [07/2023] Attending the Fortieth <a href="https://icml.cc/">International Conference on Machine Learning (ICML)</a> in Hawaii</li>
+          <li> [02/2023] Co-organized Stanford's <a href="https://hai.stanford.edu/events/aieducation-summit-ai-service-teaching-and-learning">AI+Education Summit: AI in the Service of Teaching and Learning</a> in Palo Alto, CA </li>
+          <li> [11/2022] Attended the thirty-sixth <a href="https://nips.cc/">Conference on Neural Information Processing Systems (NeurIPS)</a> in New Orleans, LA</li>
+          <li> [08/2022] <a href="https://ww2.amstat.org/meetings/jsm/2022/index.cfm">The Joint Statistical Meetings (JSM)</a>: Co-organized a minisymposium on "Research Advances at the Interface of Uncertainty Quantification and Machine Learning for High-Consequence Problems" at the Section on Statistics in Defense and National Security</li>
+        <li> [04/2022] Co-organized a minisymposium on "Advances at the Interface of Uncertainty Quantification and Machine Learning" at <a href="https://www.siam.org/conferences/cm/conference/uq22">SIAM Conference on Uncertainty Quantification (UQ22)</a></li>
+        <li> [12/2021] Started a new role at <a href="https://hai.stanford.edu/">Stanford's Institute for Human-Centered Aritifical Intelligence</a></li>
+        <li> [09/2021] <a href="https://www.csuchico.edu/academics/engineering.shtml">Engineering Leadership Program, California State University, Chico</a>: started a new role as an Advisory Council Member</li>
+        <li> [09/2019] <a href="https://www.anl.gov/ai-for-science-report">AI for Science Report</a>: contributed to sections on machine/deep learning and uncertainty quantification </li>        
+        <li> Nonprofit Leadership & Strategic Management Certificate: completed at San Francisco State University, San Francisco CA</li>
+        <!--<li>PC Member/Reviewer: ACL, EMNLP, NAACL, CSCW, CHI, ICWSM, TOCHI, LREC, CoNLL, SEM, CL, TACL </li> -->
+      </ul>
+  </div>
+
+</div>
+<!-- *********************************************************** -->
+
+<div id="Publications" class="tabcontent">
+
+  <h2>Selected Publications</h2>
+
+  <p><h3>For a full list, see my <a href="https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en">Google Scholar</a> page.</h3></p>
+
+  <hr>
+
+  <ul>
+      <li><p>Michael Smith, Erin Acquesta, Charles Smutz, Ahmad Rushdi, and Blake Moss.
+       <a href="https://scholarspace.manoa.hawaii.edu/items/6a48ec8e-67a5-4421-a693-aae0ae9fc212/full">Assessing the Fidelity of Explanations with Global Sensitivity Analysis.</a>
+       <em>Proceedings of the 56th Hawaii International Conference on System Sciences</em>, 2023. </p></li>
+      
+     <li><p>Lauren Partin, Gianluca Geraci, Ahmad Rushdi, Michael S Eldred, and Daniele E Schiavazzi.
+      <a href="https://www.sciencedirect.com/science/article/pii/S002199912200729X?CMX_ID=&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&utm_acid=267587829&utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_in=DM302821&utm_medium=email&utm_source=AC_">Multifidelity data fusion in convolutional encoder/decoder networks.</a>
+      <em>Journal of Computational Physics 472: 111666</em>, 2023. </p></li>
+      
+     <li><p>Yesenia Cevallos, Tadashi Nakano, Luis Tello-Oquendo, Ahmad Rushdi, Deysi Inca, Ivone Santill<span class="bibtex-protected">á</span>n, Amin Zadeh Shirazi, and Nicolay Samaniego.
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1878778921000508">A brief review on DNA storage, compression, and digitalization.</a>
+      <em>Nano Communication Networks</em>, 31:100391, 2022.</p> </li>
+        
+     <li><p>Michael Smith, Erin Acquesta, Ahmad A. Rushdi, Arlo Ames, Alycia Carey, Christopher Cuellar, Richard Field, Trevor Maxfield, Scott Mitchell, Elizabeth Morris, Blake Moss.
+      <a href="https://www.osti.gov/biblio/1820253">SAGE intrusion detection system: sensitivity analysis guided explainability for machine learning.</a>
+      Technical Report, Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2021.</p> </li>
+          
+     <li><p>Ahmad A Rushdi and Michael L Park.
+      <a href="https://www.osti.gov/biblio/1716561-csri-summer-proceedings">Computer Science Research Institute (CSRI) Summer Proceedings 2020.</a>
+      Technical Report, Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2020.</p> </li>
+
+     <li><p>Brian Adams, William Bohnhoff, Keith Dalbey, Mohamed Ebeida, John Eddy, Michael Eldred, Russell Hooper, Patricia Hough, Kenneth Hu, John Jakeman,  Ahmad A. Rushdi, and others.
+      <a href="https://www.osti.gov/biblio/1817318">Dakota, a multilevel parallel object-oriented framework for design optimization, parameter estimation, uncertainty quantification, and sensitivity analysis: version 6.13 user's manual.</a>
+      Technical Report, Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2020.</p> </li>
+      
+     <li><p>Mostafa A Rushdi, Ahmad A Rushdi, Tarek N Dief, Amr M Halawa, Shigeo Yoshida, and Roland Schmehl.
+      <a href="https://www.mdpi.com/1996-1073/13/9/2367">Power prediction of airborne wind energy systems using multivariate machine learning.</a>
+      <em>Energies</em>, 13(9):2367, 2020.</p> </li>
+  
+   <li><p>Ahmed Abdelkader, Chandrajit L Bajaj, Mohamed S Ebeida, Ahmed H Mahmoud, Scott A Mitchell, John D Owens, and Ahmad A Rushdi.
+    <a href="https://dl.acm.org/doi/abs/10.1145/3337680">Vorocrust: Voronoi meshing without clipping.</a>
+    <em>ACM Transactions on Graphics (TOG)</em>, 39(3):1–16, 2020.</p> </li>
+  
+   <li><p>Scott A Mitchell, Mohamed S Ebeida, Muhammad A Awad, Chonhyon Park, Anjul Patney, Ahmad A Rushdi, Laura P Swiler, Dinesh Manocha, and Li-Yi Wei.
+    <a href="https://dl.acm.org/doi/abs/10.1145/3194657">Spoke-darts for high-dimensional blue-noise sampling.</a>
+    <em>ACM Transactions on Graphics (TOG)</em>, 37(2):1–20, 2018.</p> </li>
+  
+   <li><p>Ahmed Abdelkader, Chandrajit L Bajaj, Mohamed S Ebeida, Ahmed H Mahmoud, Scott A Mitchell, John D Owens, and Ahmad A Rushdi.
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6344055/">Sampling conditions for conforming Voronoi meshing by the Vorocrust algorithm.</a>
+    <em>LIPIcs: Leibniz international proceedings in informatics</em>, 2018.</p> </li>
+  
+   <li><p>Ahmed Abdelkader, Chandrajit L Bajaj, Mohamed S Ebeida, Ahmed H Mahmoud, Scott A Mitchell, John D Owens, and Ahmad A Rushdi.
+    <a href="https://drops.dagstuhl.de/opus/volltexte/2018/8790/">Vorocrust illustrated: theory and challenges (multimedia exposition).</a>
+    In <em>34th International Symposium on Computational Geometry (SoCG 2018)</em>. Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2018.</p> </li>
+  
+   <li><p>Ahmad Rushdi, Laura P Swiler, Eric T Phipps, Marta D'Elia, and Mohamed S Ebeida.
+    <a href="https://www.dl.begellhouse.com/journals/52034eb04b657aea,7bd16ae14fe9cbcf,1c04fb773044c729.html">VPS: Voronoi piecewise surrogate models for high-dimensional data fitting.</a>
+  <em>International Journal for Uncertainty Quantification</em>, 2017.</p> </li>
+  
+   <li><p>Yesenia Cevallos, Lorena Molina, Alex Santill<span class="bibtex-protected">á</span>n, Floriano De Rango, Ahmad Rushdi, and Jes<span class="bibtex-protected">ú</span>s B Alonso.
+    <a href="https://link.springer.com/article/10.1007/s12559-016-9434-4">A digital communication analysis of gene expression of proteins in biological systems: a layered network model view.</a>
+  <em>Cognitive Computation</em>, 9(1):43–67, 2017.</p> </li>
+  
+   <li><p>Ahmad A Rushdi, Scott A Mitchell, Ahmed H Mahmoud, Chandrajit C Bajaj, and Mohamed S Ebeida.
+    <a href="https://www.sciencedirect.com/science/article/abs/pii/S001044851630080X">All-quad meshing without cleanup.</a>
+  <em>Computer-Aided Design</em>, 85:83–98, 2017.</p> </li>
+  
+   <li><p>Ahmed Abdelkader, Ahmed H Mahmoud, Ahmad A Rushdi, Scott A Mitchell, John D Owens, and Mohamed S Ebeida.
+    <a href="https://dl.acm.org/doi/10.1111/cgf.13256">A constrained resampling strategy for mesh improvement.</a>
+  In <em>Computer Graphics Forum (CGF)</em>, volume 36, 189–201. Wiley Online Library, 2017.</p> </li>
+  
+   <li><p>Marta D'Elia, Eric Phipps, Ahmad Rushdi, and MS Ebeida.
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-48721-8_3">Surrogate-based ensemble grouping strategies for embedded sampling-based uncertainty quantification.</a>
+  In <em>Quantification of Uncertainty: Improving Efficiency and Technology</em>, pages 41–66.
+  Springer, 2020.</p> </li>
+  
+   <li><p>Mohamed S Ebeida and Ahmad A Rushdi.
+    <a href="https://www.sciencedirect.com/science/article/pii/S1877705816333380">Recursive spoke darts: local hyperplane sampling for delaunay and Voronoi meshing in arbitrary dimensions.</a>
+  <em>Procedia engineering</em>, 163:110–122, 2016.</p> </li>
+  
+   <li><p>Muhammad A Awad, Ahmad A Rushdi, Misarah A Abbas, Scott A Mitchell, Ahmed H Mahmoud, Chandrajit L Bajaj, and Mohamed S Ebeida.
+    <a href="https://www.sciencedirect.com/science/article/pii/S1877705816333628">All-hex meshing of multiple-region domains without cleanup.</a>
+  <em>Procedia engineering</em>, 163:251–261, 2016.</p> </li>
+  
+   <li><p>Mohamed S Ebeida, Scott A Mitchell, Laura P Swiler, Vicente J Romero, and Ahmad A Rushdi.
+    <a href="https://www.sciencedirect.com/science/article/abs/pii/S095183201630045X">POF-darts: geometric adaptive sampling for probability of failure.</a>
+  <em>Reliability Engineering &amp; System Safety</em>, 155:64–77, 2016.</p> </li>
+  
+   <li><p>Mohamed S Ebeida, Ahmad A Rushdi, Muhammad A Awad, Ahmed H Mahmoud, Dong-Ming Yan, Shawn A English, John D Owens, Chandrajit L Bajaj, and Scott A Mitchell.
+    <a href="https://dl.acm.org/doi/10.1111/cgf.12981">Disk density tuning of a maximal random packing.</a>
+  In <em>Computer Graphics Forum</em>, volume 35, 259–269. Wiley Online Library, 2016.</p> </li>
+  
+   <li><p>Ahmad A Rushdi, Scott A Mitchell, Chandrajit L Bajaj, and Mohamed S Ebeida.
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995448/">Robust all-quad meshing of domains with connected regions.</a>
+  <em>Procedia engineering</em>, 124:96–108, 2015.</p> </li>
+  
+   <li><p>Ahmad Rushdi, Alessio Alaimo, Federico Fontanella, Mike Sapozhnikov, and Janine Tinsley.
+  Bumps and potholes along the sfi design road: meeting the sff-8431 specification.
+  In <em>proceedings of Cisco PCB-HW Conference</em>. Cisco Systems, 2012.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Abe Elmoufti.
+  An efficient EDVT validation process of sfp+ connectors using an s-parameters modeling approach.
+  In <em>proceedings of the 4th Cisco Innovating Test Conference</em>. Cisco Systems, 2011.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Abe Elmoufti.
+  Stateful swtichover: an in-depth testing approach.
+  In <em>proceedings of the 3rd Cisco Innovating Test Conference</em>. Cisco Systems, 2010.</p> </li>
+  
+   <li><p>Albert Algones, Abe Elmouft, Ahmad Rushdi, and Naveed Mozaffar.
+  An innovative testing approach to validate multi-forwarding switching engine.
+  In <em>proceedings of the 3rd Cisco Innovating Test Conference</em>, 1–4. Cisco Systems, 2010.</p> </li>
+  
+   <li><p>Ahmad Rushdi.
+    <a href="http://arabcomputersociety.org/archives/indexACS&page=article&op=viewFile&path[]=22&path[]=66.pdf">استعراض لطرائق تخفيض نسبة الطاقة القصوى إلى الطاقة المتوسطة في نظم الاتصال بترصيص الإشارات عبر الطيف
+      المقسم تعامدياً </a> An overview of PAPR reduction methods in OFDM communication systems, in Arabic.
+  <em>Communications of the Arab Computer Society Magazine, Special Issue on Wireless Communications and Networks</em>, 2010.</p> </li>
+  
+   <li><p>Ahmad Rushdi, Jamal Tuqan, and Thomas Strohmer.
+    <a href="https://pubmed.ncbi.nlm.nih.gov/23067324/">Map-invariant spectral analysis for the identification of DNA periodicities.</a>
+  <em>EURASIP Journal on Bioinformatics and Systems Biology</em>, 2012(1):1–21, 2012.</p> </li>
+  
+   <li><p>Ahmad A Rushdi.
+    <a href="https://www.researchgate.net/publication/291354406_A_mathematical_model_of_DNA_replication">A Mathematical Model of DNA Replication.</a>
+  <em>International Magazine on Advances in Computer Science and Telecommunications (IMACST)</em>, 1(1):23–30, 2010.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/abstract/document/4487532">PAPR reduction in trigonometric-based OFDM systems.</a>
+  In <em>2007 Conference Record of the Forty-First Asilomar Conference on Signals, Systems and Computers</em>, 1747–1751. IEEE, 2007.</p> </li>
+  
+   <li><p>Ahmad Rushdi, Chen Meng, and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/document/4487531">An SDP approach for papr reduction in OFDM systems using partial transmit sequences.</a>
+  In <em>2007 Conference Record of the Forty-First Asilomar Conference on Signals, Systems and Computers</em>, 1743–1746. IEEE, 2007.</p> </li>
+  
+   <li><p>Jamal Tuqan and Ahmad Rushdi.
+    <a href="https://ieeexplore.ieee.org/document/4550567">A DSP approach for finding the codon bias in DNA sequences.</a>
+  <em>IEEE Journal of Selected Topics in Signal Processing</em>, 2(3):343–356, 2008.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/document/4555680">The role of the symbolic-to-numerical mapping in the detection of DNA periodicities.</a>
+  In <em>2008 IEEE International Workshop on Genomic Signal Processing and Statistics</em>, 1–4. IEEE, 2008.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/document/4555681">Trigonometric transforms for finding repeats in DNA sequences.</a>
+  In <em>2008 IEEE International Workshop on Genomic Signal Processing and Statistics</em>, 1–4. IEEE, 2008.</p> </li>
+  
+   <li><p>A Rushdi and J Tuqan.
+    An efficient algorithm for DNA discrete fourier analysis.
+    In <em>Proceedings of the 3rd IEEE Cairo International Biomedical Engineering Conference (CIBEC)</em>, 1–4. Cairo International Biomedical Engineering Conference Cairo, Egypt, 2006.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/document/4176897">The filtered spectral rotation measure.</a>
+  In <em>2006 Fortieth Asilomar Conference on Signals, Systems and Computers</em>, 1875–1879. IEEE, 2006.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/document/4041127">A new DSP-based measure for CPG islands detection.</a>
+  In <em>2006 IEEE 12th Digital Signal Processing Workshop &amp; 4th IEEE Signal Processing Education Workshop</em>, 561–565. IEEE, 2006.</p> </li> </li>
+  
+   <li><p>Jamal Tuqan and Ahmad Rushdi.
+    <a href="https://ieeexplore.ieee.org/document/4161773">A DSP perspective to the period-3 detection problem.</a>
+  In <em>2006 IEEE International Workshop on Genomic Signal Processing and Statistics</em>, 53–54. IEEE, 2006.</p> </li>
+  
+   <li><p>Ahmad Rushdi and Jamal Tuqan.
+    <a href="https://ieeexplore.ieee.org/document/1660520">Gene identification using the z-curve representation.</a>
+  In <em>2006 IEEE International Conference on Acoustics Speech and Signal Processing (ICASSP) Proceedings</em>, volume 2, II–II. IEEE, 2006.</p> </li>
+
+  </ul>
+  
+</div>
+<!-- *********************************************************** -->
+
+<div id="Talks" class="tabcontent">
+  <h2>Invited Talks</h2>
+
+  <p><h3> Some slides can be made available upon request.</h3></p>
+
+  <hr>
+
+  <ul> 
+    <li> <p> <b>Quantifying Uncertainty in Machine Learning Models for Time Series Classification</b>
+      <br> at <em>SIAM Conference on Uncertainty Quantification (SIAM-UQ)</em>, virtual, April 2022</p></li>
+
+    <li> <p> <b><a href="https://www.osti.gov/servlets/purl/1877803">Efficient DNN Architectures for Time Series Classification</a></b>
+      <br> at <em>Sandia ML/DL Workshop</em>, virtual, July 2021</p></li>
+      
+    <li> <p> <b><a href="https://www.osti.gov/servlets/purl/1831758">Estimating Predictive Uncertainty in Scientific Machine Learning: A Library of Methods and Test Problems</a></b>
+      <br> at the <em>Uncertainty Management and Machine Learning in Engineering Applications</em> and <em>Sandia ML/DL Workshop</em>, virtual, November 2020</p></li>
+        
+    <li> <p> <b>Embracing Randomness for Uncertainty Quantification in Neural Networks</b>
+      <br> at the <em>Conference on Data Analysis (CoDA)</em>, Santa Fe, NM, February 2020</p></li>
+          
+    <li> <p> <b>Deep Learning Techniques for the Detection of DNA Regulatory Motifs</b>
+      <br> at <em>Sandia ML/DL Workshop</em>, Albuquerque, NM, July 2019</p></li>     
+
+    <li> <p> <b>Fusing Machine Learning and Uncertainty Quantification Methods</b>
+      <br> at <em>Sandia ML/DL Workshop</em>, Albuquerque, NM, July 2019</p></li>
+      
+    <li> <p> <b>Beyond Images: Extending Deep Learning into Emerging Data-Driven Applications</b>
+      <br> to the <em>Optimization and Uncertainty Quantification Department</em>, Sandia National Labs, Albuquerque NM, December 2018</p></li>      
+        
+    <li> <p> <b>Local Active Subspaces for Dimension Reduction</b>
+      <br> at <em>SIAM Workshop on Parameter Space Dimension Reduction (SIAM-DR)</em>, Pittsburgh, PA, July 2017. 
+      <br> Host: Paul Constantine</p></li>
+          
+    <li> <p> <b>An Ensemble Grouping Framework Based on Voronoi Piecewise Surrogate Models</b>
+      <br> at <em>SIAM conference on Computational Science and Engineering (SIAM-CSE)</em>, Atlanta, GA, February 2017. 
+      <br> Host: Eric Phipps</p></li>  
+      
+    <li> <p> <b>Mesh Improvement via Constrained Resampling: A Comprehensive Approach</b>
+      <br> at <em>the department of Methods and Algorithms at Los Alamos National Laboratory (LANL)</em>, Los Alamos, NM, June 2016. 
+      <br> Host: Mikhail Shashkov</p></li>
+
+    <li> <p> <b>Recursive k-d Darts Sampling for Exploring High-Dimensional Spaces</b>
+      <br> at <em>SIAM Conference on Uncertainty Quantification (SIAM-UQ)</em>, Lausanne, Switzerland, April 2016.
+      <br> Host: Fabio Nobile</p></li>  
+
+    <li> <p> <b>Locally-Accurate Surrogate models for Credible High-Dimensional Data Analysis</b>
+      <br> at <em>Dept. of Computer Science & Engineering (CSE) of New Mexico Tech (NMT)</em>, Socorro, NM, USA, March 2016.
+      <br> Host: Abdelmounaam Rezgui</p></li>
+          
+    <li> <p> <b><a href="https://www.osti.gov/servlets/purl/1514295">VPS: Voronoi Piecewise Surrogates for High-Dimensional Data Fitting</a></b>
+      <br> at <em>the 4th SRI Annual Workshop on Uncertainty Quantification, Advances in UQ Methods, Algorithms and Applications (UQAW), King Abdullah University of Science and Technology (KAUST)</em>, Thuwal, Saudi Arabia, January 2016.
+      <br> Host: Raul Tempone and Omar Knio</p></li>  
+      
+    <li> <p> <b>Feature-Preserving Spatial Density Tuning of a Maximal Random Disk Packing</b>
+      <br> at <em>the 13th US National Congress on Computational Mechanics</em>, San Diego, CA, USA, July 2015.
+      <br> Host: Scott A. Mitchell</p></li>
+
+     <li> <p> <b>LS Polynomial Optimization for Constructing Voronoi Piecewise Surrogates</b>
+      <br> to <em>the Optimization and Uncertainty Quantification Department, Sandia National Labs</em>, Albuquerque NM, November 2014.
+      <br> Host: Fabio Nobile</p></li>  
+
+    <li> <p> <b>An Overview of Probabilistic Graphical Models</b>
+      <br> to <em>the Computational Visualization Center at the University of Texas</em>, Austin TX, June 2014.
+      <br> Host: Chandrajit Bajaj</p></li>
+      
+     <li> <p> <b>Feature Detection and Parameter Estimation of Random Data Using Fourier and Signal Processing Methods</b>
+      <br> to <em>the Optimization and UQ Dept., Sandia National Labs</em>, Albuquerque NM, November 2013. 
+      <br> Host: James R. Stewart</p></li>  
+
+    <li> <p> <b>SerDes Channel Equalization: FFE and DFE approaches</b>
+      <br> at <em>Cisco PCB-HW Conference, Cisco Systems</em>, San Jose CA, February 2012.</p></li>  
+
+     <li> <p> <b>Cost-Effective DSP Models for DNA Sequence Analysis</b>
+      <br> at the <em>Industrial Affiliates Conference, department of Electrical and Computer Engineering, UCDavis</em>, Davis CA, June 2008.</p></li>  
+
+    <li> <p> <b>On the Anatomy of a Gigabit Eye Diagram</b>
+      <br> at <em>the Interns Presentations Convention of the Engineering Learning Group, Cisco Systems, Inc.</em>, Milpitas CA, August 2007.
+      <br> Best poster award.</p></li>
+      
+     <li> <p> <b>An Efficient DSP Framework for Gene Prediction</b>
+      <br> at <em>CITRIS corporate sponsor day, of the Mathematical Sciences Research Institute (MSRI)</em>, Berkeley CA, June 2006.</p></li>  
+
+    <li> <p> <b>Multirate Signal Processing Algorithm for Exons Detection</b>
+      <br> at the<em>Industrial Affiliates Conference, department of Electrical and Computer Engineering, UCDavis</em>, Davis CA, June 2006.</p></li>      
+
+</ul>
+</div>
+<!-- *********************************************************** -->
+
+<div id="Visualization" class="tabcontent">
+  <h2>Scientific & Computational Visualization</h2>
+
+  <p> I am always excited about scientific and computational visualization methods that graphically illustrate input/output data, algorithm flow, UQ/V&V metrics, and model dynamics in order to glean new insights. Below are some illustrative visuals from my research projects and publications.</p>
+  <hr>
+
+  <p> A library of high-dimensional test functions for optimization, uncertainty quantification, and numerical integration problems:</p>
+
+  <div class="flex-container">
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-bukin.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-cone.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-cross.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-rosenbrock.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-franke.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-egg-holder.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-herbie.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-michalewicz.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-rastrigin.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <video class="video" autoplay loop muted playsinline> <source src="viz/vid/vid-shubert.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+  </div>
+  <div class="flex-container">
+    <img src="viz/vid/cnt-bukin.png" alt="" width="80px">
+    <img src="viz/vid/cnt-cone.png" alt="" width="80px">
+    <img src="viz/vid/cnt-cross.png" alt="" width="80px">
+    <img src="viz/vid/cnt-rosenbrock.png" alt="" width="80px">
+    <img src="viz/vid/cnt-franke.png" alt="" width="80px">
+    <img src="viz/vid/cnt-egg-holder.png" alt="" width="80px">
+    <img src="viz/vid/cnt-herbie.png" alt="" width="80px">
+    <img src="viz/vid/cnt-michalewicz.png" alt="" width="80px">
+    <img src="viz/vid/cnt-rastrigin.png" alt="" width="80px">
+    <img src="viz/vid/cnt-shubert.png" alt="" width="80px">
+  </div>
+  
+  <hr>
+
+  <div class="flex-container">
+
+    <figure class="flex-figure-item">
+      <img src="viz/img/persistence.png" alt="persistence">
+      <figcaption>Persistence spectrum: an interference narrowband signal embedded in a broadband signal </figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/ultrasound.png" alt="ultrasound">
+      <figcaption>Digital notch filtering to detect wideband ultrasound contrast echos in blood </figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/0p79_txt_spec.png" alt="Spoke-darts">
+      <figcaption>Fourier spectrum analysis of high dimensional sample patterns [<a href="https://dl.acm.org/doi/abs/10.1145/3194657">paper</a>]</figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/period-3.png" alt="period-3">
+      <figcaption>ST-DFT spectral analysis for finding the codon bias in DNA [<a href="https://ieeexplore.ieee.org/document/4550567">paper</a>]</figcaption>
+    </figure>
+
+    <br>
+
+    <figure class="flex-figure-item">
+      <img src="viz/img/uruguay.gif" alt="uruguay">
+      <figcaption>Sub-optimal Self-Organizing Maps (SOM) solution of the Traveling Salesman Problem (NP-complete) </figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/object.png" alt="object">
+      <figcaption>Object detection using YOLOv3, SSD, and R-CNN trained on COCO + synthetic datasets. </figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/VPS_neighbors.png" alt="RSD">
+      <figcaption>Finding significant Voronoi neighbors in high dimension [<a href="https://www.sciencedirect.com/science/article/pii/S1877705816333380">paper</a>]</figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/VPS2.png" alt="VPS">
+      <figcaption>Global high-d surrogates based on local Voronoi decompoistions [<a href="https://www.dl.begellhouse.com/journals/52034eb04b657aea,7bd16ae14fe9cbcf,1c04fb773044c729.html">paper</a>]</figcaption>
+    </figure>
+
+    <br>
+
+    <figure class="flex-figure-item">
+      <img src="viz/img/disc4.png" alt="discontinuity">
+      <figcaption>Avoiding surrogate oscillations across functional discontinuities [<a href="https://www.dl.begellhouse.com/journals/52034eb04b657aea,7bd16ae14fe9cbcf,1c04fb773044c729.html">paper</a>]</figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/POF_5000_herbie.png" alt="POF-darts">
+      <figcaption>Adaptive sampling for probability of failure estimation [<a href="https://www.sciencedirect.com/science/article/abs/pii/S095183201630045X">paper</a>]</figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/7grid_template.png" alt="allquad">
+      <figcaption>All-quad meshing algorithm [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995448/">paper</a>]</figcaption>
+    </figure>
+    <figure class="flex-figure-item">
+      <img src="viz/img/flower.png" alt="2d-allquad">
+      <figcaption>2D: all quad meshing without cleanup [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995448/">paper</a>]</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+
+<!-- *********************************************************** -->
+
+    
+
+<!-- *********************************************************** -->
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<!--HTML hr tag is used here-->
+<hr>
+
+<center><footer>Copyright © 2022 Ahmad Rushdi. All Rights Reserved.</footer></center>
+   
+</body>
+
+<!-- *********************************************************** -->
+
+</html> 

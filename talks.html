@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<!-- *********************************************************** -->
+<head>
+  <meta charset="utf-8">
+  <title>.: Ahmad A. Rushdi :.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="shortcut icon" href="favicon.ico"> <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Aref+Ruqaa:wght@700&family=Cairo+Play&family=Noto+Sans+Arabic:wght@200;300;400;500&family=Readex+Pro:wght@200&family=Reem+Kufi+Fun&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+          <!-- *********************************************************** -->
+          <style>
+              * {
+                  box-sizing: border-box;
+              }
+              
+              body {
+                  margin: 0;
+                  padding: 0;
+                  font-family: 'Nunito','Aref Ruqaa Ink',Arial, sans-serif;
+              }
+              
+              /* Container for the left column and right column */
+              .container {
+                  display: flex;
+                  flex-direction: row;
+              }
+              
+              /* Style for the left column */
+              .left-column {
+                  flex: 0 0 20%; /* Fixed width of 20% */
+                  background-color: #D0E1F9;
+                  padding: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start; /* Align content to the top */
+                  align-items: center; /* Center align items horizontally */
+              }
+              
+              /* Style for the right column */
+              .right-column {
+                  flex: 1; /* Take remaining space */
+                  padding: 20px;
+              }
+              
+              /* Rounded corner images */
+              img.rounded-corners {
+                  border-radius: 50%;
+              }
+              
+              /* Style for the navigation buttons */
+              .nav-button {
+                  display: block;
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 10px;
+                  background-color: #4D648D;
+                  color: white;
+                  border: none;
+                  outline: none;
+                  text-align: center;
+                  text-decoration: none;
+                  font-weight: bold;
+                  cursor: pointer;
+              }
+              
+              /* Media query for responsive layout on mobile devices */
+              @media screen and (max-width: 600px) {
+                  .container {
+                      flex-direction: column;
+                  }
+                  
+                  .left-column, .right-column {
+                      flex: 1;
+                      width: 100%;
+                  }
+              }
+              
+              .flex-container {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                text-align: center;
+              }
+              
+              .flex-figure-item {
+                padding: 5px;
+                margin-top: 10px;
+                line-height: 10px;
+                font-weight: bold;
+                font-size: 0.75em;
+                display: flex;           /* NEW */
+                flex-direction: column;  /* NEW */
+                width: 200px;            /* NEW */
+              }
+              figcaption {
+                color: black;
+                text-align: center;
+              }
+              
+              .video {width:80px;
+                outline:none;
+                padding: 10px;
+              }
+              
+              .video_teaser {width:200px;
+                outline:none;
+                padding: 10px;
+              }
+
+              footer {
+                font-size: 0.75em; /* 14px/16=0.875em */
+              }
+              
+          </style>
+</head>
+
+<!-- *********************************************************** -->
+
+<body>
+  <div class="container">
+      <!-- *********************************************************** -->
+    <div class="left-column">
+      <h1> أحْمَد رُشْدِي </h1>
+      <img id="main-profile-pic"; width="150px"; src="./viz/Ahmad_web_bw.png" alt="Ahmad Rushdi" class="rounded-corners">
+      <h2>Ahmad A. Rushdi</h2>
+      <p style="margin: 0">Sr. Research Manager</p>
+      <p style="margin: 0"><a href="https://hai.stanford.edu/">Institute for Human-Centered AI</a></p>
+      <p style="margin: 0"><a href="https://www.stanford.edu/">Stanford University</a></p>
+      <p> <a href = "mailto: rushdi@stanford.edu"><i class="fa fa-envelope"></i></a>
+        <a href = "https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en"><i class="fa fa-google"></i></a>
+        <a href = "https://www.linkedin.com/in/ahmadrushdi/"><i class="fa fa-linkedin"></i></a>
+        <a href = "https://github.com/aarushdi"><i class="fa fa-github"></i></a>
+      </p>
+      <a href="home.html" class="nav-button">Home</a>
+      <a href="publications.html" class="nav-button">Publications</a>
+      <a href="talks.html" class="nav-button">Talks</a>
+      <a href="visualization.html" class="nav-button">Visualization</a>
+    </div>
+    <!-- *********************************************************** -->
+    <div class="right-column">
+        
+        <h2  style="color:#e42423">Invited Talks</h2>
+
+        <p><h3> Some slides can be made available upon request.</h3></p>
+
+        <hr>
+
+        <ul>
+          <li> <p> <b>Quantifying Uncertainty in Machine Learning Models for Time Series Classification</b>
+            <br> at <em>SIAM Conference on Uncertainty Quantification (SIAM-UQ)</em>, virtual, April 2022</p></li>
+
+          <li> <p> <b><a href="https://www.osti.gov/servlets/purl/1877803">Efficient DNN Architectures for Time Series Classification</a></b>
+            <br> at <em>Sandia ML/DL Workshop</em>, virtual, July 2021</p></li>
+            
+          <li> <p> <b><a href="https://www.osti.gov/servlets/purl/1831758">Estimating Predictive Uncertainty in Scientific Machine Learning: A Library of Methods and Test Problems</a></b>
+            <br> at the <em>Uncertainty Management and Machine Learning in Engineering Applications</em> and <em>Sandia ML/DL Workshop</em>, virtual, November 2020</p></li>
+              
+          <li> <p> <b>Embracing Randomness for Uncertainty Quantification in Neural Networks</b>
+            <br> at the <em>Conference on Data Analysis (CoDA)</em>, Santa Fe, NM, February 2020</p></li>
+                
+          <li> <p> <b>Deep Learning Techniques for the Detection of DNA Regulatory Motifs</b>
+            <br> at <em>Sandia ML/DL Workshop</em>, Albuquerque, NM, July 2019</p></li>
+
+          <li> <p> <b>Fusing Machine Learning and Uncertainty Quantification Methods</b>
+            <br> at <em>Sandia ML/DL Workshop</em>, Albuquerque, NM, July 2019</p></li>
+            
+          <li> <p> <b>Beyond Images: Extending Deep Learning into Emerging Data-Driven Applications</b>
+            <br> to the <em>Optimization and Uncertainty Quantification Department</em>, Sandia National Labs, Albuquerque NM, December 2018</p></li>
+              
+          <li> <p> <b>Local Active Subspaces for Dimension Reduction</b>
+            <br> at <em>SIAM Workshop on Parameter Space Dimension Reduction (SIAM-DR)</em>, Pittsburgh, PA, July 2017.
+            <br> Host: Paul Constantine</p></li>
+                
+          <li> <p> <b>An Ensemble Grouping Framework Based on Voronoi Piecewise Surrogate Models</b>
+            <br> at <em>SIAM conference on Computational Science and Engineering (SIAM-CSE)</em>, Atlanta, GA, February 2017.
+            <br> Host: Eric Phipps</p></li>
+            
+          <li> <p> <b>Mesh Improvement via Constrained Resampling: A Comprehensive Approach</b>
+            <br> at <em>the department of Methods and Algorithms at Los Alamos National Laboratory (LANL)</em>, Los Alamos, NM, June 2016.
+            <br> Host: Mikhail Shashkov</p></li>
+
+          <li> <p> <b>Recursive k-d Darts Sampling for Exploring High-Dimensional Spaces</b>
+            <br> at <em>SIAM Conference on Uncertainty Quantification (SIAM-UQ)</em>, Lausanne, Switzerland, April 2016.
+            <br> Host: Fabio Nobile</p></li>
+
+          <li> <p> <b>Locally-Accurate Surrogate models for Credible High-Dimensional Data Analysis</b>
+            <br> at <em>Dept. of Computer Science & Engineering (CSE) of New Mexico Tech (NMT)</em>, Socorro, NM, USA, March 2016.
+            <br> Host: Abdelmounaam Rezgui</p></li>
+                
+          <li> <p> <b><a href="https://www.osti.gov/servlets/purl/1514295">VPS: Voronoi Piecewise Surrogates for High-Dimensional Data Fitting</a></b>
+            <br> at <em>the 4th SRI Annual Workshop on Uncertainty Quantification, Advances in UQ Methods, Algorithms and Applications (UQAW), King Abdullah University of Science and Technology (KAUST)</em>, Thuwal, Saudi Arabia, January 2016.
+            <br> Host: Raul Tempone and Omar Knio</p></li>
+            
+          <li> <p> <b>Feature-Preserving Spatial Density Tuning of a Maximal Random Disk Packing</b>
+            <br> at <em>the 13th US National Congress on Computational Mechanics</em>, San Diego, CA, USA, July 2015.
+            <br> Host: Scott A. Mitchell</p></li>
+
+           <li> <p> <b>LS Polynomial Optimization for Constructing Voronoi Piecewise Surrogates</b>
+            <br> to <em>the Optimization and Uncertainty Quantification Department, Sandia National Labs</em>, Albuquerque NM, November 2014.
+            <br> Host: Fabio Nobile</p></li>
+
+          <li> <p> <b>An Overview of Probabilistic Graphical Models</b>
+            <br> to <em>the Computational Visualization Center at the University of Texas</em>, Austin TX, June 2014.
+            <br> Host: Chandrajit Bajaj</p></li>
+            
+           <li> <p> <b>Feature Detection and Parameter Estimation of Random Data Using Fourier and Signal Processing Methods</b>
+            <br> to <em>the Optimization and UQ Dept., Sandia National Labs</em>, Albuquerque NM, November 2013.
+            <br> Host: James R. Stewart</p></li>
+
+          <li> <p> <b>SerDes Channel Equalization: FFE and DFE approaches</b>
+            <br> at <em>Cisco PCB-HW Conference, Cisco Systems</em>, San Jose CA, February 2012.</p></li>
+
+           <li> <p> <b>Cost-Effective DSP Models for DNA Sequence Analysis</b>
+            <br> at the <em>Industrial Affiliates Conference, department of Electrical and Computer Engineering, UCDavis</em>, Davis CA, June 2008.</p></li>
+
+          <li> <p> <b>On the Anatomy of a Gigabit Eye Diagram</b>
+            <br> at <em>the Interns Presentations Convention of the Engineering Learning Group, Cisco Systems, Inc.</em>, Milpitas CA, August 2007.
+            <br> Best poster award.</p></li>
+            
+           <li> <p> <b>An Efficient DSP Framework for Gene Prediction</b>
+            <br> at <em>CITRIS corporate sponsor day, of the Mathematical Sciences Research Institute (MSRI)</em>, Berkeley CA, June 2006.</p></li>
+
+          <li> <p> <b>Multirate Signal Processing Algorithm for Exons Detection</b>
+            <br> at the<em>Industrial Affiliates Conference, department of Electrical and Computer Engineering, UCDavis</em>, Davis CA, June 2006.</p></li>
+
+      </ul>
+
+    <!-- *********************************************************** -->
+  </div>
+</body>
+</html>
+

@@ -38,8 +38,8 @@
                   padding: 20px;
                   display: flex;
                   flex-direction: column;
-                  align-items: flex-start; /* Align content to the top */
                   align-items: center; /* Center align items horizontally */
+                  justify-content: center; /* Center align items vertically */
               }
               
               /* Style for the right column */
@@ -80,46 +80,6 @@
                       width: 100%;
                   }
               }
-              
-              .flex-container {
-                padding: 0;
-                margin: 0;
-                list-style: none;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                text-align: center;
-              }
-              
-              .flex-figure-item {
-                padding: 5px;
-                margin-top: 10px;
-                line-height: 10px;
-                font-weight: bold;
-                font-size: 0.75em;
-                display: flex;           /* NEW */
-                flex-direction: column;  /* NEW */
-                width: 200px;            /* NEW */
-              }
-              figcaption {
-                color: black;
-                text-align: center;
-              }
-              
-              .video {width:80px;
-                outline:none;
-                padding: 10px;
-              }
-              
-              .video_teaser {width:200px;
-                outline:none;
-                padding: 10px;
-              }
-
-              footer {
-                font-size: 0.75em; /* 14px/16=0.875em */
-              }
-              
           </style>
 </head>
 
@@ -147,16 +107,6 @@
     </div>
     <!-- *********************************************************** -->
     <div class="right-column">
-        
-        <div class="flex-container">
-          <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase4.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-          <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase3.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-          <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-          <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-        </div>
-        <div class="flex-container">
-          <p style="color:#D0E1F9;" style="font-size:50px;" margin-top="-10px"> Will they collide? Experiments with magnitude and phase for collision avoidance</p>
-        </div>
         
         <h2 style="color:#e42423"> Biography </h2>
         <p> Thank you for visiting my webpage. I am a research scientist, interested in the broad areas of signal processing, uncertainty quantification, and machine learning. Currently, I am a Senior Research Manager at <a href="https://www.stanford.edu/">Stanford University</a>’s <a href="https://hai.stanford.edu/">Institute for Human-Centered Artificial Intelligence</a> (HAI), working with diverse AI communities (e.g., ML/DL, XAI, HCI, generative AI, NLP/LLMs, and CV) across Stanford and the corporate world (e.g., Google and IBM), in order to envision, build, and maintain new bridges around cutting-edge research for a variety of domain applications. </p>
