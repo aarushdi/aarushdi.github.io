@@ -9,10 +9,9 @@
   <link rel="shortcut icon" href="favicon.ico"> <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Aref+Ruqaa:wght@700&family=Cairo+Play&family=Noto+Sans+Arabic:wght@200;300;400;500&family=Readex+Pro:wght@200&family=Reem+Kufi+Fun&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Aref+Ruqaa+Ink&family=Nunito:wght@300;700&display=swap" rel="stylesheet">
           <!-- *********************************************************** -->
           <style>
               * {
@@ -22,7 +21,14 @@
               body {
                   margin: 0;
                   padding: 0;
-                  font-family: 'Nunito','Aref Ruqaa Ink',Arial, sans-serif;
+                  font-family: 'Nunito','Aref Ruqaa Ink','Almarai', sans-serif;
+              }
+              
+              h1 {
+                font-family: 'Nunito','Aref Ruqaa Ink', sans-serif;;
+              }
+              p {
+                font-family: 'Nunito','Almarai', sans-serif;;
               }
               
               /* Container for the left column and right column */
@@ -38,8 +44,8 @@
                   padding: 20px;
                   display: flex;
                   flex-direction: column;
+                  align-items: flex-start; /* Align content to the top */
                   align-items: center; /* Center align items horizontally */
-                  justify-content: center; /* Center align items vertically */
               }
               
               /* Style for the right column */
@@ -80,60 +86,121 @@
                       width: 100%;
                   }
               }
+              
+              .flex-container {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                text-align: center;
+              }
+              
+              .flex-figure-item {
+                padding: 5px;
+                margin-top: 10px;
+                line-height: 10px;
+                font-weight: bold;
+                font-size: 0.75em;
+                display: flex;           /* NEW */
+                flex-direction: column;  /* NEW */
+                width: 200px;            /* NEW */
+              }
+              figcaption {
+                color: black;
+                text-align: center;
+              }
+              
+              .video {width:80px;
+                outline:none;
+                padding: 10px;
+              }
+              
+              .video_teaser {width:200px;
+                outline:none;
+                padding: 10px;
+              }
+
+              footer {
+                font-size: 0.75em; /* 14px/16=0.875em */
+              }
+              
           </style>
 </head>
 
 <!-- *********************************************************** -->
 
 <body>
-  <div class="container">
-      <!-- *********************************************************** -->
-    <div class="left-column">
-      <h1> أحْمَد رُشْدِي </h1>
-      <img id="main-profile-pic"; width="150px"; src="./viz/Ahmad_web_bw.png" alt="Ahmad Rushdi" class="rounded-corners">
-      <h2>Ahmad A. Rushdi</h2>
-      <p style="margin: 0">Sr. Research Manager</p>
-      <p style="margin: 0"><a href="https://hai.stanford.edu/">Institute for Human-Centered AI</a></p>
-      <p style="margin: 0"><a href="https://www.stanford.edu/">Stanford University</a></p>
-      <p> <a href = "mailto: rushdi@stanford.edu"><i class="fa fa-envelope"></i></a>
-        <a href = "https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en"><i class="fa fa-google"></i></a>
-        <a href = "https://www.linkedin.com/in/ahmadrushdi/"><i class="fa fa-linkedin"></i></a>
-        <a href = "https://github.com/aarushdi"><i class="fa fa-github"></i></a>
-      </p>
-      <a href="home.html" class="nav-button">Home</a>
-      <a href="publications.html" class="nav-button">Publications</a>
-      <a href="talks.html" class="nav-button">Talks</a>
-      <a href="visualization.html" class="nav-button">Visualization</a>
-    </div>
-    <!-- *********************************************************** -->
-    <div class="right-column">
+    <div class="container">
+        <!-- *********************************************************** -->
+        <div class="left-column">
+            <h1> أحْمَد رُشْدِي </h1>
+            <img id="main-profile-pic"; width="150px"; src="./viz/Ahmad_web_bw.png" alt="Ahmad Rushdi" class="rounded-corners">
+                <h2>Ahmad A. Rushdi</h2>
+                <p style="margin: 0">Sr. Research Manager</p>
+                <p style="margin: 0"><a href="https://hai.stanford.edu/">Institute for Human-Centered AI</a></p>
+                <p style="margin: 0"><a href="https://www.stanford.edu/">Stanford University</a></p>
+                <p> <a href = "mailto: rushdi@stanford.edu"><i class="fa fa-envelope"></i></a>
+                <a href = "https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en"><i class="fa fa-google"></i></a>
+                <a href = "https://www.linkedin.com/in/ahmadrushdi/"><i class="fa fa-linkedin"></i></a>
+                <a href = "https://github.com/aarushdi"><i class="fa fa-github"></i></a>
+                </p>
+                <a href="home.html" class="nav-button">Home</a>
+                <a href="publications.html" class="nav-button">Publications</a>
+                <a href="talks.html" class="nav-button">Talks</a>
+                <a href="visualization.html" class="nav-button">Visualization</a>
+        </div>
+        <!-- *********************************************************** -->
+        <div class="right-column">
+            
+            <div class="flex-container">
+                <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase4.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase3.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                <video class="video_teaser" autoplay loop muted playsinline> <source src="viz/vid/phase1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            </div>
+            <div class="flex-container">
+                <p style="color:#D0E1F9;" style="font-size:50px;" margin-top="-10px"> Will they collide? Experiments with magnitude and phase for collision avoidance</p>
+            </div>
+            
+            <h2 style="color:#e42423"> Biography </h2>
+            <p> Thank you for visiting my webpage. I am a research scientist, interested in the broad areas of signal processing, uncertainty quantification, and machine learning. Currently, I am a Senior Research Manager at <a href="https://www.stanford.edu/">Stanford University</a>’s <a href="https://hai.stanford.edu/">Institute for Human-Centered Artificial Intelligence</a> (HAI), working with diverse AI communities (e.g., ML/DL, XAI, HCI, generative AI, NLP/LLMs, and CV) across Stanford and the corporate world (e.g., Google and IBM), in order to envision, build, and maintain new bridges around cutting-edge research for a variety of domain applications. </p>
+            <p> Prior to joining Stanford, I was a research scientist at the <a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/index.cfm">Center for Computing Research</a> of <a href="https://www.sandia.gov/">Sandia National Laboratories</a>, where I worked with the <a href="https://dakota.sandia.gov/">Dakota</a> team and PI'd a number of projects on UQ/ML. Before Sandia, I was an R&D manager of data science at <a href="https://www.northropgrumman.com/">Northrop Grumman Corporation</a>, a research fellow at the <a href="https://ece.ucdavis.edu/">Department of Electrical and Computer Engineering</a> of <a href="https://www.ucdavis.edu/">UC Davis</a> and the <a href="https://cvcweb.oden.utexas.edu/cvcwp/">Computational Visualization Center</a> under <a href="https://oden.utexas.edu/">Oden Institute for Computational Engineering and Sciences</a> at <a href="https://www.utexas.edu/">UT Austin</a>, and an R&D engineer at <a href="https://www.cisco.com/">Cisco Systems</a>. I hold a Ph.D. degree in <a href="https://ece.ucdavis.edu/">Electrical and Computer Engineering</a> (with a minor in Applied Math) from the <a href="https://www.ucdavis.edu/">University of California, Davis</a>, and MS.c./BS.c. degrees in <a href="http://eece.cu.edu.eg/">Electronics and Electrical Communications Engineering</a> from <a href="https://cu.edu.eg/Home">Cairo University</a>, Egypt. I am a senior member of IEEE and a member of ACM and SIAM.</p>
+            
+            <p> Please feel free to reach out if you have any questions! </p>
+            
+            <hr>
+            <!--------------------------------------------------------------------->
+            
+            <h2 style="color:#e42423"> Recent Activities</h2>
+            <ul class="list_no_dot">
+                <li> [12/2023] Co-organizing Stanford's HAI/AIMI AI+Health Conference, in Palo Alto CA </li>
+                <li> [07/2023] Attending the Fortieth <a href="https://icml.cc/">International Conference on Machine Learning (ICML)</a> in Hawaii</li>
+                <li> [02/2023] Co-organized Stanford's <a href="https://hai.stanford.edu/events/aieducation-summit-ai-service-teaching-and-learning">AI+Education Summit: AI in the Service of Teaching and Learning</a> in Palo Alto, CA </li>
+                <li> [11/2022] Attended the thirty-sixth <a href="https://nips.cc/">Conference on Neural Information Processing Systems (NeurIPS)</a> in New Orleans, LA</li>
+                <li> [08/2022] <a href="https://ww2.amstat.org/meetings/jsm/2022/index.cfm">The Joint Statistical Meetings (JSM)</a>: Co-organized a minisymposium on "Research Advances at the Interface of Uncertainty Quantification and Machine Learning for High-Consequence Problems" at the Section on Statistics in Defense and National Security</li>
+                <li> [04/2022] Co-organized a minisymposium on "Advances at the Interface of Uncertainty Quantification and Machine Learning" at <a href="https://www.siam.org/conferences/cm/conference/uq22">SIAM Conference on Uncertainty Quantification (UQ22)</a></li>
+                <li> [12/2021] Started a new role at <a href="https://hai.stanford.edu/">Stanford's Institute for Human-Centered Aritifical Intelligence</a></li>
+                <li> [09/2021] Started a new role as an Advisory Council Member with the <a href="https://www.csuchico.edu/academics/engineering.shtml">Engineering Leadership Program, California State University, Chico</a></li>
+                <li> [09/2019] <a href="https://www.anl.gov/ai-for-science-report">AI for Science Report</a>: contributed to sections on machine/deep learning and uncertainty quantification </li>
+                <li> Nonprofit Leadership & Strategic Management Certificate: completed at San Francisco State University, San Francisco CA</li>
+                <!--<li>PC Member/Reviewer: ACL, EMNLP, NAACL, CSCW, CHI, ICWSM, TOCHI, LREC, CoNLL, SEM, CL, TACL </li> -->
+            </ul>
+            
+            
+            <!--HTML hr tag is used here-->
+            <hr>
+            <br>
+            <br>
+            <br>
+            <center><footer>Copyright © 2023 Ahmad A. Rushdi. All Rights Reserved.</footer></center>
+            <!-- *********************************************************** -->
+        </div>
         
-        <h2 style="color:#e42423"> Biography </h2>
-        <p> Thank you for visiting my webpage. I am a research scientist, interested in the broad areas of signal processing, uncertainty quantification, and machine learning. Currently, I am a Senior Research Manager at <a href="https://www.stanford.edu/">Stanford University</a>’s <a href="https://hai.stanford.edu/">Institute for Human-Centered Artificial Intelligence</a> (HAI), working with diverse AI communities (e.g., ML/DL, XAI, HCI, generative AI, NLP/LLMs, and CV) across Stanford and the corporate world (e.g., Google and IBM), in order to envision, build, and maintain new bridges around cutting-edge research for a variety of domain applications. </p>
-        <p> Prior to joining Stanford, I was a research scientist at the <a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/index.cfm">Center for Computing Research</a> of <a href="https://www.sandia.gov/">Sandia National Laboratories</a>, where I worked with the <a href="https://dakota.sandia.gov/">Dakota</a> team and PI'd a number of projects on UQ/ML. Before Sandia, I was an R&D manager of data science at <a href="https://www.northropgrumman.com/">Northrop Grumman Corporation</a>, a research fellow at the <a href="https://ece.ucdavis.edu/">Department of Electrical and Computer Engineering</a> of <a href="https://www.ucdavis.edu/">UC Davis</a> and the <a href="https://cvcweb.oden.utexas.edu/cvcwp/">Computational Visualization Center</a> under <a href="https://oden.utexas.edu/">Oden Institute for Computational Engineering and Sciences</a> at <a href="https://www.utexas.edu/">UT Austin</a>, and an R&D engineer at <a href="https://www.cisco.com/">Cisco Systems</a>. I hold a Ph.D. degree in <a href="https://ece.ucdavis.edu/">Electrical and Computer Engineering</a> (with a minor in Applied Math) from the <a href="https://www.ucdavis.edu/">University of California, Davis</a>, and MS.c./BS.c. degrees in <a href="http://eece.cu.edu.eg/">Electronics and Electrical Communications Engineering</a> from <a href="https://cu.edu.eg/Home">Cairo University</a>, Egypt. I am a senior member of IEEE and a member of ACM and SIAM.</p>
-
-  <p> Please feel free to reach out if you have any questions! </p>
-
-<hr>
-<!--------------------------------------------------------------------->
-
-  <h2 style="color:#e42423"> Recent Activities</h2>
-  <ul class="list_no_dot">
-      <li> [12/2023] Co-organizing Stanford's HAI/AIMI AI+Health Conference, in Palo Alto CA </li>
-      <li> [07/2023] Attending the Fortieth <a href="https://icml.cc/">International Conference on Machine Learning (ICML)</a> in Hawaii</li>
-      <li> [02/2023] Co-organized Stanford's <a href="https://hai.stanford.edu/events/aieducation-summit-ai-service-teaching-and-learning">AI+Education Summit: AI in the Service of Teaching and Learning</a> in Palo Alto, CA </li>
-      <li> [11/2022] Attended the thirty-sixth <a href="https://nips.cc/">Conference on Neural Information Processing Systems (NeurIPS)</a> in New Orleans, LA</li>
-      <li> [08/2022] <a href="https://ww2.amstat.org/meetings/jsm/2022/index.cfm">The Joint Statistical Meetings (JSM)</a>: Co-organized a minisymposium on "Research Advances at the Interface of Uncertainty Quantification and Machine Learning for High-Consequence Problems" at the Section on Statistics in Defense and National Security</li>
-    <li> [04/2022] Co-organized a minisymposium on "Advances at the Interface of Uncertainty Quantification and Machine Learning" at <a href="https://www.siam.org/conferences/cm/conference/uq22">SIAM Conference on Uncertainty Quantification (UQ22)</a></li>
-    <li> [12/2021] Started a new role at <a href="https://hai.stanford.edu/">Stanford's Institute for Human-Centered Aritifical Intelligence</a></li>
-    <li> [09/2021] Started a new role as an Advisory Council Member with the <a href="https://www.csuchico.edu/academics/engineering.shtml">Engineering Leadership Program, California State University, Chico</a></li>
-    <li> [09/2019] <a href="https://www.anl.gov/ai-for-science-report">AI for Science Report</a>: contributed to sections on machine/deep learning and uncertainty quantification </li>
-    <li> Nonprofit Leadership & Strategic Management Certificate: completed at San Francisco State University, San Francisco CA</li>
-    <!--<li>PC Member/Reviewer: ACL, EMNLP, NAACL, CSCW, CHI, ICWSM, TOCHI, LREC, CoNLL, SEM, CL, TACL </li> -->
-  </ul>
-
-    <!-- *********************************************************** -->
-  </div>
+        
+        
 </body>
+
 </html>
 
