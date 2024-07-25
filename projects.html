@@ -218,13 +218,39 @@
         
         <p> <b>UQ for AI/ML</b>: quantifying uncertainty in ML predictive estimates, decomposing it into aleatoric and epistemic components, and consequently guiding active learning.</p>
         
-        <b>Vision</b>: Quantifying uncertainty in image captioning methods.
-        <div class="flex-container">
-          <img src="viz/UQ/DallE/Dalle3.jpeg" alt="" width="150px">
-          <img src="viz/UQ/DallE/Yolo.png" alt="" width="150px">
-          <img src="viz/UQ/DallE/SAM.png" alt="" width="150px">
-        </div>
         
+        <p> <b>Vision</b>: Quantifying uncertainty in image captioning methods.</p>
+
+        <div class="flex-container">
+
+          <figure class="flex-figure-item">
+              <img src="viz/UQ/DallE/Dalle3.jpeg" alt="" width="150px">
+            <figcaption>Text-to-image generation using Dall-E 3. Prompt: "A nature reserve showing a giraffe, elephant, zebra, and lion, faceted style. Colorful background." </figcaption>
+          </figure>
+          <figure class="flex-figure-item">
+              <img src="viz/UQ/DallE/Yolo.png" alt="" width="150px">
+                  <figcaption>Object detection using YOLOv3 (trained on COCO). class,confidence,bx,by,bw,bh
+                      horse,0.23,0.46,0.54,0.06,0.05
+                      zebra,0.96,0.31,0.88,0.13,0.15
+                      zebra,0.99,0.75,0.83,0.30,0.20
+                      zebra,0.97,0.11,0.82,0.14,0.11
+                      zebra,0.98,0.07,0.67,0.09,0.06
+                      giraffe,0.97,0.30,0.55,0.28,0.50
+                  </figcaption>
+          </figure>
+          <figure class="flex-figure-item">
+              <img src="viz/UQ/DallE/SAM.png" alt="" width="150px">
+            <figcaption>Image segmentation using Meta's Segment Anything (SAM) </figcaption>
+          </figure>
+          <figure class="flex-figure-item">
+              <img src="viz/UQ/DallE/caption.png" alt="" width="150px">
+            <figcaption>Image captioning using BLIP </figcaption>
+          </figure>
+        
+          
+          </div>
+        
+
         <b>Image classification</b>: Accuracy/uncertainty impact of rotation and AWGN addition on NN classifiers, applied to MNIST/CIFAR.
           
           <!-- ** MNIST ** -->
