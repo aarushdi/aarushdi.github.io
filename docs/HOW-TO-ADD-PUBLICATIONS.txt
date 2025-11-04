@@ -1,0 +1,116 @@
+===============================================
+HOW TO ADD NEW PUBLICATIONS TO YOUR WEBSITE
+===============================================
+
+QUICK STEPS:
+------------
+1. Open publications/publications.bib in any text editor
+2. Add your new BibTeX entry at the top or bottom
+3. Run: cd publications && ./update-bibtex.sh
+4. Open publications.html in your browser to verify
+
+That's it! Your publication will automatically appear sorted by year with your name bolded.
+
+
+EXAMPLE BIBTEX ENTRY:
+---------------------
+
+@article{rushdi2025example,
+  author = {Ahmad A. Rushdi and Other Author and Another Author},
+  title = {Your Paper Title Here},
+  journal = {Journal Name},
+  volume = {10},
+  number = {3},
+  pages = {100--120},
+  year = {2025},
+  url = {https://example.com/paper}
+}
+
+
+ENTRY TYPES YOU CAN USE:
+------------------------
+
+@article          - For journal papers
+  Required: author, title, journal, year
+  Optional: volume, number, pages, url
+
+@inproceedings    - For conference papers
+  Required: author, title, booktitle, year
+  Optional: pages, publisher, url
+
+@techreport       - For technical reports
+  Required: author, title, institution, year
+  Optional: address, url
+
+@incollection     - For book chapters
+  Required: author, title, booktitle, year
+  Optional: pages, publisher, url
+
+
+IMPORTANT FIELDS:
+-----------------
+
+author      Author names separated by " and "
+            Example: Ahmad A. Rushdi and Jane Doe and John Smith
+            (Your name will automatically be bolded)
+
+title       Paper title
+
+year        Publication year (used for sorting)
+
+url         Link to the paper (optional but recommended)
+
+journal     Journal name (for @article)
+
+booktitle   Conference or book name (for @inproceedings, @incollection)
+
+volume      Volume number (for journals)
+
+number      Issue number (for journals)
+
+pages       Page numbers (use -- for ranges, e.g., 100--120)
+
+institution Institution name (for @techreport)
+
+address     Location (for @techreport)
+
+publisher   Publisher name (for books/chapters)
+
+
+TIPS:
+-----
+
+• Publications are automatically sorted by year (newest first)
+• Your name "Ahmad A. Rushdi" will be automatically bolded
+• Use double hyphens (--) for page ranges: 100--120
+• Always include the year - it's used for sorting
+• Include URLs when available for easy access
+• Use curly braces {} for field values
+
+
+TROUBLESHOOTING:
+----------------
+
+Publications not showing?
+→ Make sure you ran: cd publications && ./update-bibtex.sh
+→ Check for syntax errors (matching braces, commas, etc.)
+
+Script won't run?
+→ Make it executable: chmod +x publications/update-bibtex.sh
+→ Then run: cd publications && ./update-bibtex.sh
+
+Need more help?
+→ See docs/README-BIBTEX.md for detailed documentation
+→ Check js/bibtex-parser.js for formatting logic
+
+
+FILES YOU SHOULD EDIT:
+----------------------
+✓ publications/publications.bib  - Add your BibTeX entries here
+
+FILES YOU SHOULD NOT EDIT:
+--------------------------
+✗ js/bibtex-data.js      - Auto-generated, will be overwritten
+✗ publications.html      - Publications list is now dynamic
+
+===============================================

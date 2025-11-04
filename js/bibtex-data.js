@@ -1,0 +1,373 @@
+// Auto-generated from publications.bib
+const BIBTEX_DATA = `
+@inproceedings{smith2023assessing,
+  author = {Michael Smith and Erin Acquesta and Charles Smutz and Ahmad A. Rushdi and Blake Moss},
+  title = {Assessing the Fidelity of Explanations with Global Sensitivity Analysis},
+  booktitle = {Proceedings of the 56th Hawaii International Conference on System Sciences},
+  year = {2023},
+  url = {https://scholarspace.manoa.hawaii.edu/items/6a48ec8e-67a5-4421-a693-aae0ae9fc212/full}
+}
+
+@article{partin2023multifidelity,
+  author = {Lauren Partin and Gianluca Geraci and Ahmad A. Rushdi and Michael S Eldred and Daniele E Schiavazzi},
+  title = {Multifidelity data fusion in convolutional encoder/decoder networks},
+  journal = {Journal of Computational Physics},
+  volume = {472},
+  pages = {111666},
+  year = {2023},
+  url = {https://www.sciencedirect.com/science/article/pii/S002199912200729X?CMX_ID=&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&utm_acid=267587829&utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_in=DM302821&utm_medium=email&utm_source=AC_}
+}
+
+@article{cevallos2022brief,
+  author = {Yesenia Cevallos and Tadashi Nakano and Luis Tello-Oquendo and Ahmad A. Rushdi and Deysi Inca and Ivone Santillán and Amin Zadeh Shirazi and Nicolay Samaniego},
+  title = {A brief review on DNA storage, compression, and digitalization},
+  journal = {Nano Communication Networks},
+  volume = {31},
+  pages = {100391},
+  year = {2022},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S1878778921000508}
+}
+
+@techreport{smith2021sage,
+  author = {Michael Smith and Erin Acquesta and Ahmad A. Rushdi and Arlo Ames and Alycia Carey and Christopher Cuellar and Richard Field and Trevor Maxfield and Scott Mitchell and Elizabeth Morris and Blake Moss},
+  title = {SAGE intrusion detection system: sensitivity analysis guided explainability for machine learning},
+  institution = {Sandia National Lab.(SNL-NM)},
+  address = {Albuquerque, NM (United States)},
+  year = {2021},
+  url = {https://www.osti.gov/biblio/1820253}
+}
+
+@techreport{rushdi2020csri,
+  author = {Ahmad A. Rushdi and Michael L. Parks},
+  title = {Computer Science Research Institute (CSRI) Summer Proceedings 2020},
+  institution = {Sandia National Lab.(SNL-NM)},
+  address = {Albuquerque, NM (United States)},
+  year = {2020},
+  url = {https://www.osti.gov/biblio/1716561-csri-summer-proceedings}
+}
+
+@techreport{adams2020dakota,
+  author = {Brian Adams and William Bohnhoff and Keith Dalbey and Mohamed Ebeida and John Eddy and Michael Eldred and Russell Hooper and Patricia Hough and Kenneth Hu and John Jakeman and Ahmad A. Rushdi and others},
+  title = {Dakota, a multilevel parallel object-oriented framework for design optimization, parameter estimation, uncertainty quantification, and sensitivity analysis: version 6.13 user\'s manual},
+  institution = {Sandia National Lab.(SNL-NM)},
+  address = {Albuquerque, NM (United States)},
+  year = {2020},
+  url = {https://www.osti.gov/biblio/1817318}
+}
+
+@article{rushdi2020power,
+  author = {Mostafa A Rushdi and Ahmad A. Rushdi and Tarek N Dief and Amr M Halawa and Shigeo Yoshida and Roland Schmehl},
+  title = {Power prediction of airborne wind energy systems using multivariate machine learning},
+  journal = {Energies},
+  volume = {13},
+  number = {9},
+  pages = {2367},
+  year = {2020},
+  url = {https://www.mdpi.com/1996-1073/13/9/2367}
+}
+
+@article{abdelkader2020vorocrust,
+  author = {Ahmed Abdelkader and Chandrajit L Bajaj and Mohamed S Ebeida and Ahmed H Mahmoud and Scott A Mitchell and John D Owens and Ahmad A. Rushdi},
+  title = {Vorocrust: Voronoi meshing without clipping},
+  journal = {ACM Transactions on Graphics (TOG)},
+  volume = {39},
+  number = {3},
+  pages = {1--16},
+  year = {2020},
+  url = {https://dl.acm.org/doi/abs/10.1145/3337680}
+}
+
+@article{mitchell2018spoke,
+  author = {Scott A Mitchell and Mohamed S Ebeida and Muhammad A Awad and Chonhyon Park and Anjul Patney and Ahmad A. Rushdi and Laura P Swiler and Dinesh Manocha and Li-Yi Wei},
+  title = {Spoke-darts for high-dimensional blue-noise sampling},
+  journal = {ACM Transactions on Graphics (TOG)},
+  volume = {37},
+  number = {2},
+  pages = {1--20},
+  year = {2018},
+  url = {https://dl.acm.org/doi/abs/10.1145/3194657}
+}
+
+@article{rushdi2017vps,
+  author = {Ahmad A. Rushdi and Laura P Swiler and Eric T Phipps and Marta D\'Elia and Mohamed S Ebeida},
+  title = {VPS: Voronoi piecewise surrogate models for high-dimensional data fitting},
+  journal = {International Journal for Uncertainty Quantification},
+  year = {2017},
+  url = {https://www.dl.begellhouse.com/journals/52034eb04b657aea,7bd16ae14fe9cbcf,1c04fb773044c729.html}
+}
+
+@article{rushdi2017allquad,
+  author = {Ahmad A. Rushdi and Scott A Mitchell and Ahmed H Mahmoud and Chandrajit C Bajaj and Mohamed S Ebeida},
+  title = {All-quad meshing without cleanup},
+  journal = {Computer-Aided Design},
+  volume = {85},
+  pages = {83--98},
+  year = {2017},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S001044851630080X}
+}
+
+@article{abdelkader2018sampling,
+  author = {Ahmed Abdelkader and Chandrajit L Bajaj and Mohamed S Ebeida and Ahmed H Mahmoud and Scott A Mitchell and John D Owens and Ahmad A. Rushdi},
+  title = {Sampling conditions for conforming Voronoi meshing by the Vorocrust algorithm},
+  journal = {LIPIcs: Leibniz international proceedings in informatics},
+  year = {2018},
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6344055/}
+}
+
+@inproceedings{abdelkader2018vorocrust,
+  author = {Ahmed Abdelkader and Chandrajit L Bajaj and Mohamed S Ebeida and Ahmed H Mahmoud and Scott A Mitchell and John D Owens and Ahmad A. Rushdi},
+  title = {Vorocrust illustrated: theory and challenges (multimedia exposition)},
+  booktitle = {34th International Symposium on Computational Geometry (SoCG 2018)},
+  year = {2018},
+  publisher = {Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik},
+  url = {https://drops.dagstuhl.de/opus/volltexte/2018/8790/}
+}
+
+@article{cevallos2017digital,
+  author = {Yesenia Cevallos and Lorena Molina and Alex Santillán and Floriano De Rango and Ahmad A. Rushdi and Jesús B Alonso},
+  title = {A digital communication analysis of gene expression of proteins in biological systems: a layered network model view},
+  journal = {Cognitive Computation},
+  volume = {9},
+  number = {1},
+  pages = {43--67},
+  year = {2017},
+  url = {https://link.springer.com/article/10.1007/s12559-016-9434-4}
+}
+
+@inproceedings{abdelkader2017constrained,
+  author = {Ahmed Abdelkader and Ahmed H Mahmoud and Ahmad A. Rushdi and Scott A Mitchell and John D Owens and Mohamed S Ebeida},
+  title = {A constrained resampling strategy for mesh improvement},
+  booktitle = {Computer Graphics Forum (CGF)},
+  volume = {36},
+  pages = {189--201},
+  year = {2017},
+  publisher = {Wiley Online Library},
+  url = {https://dl.acm.org/doi/10.1111/cgf.13256}
+}
+
+@incollection{delia2020surrogate,
+  author = {Marta D\'Elia and Eric Phipps and Ahmad A. Rushdi and MS Ebeida},
+  title = {Surrogate-based ensemble grouping strategies for embedded sampling-based uncertainty quantification},
+  booktitle = {Quantification of Uncertainty: Improving Efficiency and Technology},
+  pages = {41--66},
+  year = {2020},
+  publisher = {Springer},
+  url = {https://link.springer.com/chapter/10.1007/978-3-030-48721-8_3}
+}
+
+@article{ebeida2016recursive,
+  author = {Mohamed S Ebeida and Ahmad A. Rushdi},
+  title = {Recursive spoke darts: local hyperplane sampling for delaunay and Voronoi meshing in arbitrary dimensions},
+  journal = {Procedia engineering},
+  volume = {163},
+  pages = {110--122},
+  year = {2016},
+  url = {https://www.sciencedirect.com/science/article/pii/S1877705816333380}
+}
+
+@article{awad2016allhex,
+  author = {Muhammad A Awad and Ahmad A. Rushdi and Misarah A Abbas and Scott A Mitchell and Ahmed H Mahmoud and Chandrajit L Bajaj and Mohamed S Ebeida},
+  title = {All-hex meshing of multiple-region domains without cleanup},
+  journal = {Procedia engineering},
+  volume = {163},
+  pages = {251--261},
+  year = {2016},
+  url = {https://www.sciencedirect.com/science/article/pii/S1877705816333628}
+}
+
+@article{ebeida2016pof,
+  author = {Mohamed S Ebeida and Scott A Mitchell and Laura P Swiler and Vicente J Romero and Ahmad A. Rushdi},
+  title = {POF-darts: geometric adaptive sampling for probability of failure},
+  journal = {Reliability Engineering \\& System Safety},
+  volume = {155},
+  pages = {64--77},
+  year = {2016},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S095183201630045X}
+}
+
+@inproceedings{ebeida2016disk,
+  author = {Mohamed S Ebeida and Ahmad A. Rushdi and Muhammad A Awad and Ahmed H Mahmoud and Dong-Ming Yan and Shawn A English and John D Owens and Chandrajit L Bajaj and Scott A Mitchell},
+  title = {Disk density tuning of a maximal random packing},
+  booktitle = {Computer Graphics Forum},
+  volume = {35},
+  pages = {259--269},
+  year = {2016},
+  publisher = {Wiley Online Library},
+  url = {https://dl.acm.org/doi/10.1111/cgf.12981}
+}
+
+@article{rushdi2015robust,
+  author = {Ahmad A. Rushdi and Scott A Mitchell and Chandrajit L Bajaj and Mohamed S Ebeida},
+  title = {Robust all-quad meshing of domains with connected regions},
+  journal = {Procedia engineering},
+  volume = {124},
+  pages = {96--108},
+  year = {2015},
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995448/}
+}
+
+@inproceedings{rushdi2012bumps,
+  author = {Ahmad A. Rushdi and Alessio Alaimo and Federico Fontanella and Mike Sapozhnikov and Janine Tinsley},
+  title = {Bumps and potholes along the sfi design road: meeting the sff-8431 specification},
+  booktitle = {proceedings of Cisco PCB-HW Conference},
+  year = {2012},
+  publisher = {Cisco Systems}
+}
+
+@inproceedings{rushdi2011efficient,
+  author = {Ahmad A. Rushdi and Abe Elmoufti},
+  title = {An efficient EDVT validation process of sfp+ connectors using an s-parameters modeling approach},
+  booktitle = {proceedings of the 4th Cisco Innovating Test Conference},
+  year = {2011},
+  publisher = {Cisco Systems}
+}
+
+@inproceedings{rushdi2010stateful,
+  author = {Ahmad A. Rushdi and Abe Elmoufti},
+  title = {Stateful swtichover: an in-depth testing approach},
+  booktitle = {proceedings of the 3rd Cisco Innovating Test Conference},
+  year = {2010},
+  publisher = {Cisco Systems}
+}
+
+@inproceedings{algones2010innovative,
+  author = {Albert Algones and Abe Elmouft and Ahmad A. Rushdi and Naveed Mozaffar},
+  title = {An innovative testing approach to validate multi-forwarding switching engine},
+  booktitle = {proceedings of the 3rd Cisco Innovating Test Conference},
+  pages = {1--4},
+  year = {2010},
+  publisher = {Cisco Systems}
+}
+
+@article{rushdi2010overview,
+  author = {Ahmad A. Rushdi},
+  title = {An overview of PAPR reduction methods in OFDM communication systems},
+  journal = {Communications of the Arab Computer Society Magazine, Special Issue on Wireless Communications and Networks},
+  year = {2010},
+  note = {In Arabic},
+  url = {http://arabcomputersociety.org/archives/indexACS&page=article&op=viewFile&path[]=22&path[]=66.pdf}
+}
+
+@article{rushdi2012map,
+  author = {Ahmad A. Rushdi and Jamal Tuqan and Thomas Strohmer},
+  title = {Map-invariant spectral analysis for the identification of DNA periodicities},
+  journal = {EURASIP Journal on Bioinformatics and Systems Biology},
+  volume = {2012},
+  number = {1},
+  pages = {1--21},
+  year = {2012},
+  url = {https://pubmed.ncbi.nlm.nih.gov/23067324/}
+}
+
+@article{rushdi2010mathematical,
+  author = {Ahmad A. Rushdi},
+  title = {A Mathematical Model of DNA Replication},
+  journal = {International Magazine on Advances in Computer Science and Telecommunications (IMACST)},
+  volume = {1},
+  number = {1},
+  pages = {23--30},
+  year = {2010},
+  url = {https://www.researchgate.net/publication/291354406_A_mathematical_model_of_DNA_replication}
+}
+
+@inproceedings{rushdi2007papr,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {PAPR reduction in trigonometric-based OFDM systems},
+  booktitle = {2007 Conference Record of the Forty-First Asilomar Conference on Signals, Systems and Computers},
+  pages = {1747--1751},
+  year = {2007},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/abstract/document/4487532}
+}
+
+@inproceedings{rushdi2007sdp,
+  author = {Ahmad A. Rushdi and Chen Meng and Jamal Tuqan},
+  title = {An SDP approach for papr reduction in OFDM systems using partial transmit sequences},
+  booktitle = {2007 Conference Record of the Forty-First Asilomar Conference on Signals, Systems and Computers},
+  pages = {1743--1746},
+  year = {2007},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/4487531}
+}
+
+@article{tuqan2008dsp,
+  author = {Jamal Tuqan and Ahmad A. Rushdi},
+  title = {A DSP approach for finding the codon bias in DNA sequences},
+  journal = {IEEE Journal of Selected Topics in Signal Processing},
+  volume = {2},
+  number = {3},
+  pages = {343--356},
+  year = {2008},
+  url = {https://ieeexplore.ieee.org/document/4550567}
+}
+
+@inproceedings{rushdi2008role,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {The role of the symbolic-to-numerical mapping in the detection of DNA periodicities},
+  booktitle = {2008 IEEE International Workshop on Genomic Signal Processing and Statistics},
+  pages = {1--4},
+  year = {2008},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/4555680}
+}
+
+@inproceedings{rushdi2008trigonometric,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {Trigonometric transforms for finding repeats in DNA sequences},
+  booktitle = {2008 IEEE International Workshop on Genomic Signal Processing and Statistics},
+  pages = {1--4},
+  year = {2008},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/4555681}
+}
+
+@inproceedings{rushdi2006efficient,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {An efficient algorithm for DNA discrete fourier analysis},
+  booktitle = {Proceedings of the 3rd IEEE Cairo International Biomedical Engineering Conference (CIBEC)},
+  pages = {1--4},
+  year = {2006},
+  publisher = {Cairo International Biomedical Engineering Conference Cairo, Egypt}
+}
+
+@inproceedings{rushdi2006filtered,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {The filtered spectral rotation measure},
+  booktitle = {2006 Fortieth Asilomar Conference on Signals, Systems and Computers},
+  pages = {1875--1879},
+  year = {2006},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/4176897}
+}
+
+@inproceedings{rushdi2006new,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {A new DSP-based measure for CPG islands detection},
+  booktitle = {2006 IEEE 12th Digital Signal Processing Workshop \\& 4th IEEE Signal Processing Education Workshop},
+  pages = {561--565},
+  year = {2006},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/4041127}
+}
+
+@inproceedings{tuqan2006dsp,
+  author = {Jamal Tuqan and Ahmad A. Rushdi},
+  title = {A DSP perspective to the period-3 detection problem},
+  booktitle = {2006 IEEE International Workshop on Genomic Signal Processing and Statistics},
+  pages = {53--54},
+  year = {2006},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/4161773}
+}
+
+@inproceedings{rushdi2006gene,
+  author = {Ahmad A. Rushdi and Jamal Tuqan},
+  title = {Gene identification using the z-curve representation},
+  booktitle = {2006 IEEE International Conference on Acoustics Speech and Signal Processing (ICASSP) Proceedings},
+  volume = {2},
+  pages = {II--II},
+  year = {2006},
+  publisher = {IEEE},
+  url = {https://ieeexplore.ieee.org/document/1660520}
+}
+`;
