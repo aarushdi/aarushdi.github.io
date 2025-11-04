@@ -486,6 +486,104 @@ ul.list_no_dot li:hover::before {
     box-shadow: 0 4px 12px rgba(4, 120, 87, 0.4);
 }
 
+/* Activity icons - Visual indicators for different activity types */
+.activity-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 0.75rem 0 0.5rem;
+    font-size: 1rem;
+    opacity: 0.85;
+    transition: all var(--transition-fast);
+}
+
+.activity-icon:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* Colorful activity-specific icons */
+.fa-graduation-cap.activity-icon {
+    color: #5B21B6; /* Academic purple */
+}
+
+.fa-handshake-o.activity-icon {
+    color: #EA580C; /* Partnership orange */
+}
+
+.fa-users.activity-icon {
+    color: #0891B2; /* Collaboration cyan */
+}
+
+.fa-microphone.activity-icon {
+    color: #DC2626; /* Presentation red */
+}
+
+.fa-trophy.activity-icon {
+    color: #CA8A04; /* Achievement gold */
+}
+
+.fa-map-marker.activity-icon {
+    color: #059669; /* Location green */
+}
+
+.fa-balance-scale.activity-icon {
+    color: #4338CA; /* Ethics indigo */
+}
+
+.fa-comments.activity-icon {
+    color: #2563EB; /* Discussion blue */
+}
+
+.fa-star.activity-icon {
+    color: #D97706; /* New role amber */
+}
+
+.fa-file-text.activity-icon {
+    color: #64748B; /* Report slate */
+}
+
+.fa-certificate.activity-icon {
+    color: #B45309; /* Certificate bronze */
+}
+
+/* Organization logos - Small inline logos for institutions */
+.org-logo {
+    display: inline-block;
+    height: 1.1em;
+    width: auto;
+    margin-right: 0.4rem;
+    opacity: 0.8;
+    transition: all var(--transition-fast);
+    vertical-align: baseline;
+    object-fit: contain;
+}
+
+/* Hover effects for organization logos */
+a:hover .org-logo {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Activity logos - Small inline logos for conferences, events, etc. */
+.activity-logo {
+    display: inline-block;
+    height: 1.3em;
+    width: auto;
+    margin: 0 0.75rem 0 0.5rem;
+    opacity: 0.85;
+    transition: all var(--transition-fast);
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.activity-logo:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
 /* Alternative: Filled gradient badge style (comment out above and use this if preferred) */
 /*
 .date-badge {
@@ -854,6 +952,27 @@ figure:hover {
         font-size: 0.75rem;
         padding: 0.2rem 0.6rem;
         margin-right: 0.5rem;
+    }
+
+    /* Activity icons on mobile */
+    .activity-icon {
+        font-size: 0.9rem;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin: 0 0.5rem 0 0.3rem;
+    }
+
+    /* Activity logos on mobile */
+    .activity-logo {
+        height: 1.1em;
+        margin: 0 0.5rem 0 0.3rem;
+    }
+
+    /* Organization logos on mobile */
+    .org-logo {
+        height: 1em;
+        margin-right: 0.3rem;
     }
 
     /* Timeline adjustments for mobile */
