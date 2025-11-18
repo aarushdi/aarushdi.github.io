@@ -5,30 +5,33 @@
 const BIBTEX_DATA = `
 @inproceedings{khan2025proposals,
 	title={From Proposals to Enactment: The Procedural Bottleneck in AI Safety Regulation},
-	author={Khan, Mansur Ali and Akengin, Mehmet Efe and Rushdi, Ahmad A.},
+	author={Khan, Mansur Ali and Akengin, Mehmet Efe and, Ahmad A. ٌRushdi},
 	year = {2025},
-	booktitle={NeurIPS 2025 Workshop on Regulatable ML}
+	booktitle={NeurIPS 2025 Workshop on Regulatable ML},
+	url={https://openreview.net/forum?id=OCn2y7QDTB&referrer=%5Bthe%20profile%20of%20Mehmet%20Efe%20Akengin%5D(%2Fprofile%3Fid%3D~Mehmet_Efe_Akengin1)}
 }
 
 @inproceedings{rushdi2025LLMs-in-Arabic,
 	title={Technical vs Cultural: Evaluating LLMs in Arabic},
 	author={Ahmad A. Rushdi},
 	year = {2025},
-	booktitle={NeurIPS 2025 Workshop on Muslims in ML}
+	booktitle={NeurIPS 2025 Workshop on Muslims in ML},
+	url={https://openreview.net/forum?id=gXcWXhfu9i&noteId=gXcWXhfu9i}
 }
 
 
 @article{rushdibeyond,
 	title={Beyond Unified Reasoning: State-Action-Critique Evaluation of Domain-Specific LLM Competencies},
-	author={Rushdi, Ahmad A.},
+	author={Ahmad A. Rushdi},
 	year = {2025},
 	booktitle={Open Conference on AI Agents}
 }
 
 @inproceedings{anthis2025iclr,
 	title={ICLR 2025 Workshop on Human-AI Coevolution},
-	author={Jacy Reese Anthis, Dylan Asmar, Katherine Rose Driggs-Campbell, Amelia Hardy, Kiana Jafari Meimandi, Geoff Keeling, Mykel Kochenderfer, Houjun Liu, Shuijing Liu, Roberto Martín-Martín, Ahmad A Rushdi, Marc R. Schlichting, Peter Stone, Hariharan Subramonyam, Diyi Yang},
-	booktitle={ICLR 2025 Workshop Proposals}
+	author={Jacy Reese Anthis, Dylan Asmar, Katherine Rose Driggs-Campbell, Amelia Hardy, Kiana Jafari Meimandi, Geoff Keeling, Mykel Kochenderfer, Houjun Liu, Shuijing Liu, Roberto Martín-Martín, Ahmad A. Rushdi, Marc R. Schlichting, Peter Stone, Hariharan Subramonyam, Diyi Yang},
+	booktitle={ICLR 2025 Workshop Proposals},
+	url={https://iclr.cc/virtual/2025/workshop/24002}
 }
 
 @inproceedings{smith2023assessing,
