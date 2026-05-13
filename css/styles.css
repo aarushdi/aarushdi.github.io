@@ -7,12 +7,12 @@
   --ink: #2b2b2b;
   --muted: #888;
   --rule: #e4e0d8;
-  --accent: #b85c00;
+  --accent: #3a5a40;
   --bg: #fbf7f0;
   --bg-translucent: rgba(251, 247, 240, 0.88);
 
   --font-sans:   'IBM Plex Sans', system-ui, sans-serif;
-  --font-arabic: 'Reem Kufi', sans-serif;
+  --font-arabic: 'Aref Ruqaa', serif;
   --font-mono:   'IBM Plex Mono', ui-monospace, monospace;
 }
 
@@ -85,9 +85,9 @@ body {
 }
 .arabic {
   font-family: var(--font-arabic);
-  color: var(--muted);
+  color: var(--accent);
   margin: 0 0 0.3rem;
-  font-size: 1.2rem;        /* Reem Kufi reads slightly tighter than Plex Arabic */
+  font-size: 1.3rem;        /* Aref Ruqaa is calligraphic — wants a touch more room */
   font-weight: 700;
 }
 .hero h1 {
@@ -156,7 +156,7 @@ p { margin: 0 0 1rem; line-height: 1.65; }
 a {
   color: var(--accent);
   text-decoration: underline;
-  text-decoration-color: rgba(184,92,0,0.3);
+  text-decoration-color: rgba(58, 90, 64, 0.3);
   text-underline-offset: 2px;
 }
 a:hover { text-decoration-color: var(--accent); }
@@ -195,6 +195,11 @@ ul.activities li:last-child { border-bottom: none; }
   white-space: nowrap;
 }
 .year-chips a:hover { border-color: var(--accent); color: var(--accent); }
+.year-chips a.hidden { display: none !important; }
+.year-chips .chip-more {
+  border-style: dashed;
+  color: var(--muted);
+}
 
 /* ---------- Publication entries ---------- */
 .pub-list { list-style: none; padding: 0; margin: 0; }

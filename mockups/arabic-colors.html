@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arabic color options</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #2b2b2b;
+    --muted: #888;
+    --rule: #e4e0d8;
+    --bg: #fbf7f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.65;
+    padding: 3rem 1.5rem 5rem;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; font-weight: 600; margin: 0 0 0.4rem; letter-spacing: -0.4px; }
+  .intro { color: var(--muted); margin: 0 0 2rem; font-size: 0.95rem; }
+  code {
+    font-family: 'IBM Plex Mono', monospace;
+    background: white;
+    padding: 0.05rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+    font-size: 0.85rem;
+  }
+
+  .row {
+    padding: 1.5rem 0;
+    border-bottom: 1px dashed var(--rule);
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .row:last-child { border-bottom: none; }
+
+  .swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin: 0 0 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  .label .key { font-weight: 700; margin-right: 0.5rem; }
+  .label .name { color: var(--ink); text-transform: none; letter-spacing: normal; font-family: 'IBM Plex Sans'; font-weight: 600; font-size: 0.9rem; }
+  .label .hex { font-size: 0.78rem; }
+
+  .arabic-big {
+    font-family: 'Aref Ruqaa';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  .preview {
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+  }
+  .preview .small-arabic {
+    font-family: 'Aref Ruqaa';
+    font-weight: 700;
+    margin: 0 0 0.2rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+  .preview .en {
+    font-family: 'IBM Plex Sans';
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+  }
+  .preview .caption {
+    margin: 0.4rem 0 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Color application */
+  .c-terracotta { color: #b85c00; }   /* A — current */
+  .c-navy       { color: #1e3a5f; }   /* B — sophisticated deep blue */
+  .c-burgundy   { color: #7a2d2d; }   /* C — rich wine */
+  .c-charcoal   { color: #2b2b2b; }   /* D — minimal, matches body */
+  .c-forest     { color: #3a5a40; }   /* E — earthy green */
+
+  .s-terracotta { background: #b85c00; }
+  .s-navy       { background: #1e3a5f; }
+  .s-burgundy   { background: #7a2d2d; }
+  .s-charcoal   { background: #2b2b2b; }
+  .s-forest     { background: #3a5a40; }
+
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 24px 1fr; gap: 0.8rem; }
+    .row .preview { grid-column: 1 / -1; }
+    .arabic-big { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Arabic color options</h1>
+  <p class="intro">Aref Ruqaa, same as on the site — five different accent colors on the parchment background. Pick a letter — <code>A</code> through <code>E</code>.</p>
+
+  <div class="row">
+    <div class="swatch s-terracotta"></div>
+    <div>
+      <p class="label"><span class="key c-terracotta">A</span> <span class="name">Terracotta — current</span> <span class="hex">· #b85c00</span></p>
+      <p class="arabic-big c-terracotta">أحْمَد رُشْدِي</p>
+    </div>
+    <div class="preview">
+      <p class="small-arabic c-terracotta">أحْمَد رُشْدِي</p>
+      <p class="en">Ahmad A. Rushdi</p>
+      <p class="caption">at home-page size</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="swatch s-navy"></div>
+    <div>
+      <p class="label"><span class="key c-navy">B</span> <span class="name">Deep navy</span> <span class="hex">· #1e3a5f</span></p>
+      <p class="arabic-big c-navy">أحْمَد رُشْدِي</p>
+    </div>
+    <div class="preview">
+      <p class="small-arabic c-navy">أحْمَد رُشْدِي</p>
+      <p class="en">Ahmad A. Rushdi</p>
+      <p class="caption">at home-page size</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="swatch s-burgundy"></div>
+    <div>
+      <p class="label"><span class="key c-burgundy">C</span> <span class="name">Burgundy</span> <span class="hex">· #7a2d2d</span></p>
+      <p class="arabic-big c-burgundy">أحْمَد رُشْدِي</p>
+    </div>
+    <div class="preview">
+      <p class="small-arabic c-burgundy">أحْمَد رُشْدِي</p>
+      <p class="en">Ahmad A. Rushdi</p>
+      <p class="caption">at home-page size</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="swatch s-charcoal"></div>
+    <div>
+      <p class="label"><span class="key c-charcoal">D</span> <span class="name">Charcoal</span> <span class="hex">· #2b2b2b</span></p>
+      <p class="arabic-big c-charcoal">أحْمَد رُشْدِي</p>
+    </div>
+    <div class="preview">
+      <p class="small-arabic c-charcoal">أحْمَد رُشْدِي</p>
+      <p class="en">Ahmad A. Rushdi</p>
+      <p class="caption">at home-page size</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="swatch s-forest"></div>
+    <div>
+      <p class="label"><span class="key c-forest">E</span> <span class="name">Forest green</span> <span class="hex">· #3a5a40</span></p>
+      <p class="arabic-big c-forest">أحْمَد رُشْدِي</p>
+    </div>
+    <div class="preview">
+      <p class="small-arabic c-forest">أحْمَد رُشْدِي</p>
+      <p class="en">Ahmad A. Rushdi</p>
+      <p class="caption">at home-page size</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

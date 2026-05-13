@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600family=IBM+Plex+Mono:wght@400;500;600&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
 <!-- BibTeX data + parser -->
@@ -72,8 +72,23 @@
     });
     const years = Object.keys(byYear).sort((a, b) => (parseInt(b) || 0) - (parseInt(a) || 0));
 
-    document.getElementById('year-chips').innerHTML =
-      years.map(y => `<a href="#year-${y}" data-year="${y}">${y}</a>`).join('');
+    // Year chips: show top 5 by default, rest behind a "+N more" toggle.
+    const CHIP_VISIBLE = 5;
+    const chipsEl = document.getElementById('year-chips');
+    chipsEl.innerHTML = years.map((y, i) => {
+      const hidden = i >= CHIP_VISIBLE ? ' hidden' : '';
+      return `<a href="#year-${y}" data-year="${y}" class="chip${hidden}">${y}</a>`;
+    }).join('');
+    if (years.length > CHIP_VISIBLE) {
+      chipsEl.insertAdjacentHTML('beforeend',
+        `<a href="#" id="chip-more" class="chip-more">show more</a>`);
+      const moreBtn = document.getElementById('chip-more');
+      moreBtn.addEventListener('click', e => {
+        e.preventDefault();
+        chipsEl.querySelectorAll('.chip.hidden').forEach(c => c.classList.remove('hidden'));
+        moreBtn.remove();
+      });
+    }
 
     const recentYears = years.slice(0, 2);
 
