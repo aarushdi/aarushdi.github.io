@@ -12,7 +12,7 @@
   --bg-translucent: rgba(251, 247, 240, 0.88);
 
   --font-sans:   'IBM Plex Sans', system-ui, sans-serif;
-  --font-arabic: 'IBM Plex Sans Arabic', sans-serif;
+  --font-arabic: 'Reem Kufi', sans-serif;
   --font-mono:   'IBM Plex Mono', ui-monospace, monospace;
 }
 
@@ -87,8 +87,8 @@ body {
   font-family: var(--font-arabic);
   color: var(--muted);
   margin: 0 0 0.3rem;
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 1.2rem;        /* Reem Kufi reads slightly tighter than Plex Arabic */
+  font-weight: 700;
 }
 .hero h1 {
   margin: 0 0 0.5rem;
