@@ -1,82 +1,169 @@
 <!DOCTYPE html>
-<html>
-<!-- *********************************************************** -->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>.: Ahmad A. Rushdi | Publications :.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Ahmad A. Rushdi — Publications</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;700&family=Cairo:wght@600;700;800&family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 
-  <!-- Modern external stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+<!-- BibTeX data + parser -->
+<script src="js/bibtex-data.js"></script>
+<script src="js/bibtex-parser.js"></script>
 
-  <!-- BibTeX data and parser -->
-  <script src="js/bibtex-data.js"></script>
-  <script src="js/bibtex-parser.js"></script>
-  <!-- *********************************************************** -->
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://aarushdi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
-
-<!-- *********************************************************** -->
-
 <body>
-  <div class="container">
-      <!-- *********************************************************** -->
-    <div class="left-column">
-      <h1> أحْمَد رُشْدِي </h1>
-      <img id="main-profile-pic"; width="150px"; src="assets/Ahmad_web_bw.png" alt="Ahmad Rushdi" class="rounded-corners">
-      <h2>Ahmad A. Rushdi</h2>
-      <p style="margin: 0">Research Scientist</p>
-      <p style="margin: 0">Director, Industry Research</p>
-      <p style="margin: 0"><a href="https://hai.stanford.edu/">Institute for Human-Centered AI</a></p>
-      <p style="margin: 0"><a href="https://www.stanford.edu/">Stanford University</a></p>
-      <p> <a href = "mailto: rushdi@stanford.edu"><i class="fa fa-envelope"></i></a>
-        <a href = "https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en"><i class="fa fa-google"></i></a>
-        <a href = "https://www.linkedin.com/in/ahmadrushdi/"><i class="fa fa-linkedin"></i></a>
-        <a href = "https://github.com/aarushdi"><i class="fa fa-github"></i></a>
-      </p>
-      <a href="index.html" class="nav-button">Home</a>
-      <a href="publications.html" class="nav-button">Publications</a>
-      <a href="talks.html" class="nav-button">Talks</a>
-      <a href="projects.html" class="nav-button">Projects</a>
-    </div>
-    <!-- *********************************************************** -->
-    <div class="right-column">
-        
-        <h2>Selected Publications</h2>
 
-        <p><h4>For a full list, see my <a href="https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en">Google Scholar</a> page.</h4></p>
-
-        <hr>
-
-        <!-- Publications will be loaded dynamically from BibTeX file -->
-        <ul id="publications-list">
-            <!-- Loading publications... -->
-        </ul>
-
-        <script>
-            // Load publications when page loads
-            document.addEventListener('DOMContentLoaded', function() {
-                loadPublicationsFromData(BIBTEX_DATA, 'publications-list');
-            });
-        </script>
-
-    <!-- *********************************************************** -->
-    
-    <!--HTML hr tag is used here-->
-    <hr>
-    <br>
-    <br>
-    <br>
-    <center><footer>Copyright © 2025 Ahmad A. Rushdi. All Rights Reserved.</footer></center>
-    
-    
+<div class="topbar">
+  <div class="inner">
+    <a class="name" href="index.html">Ahmad A. Rushdi</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html" class="current">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="projects.html">Projects</a>
+    </nav>
   </div>
+</div>
+
+<div class="wrap">
+  <div class="page-header">
+    <h1>Publications</h1>
+    <p class="page-intro">Peer-reviewed work. See also my <a href="https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en">Google Scholar</a>.</p>
+    <div class="year-chips" id="year-chips"></div>
+  </div>
+
+  <div id="pubs-content"></div>
+
+  <button class="seemore" id="seemore">show all publications</button>
+
+  <footer>// © 2026 Ahmad A. Rushdi · last_updated 2026-05</footer>
+</div>
+
+<script>
+  (function () {
+    const parser = new BibTeXParser();
+    parser.parse(BIBTEX_DATA);
+
+    // Fall back to year embedded in the entry key (e.g., "anthis2025iclr" → "2025")
+    // when the BibTeX field is missing.
+    function yearOf(e) {
+      if (e.year && /^\d{4}$/.test(String(e.year).trim())) return String(e.year).trim();
+      const m = (e.key || '').match(/(19|20)\d{2}/);
+      return m ? m[0] : 'undated';
+    }
+
+    const entries = parser.entries.slice().sort(
+      (a, b) => (parseInt(yearOf(b)) || 0) - (parseInt(yearOf(a)) || 0)
+    );
+
+    const byYear = {};
+    entries.forEach(e => {
+      const y = yearOf(e);
+      if (!byYear[y]) byYear[y] = [];
+      byYear[y].push(e);
+    });
+    const years = Object.keys(byYear).sort((a, b) => (parseInt(b) || 0) - (parseInt(a) || 0));
+
+    document.getElementById('year-chips').innerHTML =
+      years.map(y => `<a href="#year-${y}" data-year="${y}">${y}</a>`).join('');
+
+    const recentYears = years.slice(0, 2);
+
+    function escapeHTML(s) {
+      return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // Always render the user's name in canonical form, regardless of source variants.
+    const ME_CANONICAL = 'Ahmad A. Rushdi';
+
+    function isMe(a) {
+      return (/^Ahmad\b/i.test(a) && /Rushdi/i.test(a)) || /^Rushdi,\s*Ahmad/i.test(a);
+    }
+
+    // BibTeX usually uses " and " between authors, but some entries use commas.
+    function splitAuthors(authors) {
+      if (/\s+and\s+/i.test(authors)) return authors.split(/\s+and\s+/);
+      return authors.split(/,\s*/);
+    }
+
+    function formatAuthors(authors) {
+      if (!authors) return '';
+      return splitAuthors(authors)
+        .map(a => a.replace(/^,\s*/, '').trim())
+        .filter(Boolean)
+        .map(a => isMe(a) ? `<span class="me">${ME_CANONICAL}</span>` : escapeHTML(a))
+        .join(', ');
+    }
+
+    function renderVenue(e) {
+      if (e.journal) {
+        let v = `<em>${escapeHTML(e.journal)}</em>`;
+        if (e.volume && e.number && e.pages) v += ` ${e.volume}(${e.number}):${e.pages}`;
+        else if (e.volume && e.pages) v += `, ${e.volume}:${e.pages}`;
+        else if (e.volume) v += `, ${e.volume}`;
+        else if (e.pages) v += `, ${e.pages}`;
+        return v;
+      }
+      if (e.booktitle) {
+        let v = `<em>${escapeHTML(e.booktitle)}</em>`;
+        if (e.pages) v += `, ${e.pages}`;
+        if (e.publisher) v += ` · ${escapeHTML(e.publisher)}`;
+        return v;
+      }
+      if (e.institution) {
+        let v = `Technical report · ${escapeHTML(e.institution)}`;
+        if (e.address) v += `, ${escapeHTML(e.address)}`;
+        return v;
+      }
+      return '';
+    }
+
+    function renderEntry(e) {
+      const title = escapeHTML(e.title || '');
+      const authors = formatAuthors(e.author);
+      const venue = renderVenue(e);
+      const links = e.url ? `<span class="pub-links"><a href="${e.url}">link</a></span>` : '';
+      return `<li>
+        <p class="pub-title">${title}</p>
+        <p class="pub-authors">${authors}</p>
+        <p class="pub-venue">${venue}${links}</p>
+      </li>`;
+    }
+
+    document.getElementById('pubs-content').innerHTML = years.map(y => {
+      const isHidden = !recentYears.includes(y);
+      const cls = isHidden ? 'more hidden' : '';
+      return `<section id="year-${y}" class="${cls}">
+        <h2>${y}</h2>
+        <ul class="pub-list">${byYear[y].map(renderEntry).join('')}</ul>
+      </section>`;
+    }).join('');
+
+    const btn = document.getElementById('seemore');
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('section.more').forEach(s => s.classList.toggle('hidden'));
+      btn.textContent = btn.textContent.includes('less') ? 'show all publications' : 'show less';
+    });
+
+    document.querySelectorAll('#year-chips a').forEach(a => {
+      a.addEventListener('click', () => {
+        const y = a.dataset.year;
+        const sec = document.getElementById('year-' + y);
+        if (sec && sec.classList.contains('hidden')) {
+          document.querySelectorAll('section.more').forEach(s => s.classList.remove('hidden'));
+          btn.textContent = 'show less';
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>
-

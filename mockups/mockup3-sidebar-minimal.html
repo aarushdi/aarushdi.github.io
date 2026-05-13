@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmad A. Rushdi — Mockup 3: Sidebar Minimal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1d1d1f;
+    --muted: #86868b;
+    --rule: #e8e8e6;
+    --accent: #0066b8;
+    --bg: #ffffff;
+    --soft: #f5f5f3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .layout { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; max-width: 1100px; margin: 0 auto; }
+
+  aside {
+    border-right: 1px solid var(--rule);
+    padding: 3rem 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    align-self: start;
+  }
+  aside img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    background: var(--soft);
+    filter: grayscale(15%);
+  }
+  .arabic { font-family: 'Cairo', sans-serif; color: var(--muted); margin: 0 0 0.15rem; font-size: 0.95rem; }
+  aside h1 { margin: 0 0 0.3rem; font-size: 1.2rem; font-weight: 600; }
+  aside .role { font-size: 0.88rem; color: var(--muted); line-height: 1.5; margin: 0 0 1.2rem; }
+  aside .role a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+  aside .role a:hover { color: var(--accent); }
+  aside .social { font-size: 0.85rem; margin: 0 0 2rem; }
+  aside .social a { color: var(--muted); text-decoration: none; margin-right: 0.7rem; }
+  aside .social a:hover { color: var(--accent); }
+  nav { display: flex; flex-direction: column; gap: 0.1rem; }
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    padding: 0.4rem 0;
+    font-size: 0.92rem;
+    border-left: 2px solid transparent;
+    padding-left: 0.7rem;
+    margin-left: -0.7rem;
+  }
+  nav a.active { border-left-color: var(--accent); color: var(--accent); font-weight: 500; }
+  nav a:hover { color: var(--accent); }
+
+  main { padding: 3.5rem 3rem 5rem; max-width: 720px; }
+  h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 0 0 1.2rem;
+  }
+  section + section { margin-top: 3rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  ul.activities { list-style: none; padding: 0; margin: 0; }
+  ul.activities li {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  ul.activities li:last-child { border-bottom: none; }
+  .when { color: var(--muted); font-size: 0.83rem; font-variant-numeric: tabular-nums; padding-top: 0.1rem; }
+  .hidden { display: none; }
+  .seemore {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 0;
+  }
+  .seemore:hover { text-decoration: underline; }
+
+  @media (max-width: 760px) {
+    .layout { grid-template-columns: 1fr; }
+    aside { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--rule); }
+    main { padding: 2rem 1.5rem 4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <img src="../assets/Ahmad_web_bw.png" alt="Ahmad Rushdi">
+    <p class="arabic">أحْمَد رُشْدِي</p>
+    <h1>Ahmad A. Rushdi</h1>
+    <p class="role">Research Scientist · Director, Industry Research<br><a href="https://hai.stanford.edu/">Stanford HAI</a></p>
+    <p class="social">
+      <a href="mailto:rushdi@stanford.edu">email</a>·
+      <a href="https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en">scholar</a>·
+      <a href="https://www.linkedin.com/in/ahmadrushdi/">linkedin</a>·
+      <a href="https://github.com/aarushdi">github</a>
+    </p>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>I am a research scientist and Director of Industry Programs at <a href="https://hai.stanford.edu/">Stanford HAI</a>, where I lead research collaborations and executive education initiatives translating AI, ML, and foundation-model research into applied real-world solutions. My research spans uncertainty quantification for scientific machine learning and broader work on AI trust, safety, and responsible development.</p>
+      <p>Previously at <a href="https://www.sandia.gov/">Sandia National Laboratories</a>, <a href="https://www.northropgrumman.com/">Northrop Grumman</a>, <a href="https://ece.ucdavis.edu/">UC Davis</a>, the <a href="https://oden.utexas.edu/">Oden Institute</a> at UT Austin, and <a href="https://www.cisco.com/">Cisco</a>. Ph.D. in ECE from UC Davis; M.S./B.S. from Cairo University.</p>
+    </section>
+
+    <section>
+      <h2>Recent</h2>
+      <ul class="activities">
+        <li><span class="when">Dec 2025</span><span>Presenting at <a href="https://nips.cc/">NeurIPS</a>, San Diego.</span></li>
+        <li><span class="when">Sep 2025</span><span>Co-organizing the <a href="https://hai.stanford.edu/industry/ai-for-organizations-grand-challenge">AI for Organizations Grand Challenge</a> with Google DeepMind.</span></li>
+        <li><span class="when">Apr 2025</span><span>Co-organizing the Human-AI Coevolution workshop at <a href="https://iclr.cc/">ICLR</a>, Singapore.</span></li>
+        <li><span class="when">Dec 2024</span><span>Attended <a href="https://nips.cc/">NeurIPS</a>, Vancouver.</span></li>
+        <li><span class="when">Oct 2024</span><span>Co-organized <a href="https://icme.stanford.edu/events/workshops/bridging-farm-ai-science-slac-and-stanford">Bridging the Farm: AI for Science</a>.</span></li>
+
+        <li class="more hidden"><span class="when">Jul 2024</span><span>Talks at the AI for Good Institute, Stanford.</span></li>
+        <li class="more hidden"><span class="when">May 2024</span><span>Judged at NextGen II Hackathon, Riyadh.</span></li>
+        <li class="more hidden"><span class="when">Feb 2024</span><span>Co-organized HAI/SAL AI+Education Summit.</span></li>
+        <li class="more hidden"><span class="when">2023–now</span><span>Panelist/reviewer, Stanford's Ethics &amp; Society Review.</span></li>
+        <li class="more hidden"><span class="when">Dec 2023</span><span>NeurIPS, New Orleans; NAML affinity workshop panelist.</span></li>
+      </ul>
+      <button class="seemore" onclick="this.parentElement.querySelectorAll('.more').forEach(e=>e.classList.toggle('hidden')); this.textContent = this.textContent.includes('Show') ? 'Show less ↑' : 'Show all activity ↓';">Show all activity ↓</button>
+    </section>
+  </main>
+</div>
+</body>
+</html>

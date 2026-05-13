@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website redesign — mockups</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    background: #fafafa;
+    color: #222;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  h1 { font-size: 1.8rem; font-weight: 600; margin: 0 0 0.4rem; }
+  .lead { color: #666; margin: 0 0 2.5rem; }
+  .grid { display: grid; gap: 1rem; }
+  a.card {
+    display: block;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    background: white;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  a.card:hover { border-color: #111; transform: translateY(-1px); }
+  .label { color: #999; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 0.4rem; }
+  h2 { margin: 0 0 0.3rem; font-size: 1.15rem; font-weight: 600; }
+  p { margin: 0; color: #555; font-size: 0.94rem; }
+  .meta { margin-top: 0.6rem; color: #888; font-size: 0.85rem; }
+  .note {
+    margin-top: 2.5rem;
+    padding: 1.2rem 1.4rem;
+    background: #fff8e6;
+    border: 1px solid #f0d985;
+    border-radius: 8px;
+    font-size: 0.93rem;
+    color: #5a4a14;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Personal site — design mockups</h1>
+  <p class="lead">Five minimal directions to pick from. Each is a standalone HTML file. Open one, scroll, click <em>"Show more"</em>, resize the window.</p>
+
+  <div class="grid">
+    <a class="card" href="mockup1-editorial.html">
+      <p class="label">Mockup 1</p>
+      <h2>Editorial</h2>
+      <p>Single narrow column, serif body (Source Serif), quiet maroon accent. Like a longform essay or a writer's homepage. No sidebar.</p>
+      <p class="meta">vibe: Karpathy / Cegłowski · serif body · top nav</p>
+    </a>
+    <a class="card" href="mockup2-academic-classic.html">
+      <p class="label">Mockup 2</p>
+      <h2>Academic Classic</h2>
+      <p>Photo + name at top, tabbed nav under it, sans-serif body. Calm Stanford-blue accent, square avatar. The "expected" academic look, executed cleanly.</p>
+      <p class="meta">vibe: Jon Barron / Saining Xie · sans body · top photo</p>
+    </a>
+    <a class="card" href="mockup3-sidebar-minimal.html">
+      <p class="label">Mockup 3</p>
+      <h2>Sidebar Minimal</h2>
+      <p>Keeps the two-column structure of the current site, but strips gradients, animations, and colored badges. Same skeleton, much quieter.</p>
+      <p class="meta">vibe: keeps current layout · easiest content migration</p>
+    </a>
+    <a class="card" href="mockup4-single-page.html">
+      <p class="label">Mockup 4</p>
+      <h2>Single Page (anchored)</h2>
+      <p>Sticky top nav, everything on one scrollable page with section anchors. Includes a 2×2 "Selected" preview grid linking to subpages.</p>
+      <p class="meta">vibe: modern docs / hashicorp · sticky nav · one URL</p>
+    </a>
+    <a class="card" href="mockup5-mono-zen.html">
+      <p class="label">Mockup 5</p>
+      <h2>Mono Zen</h2>
+      <p>Monospace headings + dates, sans body, parchment background, single terracotta accent. Distinctive without being loud.</p>
+      <p class="meta">vibe: dev/hacker calm · monospace metadata · most opinionated</p>
+    </a>
+    <a class="card" href="mockup6-mono-topbar.html" style="border-color:#b85c00;">
+      <p class="label" style="color:#b85c00;">Mockup 6 — hybrid</p>
+      <h2>Mono Zen + sticky top bar</h2>
+      <p>Mockup 5's aesthetic with Mockup 4's sticky top nav. Photo hero, `[bracketed]` social links, dashed activity rows.</p>
+      <p class="meta">vibe: #5's mood + #4's navigation · the candidate</p>
+    </a>
+    <a class="card" href="mockup6-fonts.html" style="border-color:#b85c00;">
+      <p class="label" style="color:#b85c00;">Mockup 6 — font lab</p>
+      <h2>Same layout, 6 font pairings</h2>
+      <p>Floating picker bottom-right. Cycle through Current, Editorial (Fraunces × Amiri), IBM Plex, Geometric (Space Grotesk × Reem Kufi), Magazine (Instrument Serif × Aref Ruqaa), Scholarly (Newsreader × Markazi).</p>
+      <p class="meta">vibe: A/B test fonts side-by-side · choice persists across reloads</p>
+    </a>
+    <a class="card" href="mockup6-publications.html" style="border-color:#b85c00;">
+      <p class="label" style="color:#b85c00;">Mockup 6 — Publications</p>
+      <h2>Subpage preview: Publications</h2>
+      <p>Grouped by year, real entries pulled from your BibTeX. Self-name bolded. "show all selected publications" reveals older years. <code>[link]</code> chips use the bracketed mono style.</p>
+    </a>
+    <a class="card" href="mockup6-talks.html" style="border-color:#b85c00;">
+      <p class="label" style="color:#b85c00;">Mockup 6 — Talks</p>
+      <h2>Subpage preview: Talks</h2>
+      <p>Most recent 6 visible, "show all 26 talks" reveals the rest. Mono date column on left, talk title + venue + host on right.</p>
+    </a>
+    <a class="card" href="mockup6-projects.html" style="border-color:#b85c00;">
+      <p class="label" style="color:#b85c00;">Mockup 6 — Projects</p>
+      <h2>Subpage preview: Projects</h2>
+      <p>Existing videos &amp; images preserved, restyled in clean responsive grids. Captions sit quietly under each tile.</p>
+    </a>
+  </div>
+
+  <div class="note">
+    <strong>How to choose:</strong> each mockup uses the same content (your bio + top 5 activities + a "Show more" toggle revealing 5 older items). Pick the one that feels right and I'll move all four pages (Home, Publications, Talks, Projects) into it, preserving your BibTeX pipeline and the Arabic name typography.
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmad A. Rushdi — Mockup 6: Font Lab</title>
+
+<!-- Load all candidate fonts upfront so switching is instant -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+  family=Inter:wght@400;500;600;700&
+  family=JetBrains+Mono:wght@400;500;700&
+  family=Cairo:wght@500;600;700&
+  family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&
+  family=Amiri:wght@400;700&
+  family=IBM+Plex+Sans:wght@400;500;600;700&
+  family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&
+  family=IBM+Plex+Mono:wght@400;500&
+  family=Space+Grotesk:wght@400;500;700&
+  family=Reem+Kufi:wght@400;600;700&
+  family=Instrument+Serif:ital@0;1&
+  family=Aref+Ruqaa:wght@400;700&
+  family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&
+  family=Markazi+Text:wght@400;500;600;700&
+  display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #2b2b2b;
+    --muted: #888;
+    --rule: #e4e0d8;
+    --accent: #b85c00;
+    --bg: #fbf7f0;
+    --bg-translucent: rgba(251, 247, 240, 0.88);
+
+    /* Default font stack — overridden by body classes below */
+    --font-display: 'Inter', system-ui, sans-serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+    --font-arabic:  'Cairo', sans-serif;
+    --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+    --h1-weight:    700;
+    --h1-tracking:  -0.5px;
+  }
+
+  /* === Font pairings ===================================================== */
+
+  /* A — Current baseline: Inter × Cairo × JetBrains Mono (clean modern) */
+  body.font-a {
+    --font-display: 'Inter', system-ui, sans-serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+    --font-arabic:  'Cairo', sans-serif;
+    --font-mono:    'JetBrains Mono', monospace;
+    --h1-weight:    700;
+    --h1-tracking:  -0.5px;
+  }
+
+  /* B — Editorial serif: Fraunces × Amiri × JetBrains Mono */
+  body.font-b {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+    --font-arabic:  'Amiri', serif;
+    --font-mono:    'JetBrains Mono', monospace;
+    --h1-weight:    600;
+    --h1-tracking:  -1px;
+  }
+
+  /* C — IBM Plex unified system (looks like a research lab's identity) */
+  body.font-c {
+    --font-display: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-body:    'IBM Plex Sans', system-ui, sans-serif;
+    --font-arabic:  'IBM Plex Sans Arabic', sans-serif;
+    --font-mono:    'IBM Plex Mono', monospace;
+    --h1-weight:    600;
+    --h1-tracking:  -0.4px;
+  }
+
+  /* D — Geometric: Space Grotesk × Reem Kufi × JetBrains Mono */
+  body.font-d {
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+    --font-arabic:  'Reem Kufi', sans-serif;
+    --font-mono:    'JetBrains Mono', monospace;
+    --h1-weight:    700;
+    --h1-tracking:  -0.6px;
+  }
+
+  /* E — Magazine/calligraphic: Instrument Serif × Aref Ruqaa × JetBrains Mono */
+  body.font-e {
+    --font-display: 'Instrument Serif', serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+    --font-arabic:  'Aref Ruqaa', serif;
+    --font-mono:    'JetBrains Mono', monospace;
+    --h1-weight:    400;
+    --h1-tracking:  -0.5px;
+  }
+
+  /* F — Scholarly: Newsreader × Markazi Text × JetBrains Mono */
+  body.font-f {
+    --font-display: 'Newsreader', Georgia, serif;
+    --font-body:    'Newsreader', Georgia, serif;
+    --font-arabic:  'Markazi Text', serif;
+    --font-mono:    'JetBrains Mono', monospace;
+    --h1-weight:    600;
+    --h1-tracking:  -0.6px;
+  }
+
+  /* ====================================================================== */
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+
+  /* Sticky top bar */
+  .topbar {
+    position: sticky;
+    top: 0;
+    background: var(--bg-translucent);
+    backdrop-filter: saturate(140%) blur(10px);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid var(--rule);
+    z-index: 50;
+  }
+  .topbar .inner {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .topbar .name {
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.2px;
+  }
+  .topbar nav { font-size: 0.94rem; font-family: var(--font-body); }
+  .topbar nav a {
+    color: var(--ink);
+    text-decoration: none;
+    margin-left: 1.4rem;
+  }
+  .topbar nav a:hover { color: var(--accent); }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
+
+  /* Hero */
+  .hero {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #eee;
+    filter: grayscale(15%);
+    border: 1px solid var(--rule);
+  }
+  .arabic {
+    font-family: var(--font-arabic);
+    color: var(--muted);
+    margin: 0 0 0.3rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: var(--font-display);
+    margin: 0 0 0.5rem;
+    font-size: 2.2rem;
+    font-weight: var(--h1-weight);
+    letter-spacing: var(--h1-tracking);
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .role {
+    color: var(--muted);
+    margin: 0 0 0.9rem;
+    font-size: 0.98rem;
+  }
+  .role a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 2px;
+  }
+  .role a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+  .social { font-family: var(--font-mono); font-size: 0.88rem; margin: 0; }
+  .social a { color: var(--ink); text-decoration: none; margin-right: 0.5rem; }
+  .social a::before { content: '['; color: var(--muted); margin-right: 0.2rem; }
+  .social a::after  { content: ']'; color: var(--muted); margin-left: 0.2rem; }
+  .social a:hover { color: var(--accent); }
+
+  /* Section headers (## mono prefix kept regardless of pairing) */
+  h2 {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 3rem 0 1.2rem;
+    scroll-margin-top: 5rem;
+    letter-spacing: -0.2px;
+  }
+  h2::before { content: '## '; color: var(--muted); font-weight: 400; }
+
+  p { margin: 0 0 1rem; line-height: 1.65; font-family: var(--font-body); }
+  a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(184,92,0,0.3); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+
+  /* Activity list */
+  ul.activities { list-style: none; padding: 0; margin: 0; }
+  ul.activities li {
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed var(--rule);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1.2rem;
+    align-items: baseline;
+  }
+  ul.activities li:last-child { border-bottom: none; }
+  .when { font-family: var(--font-mono); color: var(--muted); font-size: 0.85rem; }
+  .what { color: var(--ink); font-size: 0.96rem; line-height: 1.55; font-family: var(--font-body); }
+  .hidden { display: none; }
+  .seemore {
+    margin-top: 1.2rem;
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    background: none; border: none;
+    color: var(--accent);
+    cursor: pointer; padding: 0;
+  }
+  .seemore::before { content: '$ '; color: var(--muted); }
+  .seemore:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-family: var(--font-mono);
+  }
+
+  /* Floating font picker (bottom-right, doesn't touch the design) */
+  .picker {
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    padding: 0.7rem 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    z-index: 100;
+    max-width: 240px;
+  }
+  .picker .head { color: var(--muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; }
+  .picker .row { display: flex; gap: 0.3rem; margin-bottom: 0.5rem; }
+  .picker button {
+    background: white;
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    padding: 0.35rem 0.55rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.82rem;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .picker button:hover { border-color: var(--accent); color: var(--accent); }
+  .picker button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+  .picker .meta { color: var(--muted); font-size: 0.72rem; line-height: 1.4; }
+
+  @media (max-width: 700px) {
+    .hero { grid-template-columns: 1fr; gap: 1.2rem; }
+    .hero img { width: 110px; height: 110px; }
+    .topbar .inner { padding: 0.7rem 1rem; }
+    .topbar nav a { margin-left: 0.9rem; font-size: 0.88rem; }
+    h1 { font-size: 1.7rem; }
+    .picker { bottom: 0.7rem; right: 0.7rem; max-width: 200px; font-size: 0.72rem; }
+  }
+</style>
+</head>
+<body class="font-a">
+
+<div class="topbar">
+  <div class="inner">
+    <a class="name" href="#">Ahmad A. Rushdi</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#recent">Recent</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="hero">
+    <img src="../assets/Ahmad_web_bw.png" alt="Ahmad Rushdi">
+    <div>
+      <p class="arabic">أحْمَد رُشْدِي</p>
+      <h1>Ahmad A. Rushdi</h1>
+      <p class="role">Research Scientist · Director, Industry Research — <a href="https://hai.stanford.edu/">Stanford HAI</a></p>
+      <p class="social">
+        <a href="mailto:rushdi@stanford.edu">email</a>
+        <a href="https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en">scholar</a>
+        <a href="https://www.linkedin.com/in/ahmadrushdi/">linkedin</a>
+        <a href="https://github.com/aarushdi">github</a>
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <h2 id="about">About</h2>
+    <p>I am a research scientist and Director of Industry Programs at <a href="https://hai.stanford.edu/">Stanford HAI</a>, where I lead research collaborations and executive education initiatives that translate AI, ML, and foundation-model research into applied real-world solutions. My research spans uncertainty quantification (UQ) for scientific machine learning (SciML) and broader work on AI trust, safety, privacy, and responsible development.</p>
+    <p>Previously: research scientist at <a href="https://www.sandia.gov/">Sandia National Laboratories</a> (Dakota team), R&amp;D Manager of Data Science at <a href="https://www.northropgrumman.com/">Northrop Grumman</a>, research fellow at <a href="https://ece.ucdavis.edu/">UC Davis</a> and the <a href="https://oden.utexas.edu/">Oden Institute</a> at UT Austin, and R&amp;D engineer at <a href="https://www.cisco.com/">Cisco</a>. Ph.D. in ECE (minor in Applied Math) from UC Davis; M.S./B.S. from Cairo University. Senior Member of IEEE; member of ACM and SIAM.</p>
+  </section>
+
+  <section>
+    <h2 id="recent">Recent</h2>
+    <ul class="activities">
+      <li><span class="when">2025-12</span><span class="what">Presenting at <a href="https://nips.cc/">NeurIPS</a>, San Diego.</span></li>
+      <li><span class="when">2025-09</span><span class="what">Co-organizing the <a href="https://hai.stanford.edu/industry/ai-for-organizations-grand-challenge">AI for Organizations Grand Challenge</a> with Google DeepMind.</span></li>
+      <li><span class="when">2025-04</span><span class="what">Co-organizing the Human-AI Coevolution workshop at <a href="https://iclr.cc/">ICLR</a>, Singapore.</span></li>
+      <li><span class="when">2024-12</span><span class="what">Attended <a href="https://nips.cc/">NeurIPS</a>, Vancouver.</span></li>
+      <li><span class="when">2024-10</span><span class="what">Co-organized <a href="https://icme.stanford.edu/events/workshops/bridging-farm-ai-science-slac-and-stanford">Bridging the Farm: AI for Science at SLAC and Stanford</a>.</span></li>
+
+      <li class="more hidden"><span class="when">2024-07</span><span class="what">Two talks on T2I model evaluation and bias mitigation at the AI for Good Institute, Stanford.</span></li>
+      <li class="more hidden"><span class="when">2024-05</span><span class="what">Judged and mentored teams at NextGen II Hackathon, Riyadh.</span></li>
+      <li class="more hidden"><span class="when">2024-02</span><span class="what">Co-organized the HAI/SAL AI+Education Summit.</span></li>
+      <li class="more hidden"><span class="when">2023→</span><span class="what">Panelist/reviewer on Stanford's Ethics &amp; Society Review.</span></li>
+      <li class="more hidden"><span class="when">2023-12</span><span class="what">NeurIPS, New Orleans; panelist at the NAML affinity workshop.</span></li>
+    </ul>
+    <button class="seemore" onclick="this.parentElement.querySelectorAll('.more').forEach(e=>e.classList.toggle('hidden')); this.textContent = this.textContent.includes('less') ? 'show all activity' : 'show less';">show all activity</button>
+  </section>
+
+  <footer>// © 2025 Ahmad A. Rushdi · last_updated 2026-05</footer>
+</div>
+
+<!-- Floating font picker -->
+<div class="picker" id="picker">
+  <div class="head">Fonts</div>
+  <div class="row">
+    <button data-f="a" class="active">A</button>
+    <button data-f="b">B</button>
+    <button data-f="c">C</button>
+    <button data-f="d">D</button>
+    <button data-f="e">E</button>
+    <button data-f="f">F</button>
+  </div>
+  <div class="meta" id="picker-meta">
+    <strong>A · Current</strong><br>Inter × Cairo × JetBrains Mono
+  </div>
+</div>
+
+<script>
+  const meta = {
+    a: ['A · Current',     'Inter × Cairo × JetBrains Mono'],
+    b: ['B · Editorial',   'Fraunces × Amiri × JetBrains Mono'],
+    c: ['C · IBM Plex',    'Plex Sans × Plex Arabic × Plex Mono'],
+    d: ['D · Geometric',   'Space Grotesk × Reem Kufi × JetBrains Mono'],
+    e: ['E · Magazine',    'Instrument Serif × Aref Ruqaa × JetBrains Mono'],
+    f: ['F · Scholarly',   'Newsreader × Markazi Text × JetBrains Mono'],
+  };
+  const body = document.body;
+  const metaEl = document.getElementById('picker-meta');
+  const stored = localStorage.getItem('font-pair') || 'a';
+
+  function apply(k) {
+    body.className = 'font-' + k;
+    document.querySelectorAll('.picker button').forEach(b => {
+      b.classList.toggle('active', b.dataset.f === k);
+    });
+    metaEl.innerHTML = '<strong>' + meta[k][0] + '</strong><br>' + meta[k][1];
+    localStorage.setItem('font-pair', k);
+  }
+
+  document.querySelectorAll('.picker button').forEach(b => {
+    b.addEventListener('click', () => apply(b.dataset.f));
+  });
+  apply(stored);
+</script>
+</body>
+</html>

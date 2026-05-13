@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmad A. Rushdi — Mockup 5: Mono Zen</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #2b2b2b;
+    --muted: #888;
+    --rule: #e4e0d8;
+    --accent: #b85c00;       /* warm terracotta */
+    --bg: #fbf7f0;            /* parchment */
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 660px; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+
+  header { margin-bottom: 2.5rem; }
+  .prompt { color: var(--accent); margin-right: 0.5rem; }
+  .arabic { font-family: 'Cairo', sans-serif; color: var(--muted); margin: 0 0 0.3rem; font-size: 1rem; }
+  h1 {
+    font-family: 'Inter', sans-serif;
+    margin: 0 0 0.3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+  }
+  .role { color: var(--muted); margin: 0 0 1rem; font-size: 0.92rem; }
+  .role a { color: var(--muted); text-decoration: underline; text-decoration-color: var(--rule); }
+  .role a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+  nav { margin: 1.2rem 0 0; font-size: 0.92rem; }
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    margin-right: 0.4rem;
+  }
+  nav a::before { content: '['; color: var(--muted); margin-right: 0.15rem; }
+  nav a::after  { content: ']'; color: var(--muted); margin-left: 0.15rem; }
+  nav a:hover { color: var(--accent); }
+
+  h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: var(--accent);
+    margin: 3rem 0 1rem;
+  }
+  h2::before { content: '## '; color: var(--muted); font-weight: 400; }
+
+  p { margin: 0 0 1rem; font-family: 'Inter', sans-serif; font-size: 15.5px; line-height: 1.65; }
+  a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(184,92,0,0.3); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+
+  ul.activities { list-style: none; padding: 0; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.88rem; }
+  ul.activities li {
+    padding: 0.45rem 0;
+    border-bottom: 1px dashed var(--rule);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+  }
+  ul.activities li:last-child { border-bottom: none; }
+  .when { color: var(--muted); }
+  .what { color: var(--ink); font-family: 'Inter', sans-serif; font-size: 0.95rem; line-height: 1.5; }
+  .hidden { display: none; }
+  .seemore {
+    margin-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 0;
+  }
+  .seemore::before { content: '$ '; color: var(--muted); }
+  .seemore:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-family: 'JetBrains Mono', monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="arabic">أحْمَد رُشْدِي</p>
+    <h1><span class="prompt">~</span>Ahmad A. Rushdi</h1>
+    <p class="role">research scientist · director, industry research<br>· <a href="https://hai.stanford.edu/">stanford hai</a></p>
+    <nav>
+      <a href="#">home</a>
+      <a href="publications.html">pubs</a>
+      <a href="talks.html">talks</a>
+      <a href="projects.html">projects</a>
+      <a href="mailto:rushdi@stanford.edu">email</a>
+      <a href="https://scholar.google.com/citations?user=9F-0uvIAAAAJ&hl=en">scholar</a>
+      <a href="https://github.com/aarushdi">github</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>about</h2>
+    <p>Research scientist and Director of Industry Programs at <a href="https://hai.stanford.edu/">Stanford HAI</a>, leading research collaborations and executive education initiatives that translate AI, ML, and foundation-model research into applied real-world solutions. Research spans uncertainty quantification for scientific machine learning and broader work on AI trust, safety, and responsible development.</p>
+    <p>Previously: <a href="https://www.sandia.gov/">Sandia National Laboratories</a> (Dakota team), <a href="https://www.northropgrumman.com/">Northrop Grumman</a>, <a href="https://ece.ucdavis.edu/">UC Davis</a>, the <a href="https://oden.utexas.edu/">Oden Institute</a> at UT Austin, and <a href="https://www.cisco.com/">Cisco</a>. Ph.D., ECE, UC Davis. M.S./B.S., Cairo University.</p>
+  </section>
+
+  <section>
+    <h2>recent</h2>
+    <ul class="activities">
+      <li><span class="when">2025-12</span><span class="what">Presenting at <a href="https://nips.cc/">NeurIPS</a>, San Diego.</span></li>
+      <li><span class="when">2025-09</span><span class="what">Co-organizing the <a href="https://hai.stanford.edu/industry/ai-for-organizations-grand-challenge">AI for Organizations Grand Challenge</a> with Google DeepMind.</span></li>
+      <li><span class="when">2025-04</span><span class="what">Co-organizing the Human-AI Coevolution workshop at <a href="https://iclr.cc/">ICLR</a>, Singapore.</span></li>
+      <li><span class="when">2024-12</span><span class="what">Attended <a href="https://nips.cc/">NeurIPS</a>, Vancouver.</span></li>
+      <li><span class="when">2024-10</span><span class="what">Co-organized <a href="https://icme.stanford.edu/events/workshops/bridging-farm-ai-science-slac-and-stanford">Bridging the Farm: AI for Science</a>.</span></li>
+
+      <li class="more hidden"><span class="when">2024-07</span><span class="what">Talks at the AI for Good Institute, Stanford.</span></li>
+      <li class="more hidden"><span class="when">2024-05</span><span class="what">Judged at NextGen II Hackathon, Riyadh.</span></li>
+      <li class="more hidden"><span class="when">2024-02</span><span class="what">Co-organized HAI/SAL AI+Education Summit.</span></li>
+      <li class="more hidden"><span class="when">2023→</span><span class="what">Panelist/reviewer, Stanford's Ethics &amp; Society Review.</span></li>
+      <li class="more hidden"><span class="when">2023-12</span><span class="what">NeurIPS, New Orleans; NAML affinity workshop panelist.</span></li>
+    </ul>
+    <button class="seemore" onclick="this.parentElement.querySelectorAll('.more').forEach(e=>e.classList.toggle('hidden')); this.textContent = this.textContent.includes('less') ? 'show all activity' : 'show less';">show all activity</button>
+  </section>
+
+  <footer>// © 2025 Ahmad A. Rushdi · last_updated 2026-05</footer>
+</div>
+</body>
+</html>
