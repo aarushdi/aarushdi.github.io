@@ -3,36 +3,28 @@
 // Run: cd publications && ./update-bibtex.sh to regenerate this file
 
 const BIBTEX_DATA = `
-@inproceedings{khan2026bridge,
-	title={Position: Bridge the Gaps between AI Development and Regulation},
+@inproceedings{rushdi2026perceptual,
+	title={Uncertainty as Perceptual Testimony in Vision-Language Models},
+	author={Ahmad A. Rushdi},
+	year = {2026},
+	booktitle={ICML 2026 Workshop on Philosophy Meets Machine Learning: What Counts As Trustworthy? (PhilML)},
+	url={https://openreview.net/forum?id=oqwK9nd8AP}
+}
+
+@inproceedings{khan2026governance,
+	title={The Bottleneck in AI Governance: Evidence from 1,419 State Bills},
 	author={Mansur Ali Khan and Mehmet Efe Akengin and Osman Salahuddin and Ahmad A. Rushdi},
 	year = {2026},
-	booktitle={ICML 2026},
-	url={https://openreview.net/forum?id=1WYrzYfzVU}
+	booktitle={ICML 2026 Workshop on Trustworthy AI for Good (AI4GOOD)},
+	url={https://openreview.net/forum?id=5A76rIANSP}
 }
 
-@inproceedings{rushdi2026separating,
-	title={Separating Value Disagreement from Data Uncertainty in Pluralistic Preference Data},
+@inproceedings{rushdi2026hallucination,
+	title={Detecting LLM Hallucination on Dynamical Systems via Physics-Based Audit Signals},
 	author={Ahmad A. Rushdi},
 	year = {2026},
-	booktitle={ICML 2026 Workshop on Pluralistic Alignment},
-	url={https://openreview.net/forum?id=0X4RqiLYQf}
-}
-
-@article{ziems2026reflections,
-	title={Reflections and New Directions for Human-Centered Large Language Models},
-	author={Caleb Ziems and Dora Zhao and Rose E. Wang and Matthew Jörke and Ahmad A. Rushdi and Advit Deepak and Sunny Yu and Anshika Agarwal and Harshvardhan Agarwal and Gabriela Aranguiz-Dias and Aditri Bhagirath and Justine Breuch and Huanxing Chen and Ruishi Chen and Sarah Chen and Haocheng Fan and William Fang and Cat Gonzales Fergesen and Daniel Frees and Tian Gao and Ziqing Huang and Vishal Jain and Yucheng Jiang and Kirill Kalinin and Su Doga Karaca and Arpandeep Khatua and Teland La and Isabelle Levent and Miranda Li and Xinling Li and Yongce Li and Angela Liu and Minsik Oh and Nathan J. Paek and Anthony Qin and Emily Redmond and Michael J. Ryan and Aadesh Salecha and Xiaoxian Shen and Pranava Singhal and Shashanka Subrahmanya and Mei Tan and Irawadee Thawornbut and Michelle Vinocour and Xiaoyue Wang and Zheng Wang and Henry Jin Weng and Pawan Wirawarn and Shirley Wu and Sophie Wu and Yichen Xie and Patrick Ye and Sean Zhang and Yutong Zhang and Cathy Zhou and Yiling Zhao and James Landay and Diyi Yang},
-	year = {2026},
-	journal={arXiv preprint arXiv:2605.06901},
-	url={https://arxiv.org/abs/2605.06901}
-}
-
-@inproceedings{rushdi2026pass,
-	title={Beyond Pass@1: K-Sample Behavioral Equivalence for Code-Agent Evaluation},
-	author={Ahmad A. Rushdi},
-	year = {2026},
-	booktitle={RLEval Workshop at ACM Conference on AI and Agentic Systems (ACM CAIS)},
-	url={https://rl-eval.github.io}
+	booktitle={2026 Conference on Physics and AI (PAI26)},
+	url={https://openreview.net/pdf?id=9PJJR0p0cx}
 }
 
 @inproceedings{khan2025proposals,
