@@ -22,8 +22,10 @@ file:// page fetch the .bib):
     # then open http://localhost:8000/publications.html
 
 
-EXAMPLE BIBTEX ENTRY:
----------------------
+EXAMPLE ENTRIES:
+----------------
+
+Journal article:
 
 @article{rushdi2025example,
   author = {Ahmad A. Rushdi and Other Author and Another Author},
@@ -33,7 +35,21 @@ EXAMPLE BIBTEX ENTRY:
   number = {3},
   pages = {100--120},
   year = {2025},
-  url = {https://example.com/paper}
+  url = {https://example.com/paper.pdf}
+}
+
+Workshop paper held at a conference (this is the common recent case — note
+how the workshop AND the host conference each get their own link):
+
+@inproceedings{rushdi2026example,
+  author = {Ahmad A. Rushdi},
+  title = {Your Workshop Paper Title},
+  year = {2026},
+  booktitle = {Workshop on Some Topic},          % the venue name
+  venueurl  = {https://the-workshop-site.org},    % links the workshop name
+  host      = {ICML 2026},                         % the host conference
+  hosturl   = {https://icml.cc/},                  % links the host conference
+  url       = {https://openreview.net/pdf?id=XXXX} % the PAPER PDF
 }
 
 
@@ -42,11 +58,11 @@ ENTRY TYPES YOU CAN USE:
 
 @article          - For journal papers
   Required: author, title, journal, year
-  Optional: volume, number, pages, url
+  Optional: volume, number, pages, url, venueurl
 
-@inproceedings    - For conference papers
+@inproceedings    - For conference / workshop papers
   Required: author, title, booktitle, year
-  Optional: pages, publisher, url
+  Optional: pages, publisher, url, venueurl, host, hosturl
 
 @techreport       - For technical reports
   Required: author, title, institution, year
@@ -54,7 +70,7 @@ ENTRY TYPES YOU CAN USE:
 
 @incollection     - For book chapters
   Required: author, title, booktitle, year
-  Optional: pages, publisher, url
+  Optional: pages, publisher, url, venueurl
 
 
 IMPORTANT FIELDS:
@@ -68,11 +84,24 @@ title       Paper title
 
 year        Publication year (used for sorting)
 
-url         Link to the paper (optional but recommended)
+url         Link to the PAPER itself. Use a DIRECT PDF link.
+            For OpenReview, use the pdf form, NOT the forum/review page:
+              good:  https://openreview.net/pdf?id=XXXX
+              avoid: https://openreview.net/forum?id=XXXX   (this is the review page)
+            Strip any "&referrer=..." / "&noteId=..." junk from the URL.
 
 journal     Journal name (for @article)
 
-booktitle   Conference or book name (for @inproceedings, @incollection)
+booktitle   Venue name (for @inproceedings, @incollection). For a workshop,
+            put just the workshop name here and put the conference in `host`.
+
+venueurl    (Optional) URL for the venue — makes the journal/booktitle name a
+            link to the conference or workshop site.
+
+host        (Optional) Host conference of a workshop, e.g. "ICML 2026".
+            Rendered as a second, separately-linked chunk after the venue.
+
+hosturl     (Optional) URL for the host conference (e.g. https://icml.cc/).
 
 volume      Volume number (for journals)
 
@@ -94,7 +123,7 @@ TIPS:
 • Your name "Ahmad A. Rushdi" will be automatically bolded
 • Use double hyphens (--) for page ranges: 100--120
 • Always include the year - it's used for sorting
-• Include URLs when available for easy access
+• url = the paper PDF; venueurl/hosturl = the event websites
 • Use curly braces {} for field values
 
 

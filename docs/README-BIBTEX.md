@@ -50,9 +50,14 @@ To preview locally, serve over HTTP (`fetch` is blocked on `file://` URLs):
 - `author` - Author names separated by "and" (your name will be auto-bolded)
 - `title` - Paper title
 - `year` - Publication year
-- `url` - Link to paper (optional)
+- `url` - Link to the paper itself — use a **direct PDF** link. For OpenReview,
+  use `pdf?id=...`, not the `forum?id=...` review page (and strip `&referrer=`/`&noteId=`)
 - `journal` - Journal name (for articles)
-- `booktitle` - Conference/book name (for proceedings/chapters)
+- `booktitle` - Venue name (for proceedings/chapters); for a workshop, put just
+  the workshop name here and the host conference in `host`
+- `venueurl` - Optional. Makes the journal/booktitle name link to the event site
+- `host`, `hosturl` - Optional. Adds the host conference of a workshop (e.g.
+  `ICML 2026`) as a second, separately-linked chunk after the venue name
 - `volume`, `number`, `pages` - Publication details
 - `institution`, `address` - For technical reports
 - `publisher` - Publisher name
