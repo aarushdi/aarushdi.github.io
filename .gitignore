@@ -1,0 +1,12 @@
+# OS / editor junk
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*~
+
+# Logs
+*.log
+
+# Temporary preview files (work-in-progress, not part of the live site)
+*-preview.html

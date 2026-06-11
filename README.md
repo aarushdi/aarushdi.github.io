@@ -19,7 +19,7 @@ aarushdi.github.io/
 │   └── favicon.ico       # Site icon
 │
 ├── css/                   # Stylesheets
-│   └── styles.css        # Main stylesheet (emerald/teal theme)
+│   └── styles.css        # Main stylesheet (IBM Plex, mono-zen theme)
 │
 ├── js/                    # JavaScript files
 │   └── bibtex-parser.js  # BibTeX parser and renderer
@@ -28,17 +28,10 @@ aarushdi.github.io/
 │   └── publications.bib  # THE source of truth — edit this, nothing else
 │
 ├── docs/                  # Documentation
-│   ├── HOW-TO-ADD-PUBLICATIONS.txt  # Quick guide
-│   └── README-BIBTEX.md             # Detailed BibTeX docs
+│   └── PUBLICATIONS.md   # How to add/manage publications
 │
 └── viz/                   # Project visualizations and assets
-    ├── app/
-    ├── bio/
-    ├── collision/
-    ├── library/
-    ├── mesh/
-    ├── UQ/
-    └── VPS/
+    ├── app/  bio/  collision/  library/  mesh/  UQ/  VPS/
 ```
 
 ## 🚀 Quick Start
@@ -58,7 +51,7 @@ To preview locally, serve over HTTP (a `fetch()` won't work from a `file://` URL
 python3 -m http.server   # then open http://localhost:8000/publications.html
 ```
 
-See `docs/HOW-TO-ADD-PUBLICATIONS.txt` for the BibTeX field reference.
+See `docs/PUBLICATIONS.md` for the BibTeX field reference.
 
 ### Updating Content
 
@@ -131,8 +124,7 @@ Changes will appear at `aarushdi.github.io` within a few minutes.
 
 ## 📚 Documentation
 
-- `docs/HOW-TO-ADD-PUBLICATIONS.txt` - Step-by-step publication guide
-- `docs/README-BIBTEX.md` - Complete BibTeX system documentation
+- `docs/PUBLICATIONS.md` - How to add and manage publications (fields, examples, troubleshooting)
 
 ## 🎯 Technologies
 
