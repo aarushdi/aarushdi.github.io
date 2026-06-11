@@ -139,7 +139,16 @@
         return v;
       }
       if (e.booktitle) {
-        let v = `<em>${venueName(escapeHTML(e.booktitle))}</em>`;
+        // venueurl links the venue/workshop name; host (+ hosturl) optionally
+        // adds the host conference as a second, separately-linked chunk.
+        let inner = venueName(escapeHTML(e.booktitle));
+        if (e.host) {
+          const h = e.hosturl
+            ? `<a href="${e.hosturl}">${escapeHTML(e.host)}</a>`
+            : escapeHTML(e.host);
+          inner += `, ${h}`;
+        }
+        let v = `<em>${inner}</em>`;
         if (e.pages) v += `, ${e.pages}`;
         if (e.publisher) v += ` · ${escapeHTML(e.publisher)}`;
         return v;
