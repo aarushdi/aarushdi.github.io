@@ -127,8 +127,11 @@
     }
 
     function renderVenue(e) {
+      // Link the venue name to the conference/workshop site when venueurl is set.
+      const venueName = name =>
+        e.venueurl ? `<a href="${e.venueurl}">${name}</a>` : name;
       if (e.journal) {
-        let v = `<em>${escapeHTML(e.journal)}</em>`;
+        let v = `<em>${venueName(escapeHTML(e.journal))}</em>`;
         if (e.volume && e.number && e.pages) v += ` ${e.volume}(${e.number}):${e.pages}`;
         else if (e.volume && e.pages) v += `, ${e.volume}:${e.pages}`;
         else if (e.volume) v += `, ${e.volume}`;
@@ -136,7 +139,7 @@
         return v;
       }
       if (e.booktitle) {
-        let v = `<em>${escapeHTML(e.booktitle)}</em>`;
+        let v = `<em>${venueName(escapeHTML(e.booktitle))}</em>`;
         if (e.pages) v += `, ${e.pages}`;
         if (e.publisher) v += ` · ${escapeHTML(e.publisher)}`;
         return v;
