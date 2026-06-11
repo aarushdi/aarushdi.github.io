@@ -6,10 +6,20 @@ QUICK STEPS:
 ------------
 1. Open publications/publications.bib in any text editor
 2. Add your new BibTeX entry at the top or bottom
-3. Run: cd publications && ./update-bibtex.sh
-4. Open publications.html in your browser to verify
+3. Commit and push.
 
-That's it! Your publication will automatically appear sorted by year with your name bolded.
+That's it! There is NO build step. publications.html reads publications.bib
+directly in the browser, so the entry appears automatically, sorted by year
+with your name bolded.
+
+publications.bib is the SINGLE SOURCE OF TRUTH. There is no generated data
+file to keep in sync anymore (the old js/bibtex-data.js + update-bibtex.sh
+have been removed). Just edit the .bib.
+
+To preview locally before pushing, serve over HTTP (a browser will not let a
+file:// page fetch the .bib):
+    python3 -m http.server
+    # then open http://localhost:8000/publications.html
 
 
 EXAMPLE BIBTEX ENTRY:
@@ -92,12 +102,9 @@ TROUBLESHOOTING:
 ----------------
 
 Publications not showing?
-→ Make sure you ran: cd publications && ./update-bibtex.sh
-→ Check for syntax errors (matching braces, commas, etc.)
-
-Script won't run?
-→ Make it executable: chmod +x publications/update-bibtex.sh
-→ Then run: cd publications && ./update-bibtex.sh
+→ Check for syntax errors in your entry (matching braces, commas, etc.)
+→ If previewing locally, make sure you're using http://localhost (not a
+  file:// path) — see the local-server command above.
 
 Need more help?
 → See docs/README-BIBTEX.md for detailed documentation
@@ -106,11 +113,11 @@ Need more help?
 
 FILES YOU SHOULD EDIT:
 ----------------------
-✓ publications/publications.bib  - Add your BibTeX entries here
+✓ publications/publications.bib  - The ONE source of truth. Add entries here.
 
 FILES YOU SHOULD NOT EDIT:
 --------------------------
-✗ js/bibtex-data.js      - Auto-generated, will be overwritten
-✗ publications.html      - Publications list is now dynamic
+✗ publications.html      - Publications list is loaded dynamically from the .bib
+✗ js/bibtex-parser.js    - Parsing/formatting logic (only touch to change layout)
 
 ===============================================

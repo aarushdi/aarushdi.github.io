@@ -22,12 +22,10 @@ aarushdi.github.io/
 │   └── styles.css        # Main stylesheet (emerald/teal theme)
 │
 ├── js/                    # JavaScript files
-│   ├── bibtex-data.js    # Auto-generated BibTeX data (don't edit)
 │   └── bibtex-parser.js  # BibTeX parser and renderer
 │
 ├── publications/          # Publication management
-│   ├── publications.bib  # Master BibTeX file (edit this!)
-│   └── update-bibtex.sh  # Script to regenerate bibtex-data.js
+│   └── publications.bib  # THE source of truth — edit this, nothing else
 │
 ├── docs/                  # Documentation
 │   ├── HOW-TO-ADD-PUBLICATIONS.txt  # Quick guide
@@ -47,11 +45,20 @@ aarushdi.github.io/
 
 ### Updating Publications
 
-1. Edit `publications/publications.bib` to add new papers
-2. Run: `cd publications && ./update-bibtex.sh`
-3. Refresh `publications.html` in your browser
+1. Edit `publications/publications.bib` to add new papers — **that's the only step.**
+2. Commit and push.
 
-See `docs/HOW-TO-ADD-PUBLICATIONS.txt` for details.
+`publications.html` loads `publications.bib` directly in the browser, so there is
+**no build step and no generated file to keep in sync.** Never maintain a separate
+copy of the data — `publications.bib` is the single source of truth.
+
+To preview locally, serve over HTTP (a `fetch()` won't work from a `file://` URL):
+
+```bash
+python3 -m http.server   # then open http://localhost:8000/publications.html
+```
+
+See `docs/HOW-TO-ADD-PUBLICATIONS.txt` for the BibTeX field reference.
 
 ### Updating Content
 
@@ -81,21 +88,17 @@ See `docs/HOW-TO-ADD-PUBLICATIONS.txt` for details.
 - `publications/publications.bib` - Publication data in BibTeX format
 
 ### Scripts
-- `publications/update-bibtex.sh` - Regenerates JS data from BibTeX
-- `js/bibtex-parser.js` - Parses and formats BibTeX entries
+- `js/bibtex-parser.js` - Fetches `publications.bib`, then parses and formats the entries
 
 ## 🔧 Maintenance
 
 ### Adding a Publication
 ```bash
-# 1. Edit the BibTeX file
+# 1. Edit the BibTeX file — this is the only thing to change
 open publications/publications.bib
 
-# 2. Regenerate the data file
-cd publications && ./update-bibtex.sh
-
-# 3. Verify
-open publications.html
+# 2. Preview (optional) over a local HTTP server, then commit + push
+python3 -m http.server   # http://localhost:8000/publications.html
 ```
 
 ### Changing Colors

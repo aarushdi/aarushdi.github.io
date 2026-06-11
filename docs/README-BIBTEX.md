@@ -4,19 +4,23 @@ This website uses a BibTeX file to manage publications, making it easy to add ne
 
 ## How It Works
 
-1. **publications.bib** - Your master BibTeX file containing all publications
-2. **bibtex-data.js** - Auto-generated JavaScript file (embedded BibTeX data)
-3. **bibtex-parser.js** - JavaScript parser that reads and formats the entries
-4. **publications.html** - Dynamically loads and displays publications
+1. **publications.bib** - The single source of truth: every publication lives here
+2. **bibtex-parser.js** - Fetches `publications.bib`, then parses and formats the entries
+3. **publications.html** - Loads `publications.bib` directly in the browser and renders it
+
+There is no generated/intermediate data file and no build step. `publications.html`
+calls `fetch('publications/publications.bib')` at load time. (The former
+`js/bibtex-data.js` + `update-bibtex.sh` were removed because the generated copy
+could silently drift out of sync with the `.bib`.)
 
 ## Adding New Publications
 
-### Method 1: Add to BibTeX file (Recommended)
-
 1. Open `publications.bib` in a text editor
 2. Add your new BibTeX entry (example below)
-3. Run the update script: `./update-bibtex.sh`
-4. Open `publications.html` in your browser to verify
+3. Commit and push — done.
+
+To preview locally, serve over HTTP (`fetch` is blocked on `file://` URLs):
+`python3 -m http.server`, then open `http://localhost:8000/publications.html`.
 
 ### Example BibTeX Entry
 
@@ -59,23 +63,14 @@ This website uses a BibTeX file to manage publications, making it easy to add ne
 - ✅ Automatically sorts publications by year (newest first)
 - ✅ Auto-bolds "Ahmad A. Rushdi" in author lists
 - ✅ Formats venues based on entry type (journal, conference, etc.)
-- ✅ Works offline (no web server needed)
 - ✅ Maintains consistent formatting across all entries
-
-## Manual Regeneration
-
-If the script doesn't work, you can manually regenerate `bibtex-data.js`:
-
-```bash
-cat publications.bib | sed 's/\\/\\\\/g' | sed "s/'/\\\\'/g" | \
-awk 'BEGIN {print "const BIBTEX_DATA = \`"} {print} END {print "\`;"}' > bibtex-data.js
-```
 
 ## Troubleshooting
 
 **Publications not showing?**
 - Check browser console (F12) for errors
-- Verify `bibtex-data.js` exists and has content
+- If previewing locally, use `http://localhost` (via `python3 -m http.server`),
+  not a `file://` path — the page fetches the `.bib` and `fetch` is blocked on `file://`
 - Make sure BibTeX entries are properly formatted (matching braces, etc.)
 
 **Wrong formatting?**
@@ -83,13 +78,9 @@ awk 'BEGIN {print "const BIBTEX_DATA = \`"} {print} END {print "\`;"}' > bibtex-
 - Verify required fields are present (author, title, year)
 - Check for special characters that need escaping
 
-## Files Not to Edit Directly
+## Files
 
-- `bibtex-data.js` - Auto-generated, will be overwritten
-- The publications list in `publications.html` - Now dynamic
-
-## Files to Keep
-
-- `publications.bib` - Your master source of truth for publications
-- `update-bibtex.sh` - Helper script to regenerate data file
-- `bibtex-parser.js` - Core parsing logic
+- `publications.bib` - The single source of truth for publications (edit this)
+- `bibtex-parser.js` - Core parsing/formatting logic (edit only to change layout)
+- Do **not** add a separate data file or hand-edit the rendered list in
+  `publications.html` — keep everything in the `.bib`

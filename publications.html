@@ -12,8 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
-<!-- BibTeX data + parser -->
-<script src="js/bibtex-data.js"></script>
+<!-- BibTeX parser (publications load from publications/publications.bib at runtime) -->
 <script src="js/bibtex-parser.js"></script>
 
 <!-- GoatCounter analytics -->
@@ -48,9 +47,18 @@
 </div>
 
 <script>
-  (function () {
+  (async function () {
     const parser = new BibTeXParser();
-    parser.parse(BIBTEX_DATA);
+    try {
+      const res = await fetch('publications/publications.bib');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      parser.parse(await res.text());
+    } catch (err) {
+      console.error('Failed to load publications.bib:', err);
+      document.getElementById('pubs-content').innerHTML =
+        '<p class="page-intro">Could not load publications. If viewing this file locally, serve it over HTTP (e.g. <code>python3 -m http.server</code>) rather than opening the file directly.</p>';
+      return;
+    }
 
     // Fall back to year embedded in the entry key (e.g., "anthis2025iclr" → "2025")
     // when the BibTeX field is missing.
