@@ -206,6 +206,11 @@ ul.activities li:last-child { border-bottom: none; }
 .pub-list li { padding: 0.8rem 0; border-bottom: 1px dashed var(--rule); }
 .pub-list li:last-child { border-bottom: none; }
 .pub-title { font-weight: 500; margin: 0 0 0.25rem; line-height: 1.45; color: var(--ink); }
+.pub-status {
+  font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em;
+  vertical-align: 0.1em; margin-left: 0.5rem; padding: 0.1rem 0.45rem;
+  border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); white-space: nowrap;
+}
 .pub-authors { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.25rem; line-height: 1.5; }
 .me { color: var(--ink); font-weight: 600; }
 .pub-venue { color: var(--muted); font-size: 0.9rem; margin: 0; font-style: italic; }

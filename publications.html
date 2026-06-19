@@ -166,8 +166,9 @@
       const authors = formatAuthors(e.author);
       const venue = renderVenue(e);
       const links = e.url ? `<span class="pub-links"><a href="${e.url}">link</a></span>` : '';
+      const badge = e.status ? `<span class="pub-status">${escapeHTML(e.status)}</span>` : '';
       return `<li>
-        <p class="pub-title">${title}</p>
+        <p class="pub-title">${title}${badge}</p>
         <p class="pub-authors">${authors}</p>
         <p class="pub-venue">${venue}${links}</p>
       </li>`;
