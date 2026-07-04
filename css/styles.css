@@ -117,6 +117,27 @@ body {
 .social a::after  { content: ']'; color: var(--muted); margin-left: 0.2rem; }
 .social a:hover { color: var(--accent); }
 
+/* ---------- Hero epigraph (home) ---------- */
+.epigraph {
+  margin: -0.6rem 0 3rem;
+  padding: 0.15rem 0 0.15rem 1.1rem;
+  border-left: 2px solid var(--accent);
+  max-width: 60ch;
+  font-size: 1.02rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.epigraph cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.epigraph cite::before { content: '— '; }
+
 /* ---------- Page header (sub-pages) ---------- */
 .page-header { margin-bottom: 2.5rem; }
 .page-header h1 {
