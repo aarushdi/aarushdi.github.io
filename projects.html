@@ -36,6 +36,31 @@
   </div>
 
   <div class="project">
+    <h2>LLM Evaluation: Uncertainty &amp; Trust</h2>
+    <p class="project-desc">Recent work stress-testing large language models and the systems around them &mdash; whether they genuinely reason about numerical functions or merely recall, and how the governance of AI can itself be measured and audited.</p>
+
+    <p class="project-desc"><strong>Reasoning or recall?</strong> A blind protocol hides the identity of a function and asks LLMs to predict, integrate, and optimize it from sampled points alone &mdash; separating genuine numerical reasoning from memorized recall.</p>
+    <div class="media-row cols-2">
+      <figure>
+        <img src="viz/ai/reasoning-recall-teaser.png" alt="blind numerical-function protocol" style="height:170px">
+        <figcaption>Blind protocol across three tasks (multifidelity, integration, optimization): sampled points &rarr; LLM &rarr; predicted function, integral, or optimum.</figcaption>
+      </figure>
+      <figure>
+        <img src="viz/ai/reasoning-recall-spectrum.png" alt="recall vs reasoning spectrum" style="height:170px">
+        <figcaption>Responses span a spectrum &mdash; recall, code, genuine reasoning, or no capability &mdash; by error metric and sample budget.</figcaption>
+      </figure>
+    </div>
+
+    <p class="project-desc"><strong>AI governance.</strong> Where do AI laws actually stall? Tracing 1,419 U.S. state bills from introduction to enactment surfaces the procedural bottleneck.</p>
+    <div class="media-row">
+      <figure>
+        <img src="viz/ai/governance-billflow.png" alt="bill-flow funnel" style="height:150px">
+        <figcaption>Flow of 1,419 state AI bills (2017&ndash;2026) from introduction through committee, floor vote, and final outcome. <a href="https://openreview.net/pdf?id=5A76rIANSP">paper</a></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="project">
     <h2>High-d sampling &amp; visualization</h2>
     <p class="project-desc">A library of high-dimensional test functions for optimization, uncertainty quantification, and numerical integration problems.</p>
     <div class="media-row cols-8"><video autoplay loop muted playsinline><source src="viz/library/vid-bukin.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-cone.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-cross.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-rosenbrock.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-franke.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-egg-holder.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-herbie.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-rastrigin.mp4" type="video/mp4"></video></div>
@@ -86,6 +111,14 @@
       <figure>
         <video autoplay loop muted playsinline><source src="viz/UQ/1d/UQ_1d.mp4" type="video/mp4"></video>
         <figcaption>Uncertainty bands across methods.</figcaption>
+      </figure>
+    </div>
+
+    <p class="project-desc"><strong>Multifidelity fusion.</strong> Convolutional encoder/decoder networks that fuse many cheap low-fidelity samples with a few expensive high-fidelity ones to reconstruct full fields and their predictive uncertainty.</p>
+    <div class="media-row">
+      <figure>
+        <img src="viz/UQ/multifidelity-fields.png" alt="multifidelity field predictions" style="height:150px">
+        <figcaption>True vs. predicted pressure fields with error and uncertainty maps (Poiseuille flow), reconstructed mostly from low-fidelity data. <a href="https://arxiv.org/abs/2205.05187">paper</a></figcaption>
       </figure>
     </div>
   </div>
