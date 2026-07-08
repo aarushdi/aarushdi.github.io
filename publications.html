@@ -56,17 +56,6 @@
      Full field guide + examples: docs/PUBLICATIONS.md
      =========================================================================== -->
 <script type="application/x-bibtex" id="bibtex-data">
-@inproceedings{rushdi2026odes,
-	title={When LLMs Solve ODEs: Failure Modes, Conservation Blind Spots, and Ground-Truth-Free Auditing},
-	author={Ahmad A. Rushdi},
-	year = {2026},
-	booktitle={Workshop on AI for Math (AI4Math)},
-	venueurl={https://ai4math2026.github.io/},
-	host={ICML 2026},
-	hosturl={https://icml.cc/},
-	status={accepted}
-}
-
 @inproceedings{rushdi2026reasoning,
 	title={Reasoning or Recall? Blind Evaluation of LLMs on Numerical Function Tasks},
 	author={Ahmad A. Rushdi and Kiana Jafari Meimandi and Mykel Kochenderfer},
@@ -74,8 +63,17 @@
 	booktitle={Workshop on AI for Math (AI4Math)},
 	venueurl={https://ai4math2026.github.io/},
 	host={ICML 2026},
-	hosturl={https://icml.cc/},
-	status={accepted}
+	hosturl={https://icml.cc/}
+}
+
+@inproceedings{rushdi2026odes,
+	title={When LLMs Solve ODEs: Failure Modes, Conservation Blind Spots, and Ground-Truth-Free Auditing},
+	author={Ahmad A. Rushdi},
+	year = {2026},
+	booktitle={Workshop on AI for Math (AI4Math)},
+	venueurl={https://ai4math2026.github.io/},
+	host={ICML 2026},
+	hosturl={https://icml.cc/}
 }
 
 @inproceedings{rushdi2026selective,
@@ -85,8 +83,7 @@
 	booktitle={Deep Learning for Code Workshop (DL4C)},
 	venueurl={https://dl4c.github.io/},
 	host={ICML 2026},
-	hosturl={https://icml.cc/},
-	status={accepted}
+	hosturl={https://icml.cc/}
 }
 
 @inproceedings{rushdi2026cite,
@@ -96,8 +93,7 @@
 	booktitle={Workshop on Muslims in ML (MusIML)},
 	venueurl={https://www.musiml.org/events/2026-ICML/index.html},
 	host={ICML 2026},
-	hosturl={https://icml.cc/},
-	status={accepted}
+	hosturl={https://icml.cc/}
 }
 
 @inproceedings{khan2026governancemusiml,
@@ -107,8 +103,7 @@
 	booktitle={Workshop on Muslims in ML (MusIML)},
 	venueurl={https://www.musiml.org/events/2026-ICML/index.html},
 	host={ICML 2026},
-	hosturl={https://icml.cc/},
-	status={accepted}
+	hosturl={https://icml.cc/}
 }
 
 @inproceedings{khan2026bridge,
@@ -700,7 +695,8 @@
       const authors = formatAuthors(e.author);
       const venue = renderVenue(e);
       const links = e.url ? `<span class="pub-links"><a href="${e.url}">link</a></span>` : '';
-      const badge = e.status ? `<span class="pub-status">${escapeHTML(e.status)}</span>` : '';
+      const statusMod = (e.status || '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const badge = e.status ? `<span class="pub-status pub-status--${statusMod}">${escapeHTML(e.status)}</span>` : '';
       return `<li>
         <p class="pub-title">${title}${badge}</p>
         <p class="pub-authors">${authors}</p>
