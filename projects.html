@@ -37,7 +37,7 @@
 
   <div class="project">
     <h2>LLM Evaluation: Uncertainty &amp; Trust</h2>
-    <p class="project-desc">Recent work stress-testing large language models and the systems around them &mdash; whether they genuinely reason about numerical functions or merely recall, and how the governance of AI can itself be measured and audited.</p>
+    <p class="project-desc">Recent work stress-testing large language and vision-language models &mdash; whether they genuinely reason about numerical functions or merely recall, and whether a model's stated confidence stays warranted as its perceptual evidence degrades.</p>
 
     <p class="project-desc"><strong>Reasoning or recall?</strong> A blind protocol hides the identity of a function and asks LLMs to predict, integrate, and optimize it from sampled points alone &mdash; separating genuine numerical reasoning from memorized recall.</p>
     <div class="media-row cols-2">
@@ -47,11 +47,26 @@
       </figure>
       <figure>
         <img src="viz/ai/reasoning-recall-spectrum.png" alt="recall vs reasoning spectrum" style="height:170px">
-        <figcaption>Responses span a spectrum &mdash; recall, code, genuine reasoning, or no capability &mdash; by error metric and sample budget.</figcaption>
+        <figcaption>Responses span a spectrum &mdash; recall, code, genuine reasoning, or no capability &mdash; by error metric and sample budget. <a href="https://openreview.net/pdf?id=wZfssjcuxH">paper</a></figcaption>
       </figure>
     </div>
 
-    <p class="project-desc"><strong>AI governance.</strong> Where do AI laws actually stall? Tracing 1,419 U.S. state bills from introduction to enactment surfaces the procedural bottleneck.</p>
+    <p class="project-desc"><strong>Confidence as testimony.</strong> Treating a vision-language model's verbalized confidence as perceptual testimony, an honest model should grow less certain as its evidence dissolves. Under escalating Gaussian noise, faithful scenes track that ideal &mdash; while other items confabulate a specific, wrong class at high confidence.</p>
+    <div class="media-row">
+      <figure>
+        <img src="viz/ai/uncertainty-noise-strip.png" alt="VLM confidence under increasing image noise" style="height:300px">
+        <figcaption>Verbalized confidence under increasing Gaussian noise (&sigma;). It decays gracefully as the subject dissolves (snow: 97&rarr;35%), but a redundant scene stays legible and confident (lion). <a href="https://openreview.net/forum?id=oqwK9nd8AP">paper</a></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="project">
+    <h2>AI Ethics &amp; Governance</h2>
+    <p class="project-desc">Where regulation meets the pace of AI &mdash; measuring how governance actually works, and where it stalls.</p>
+
+    <p class="project-desc"><strong>Bridging AI development and regulation.</strong> AI capability is outpacing the law: of U.S. AI bills introduced from 2017&ndash;2025, only 4.23% reach any terminal outcome. This position paper traces the institutional, economic, political, and informational barriers behind the stall &mdash; committee bottlenecks, multi-sponsor coordination, and knowledge gaps &mdash; and argues for adaptive, anticipatory legislation with independent oversight so governance can keep pace with the technology. <a href="https://icml.cc/virtual/2026/poster/67243">position paper</a></p>
+
+    <p class="project-desc"><strong>Where AI laws stall.</strong> Tracing 1,419 U.S. state bills from introduction to enactment surfaces the procedural bottleneck.</p>
     <div class="media-row">
       <figure>
         <img src="viz/ai/governance-billflow.png" alt="bill-flow funnel" style="height:150px">
