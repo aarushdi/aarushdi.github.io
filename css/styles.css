@@ -138,19 +138,25 @@ body {
 }
 .epigraph cite::before { content: '— '; }
 
-/* Closing variant: a quiet parting epigraph just above the footer. */
-.epigraph--closing { margin: 4rem 0 0; }
+/* Closing variant: a quiet parting epigraph just above the footer.
+   Verse on top, English quote beneath (smaller, one line). */
+.epigraph--closing { margin: 4rem 0 0; max-width: none; }
 .epigraph--closing + footer { margin-top: 1.4rem; }
 .epigraph-ar {
   display: block;
-  margin-top: 0.7rem;
   font-family: var(--font-arabic);
   font-style: normal;
   font-size: 1.5rem;
   line-height: 1.7;
   color: var(--accent);
-  text-align: right;
+  text-align: left;
   direction: rtl;
+}
+.epigraph-en {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* ---------- Page header (sub-pages) ---------- */
