@@ -138,6 +138,21 @@ body {
 }
 .epigraph cite::before { content: '— '; }
 
+/* Closing variant: a quiet parting epigraph just above the footer. */
+.epigraph--closing { margin: 4rem 0 0; }
+.epigraph--closing + footer { margin-top: 1.4rem; }
+.epigraph-ar {
+  display: block;
+  margin-top: 0.7rem;
+  font-family: var(--font-arabic);
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--accent);
+  text-align: right;
+  direction: rtl;
+}
+
 /* ---------- Page header (sub-pages) ---------- */
 .page-header { margin-bottom: 2.5rem; }
 .page-header h1 {
