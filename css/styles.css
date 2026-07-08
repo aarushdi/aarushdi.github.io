@@ -232,6 +232,9 @@ ul.activities li:last-child { border-bottom: none; }
   vertical-align: 0.1em; margin-left: 0.5rem; padding: 0.1rem 0.45rem;
   border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); white-space: nowrap;
 }
+/* Spotlight: a slate blue that mirrors the green accent (same R/G, blue raised). */
+.pub-status--spotlight { border-color: #3a5a7a; color: #3a5a7a; }
+.spotlight-tag { color: #3a5a7a; }
 .pub-authors { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.25rem; line-height: 1.5; }
 .me { color: var(--ink); font-weight: 600; }
 .pub-venue { color: var(--muted); font-size: 0.9rem; margin: 0; font-style: italic; }
@@ -309,8 +312,8 @@ ul.talks li:last-child { border-bottom: none; }
 .lightbox.open { display: flex; }
 .lightbox img,
 .lightbox video {
-  height: 270px;
   width: auto;
+  height: auto;
   max-width: 95vw;
   max-height: 90vh;
   border-radius: 8px;
