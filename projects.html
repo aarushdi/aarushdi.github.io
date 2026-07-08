@@ -51,11 +51,11 @@
       </figure>
     </div>
 
-    <p class="project-desc"><strong>Confidence as testimony.</strong> Treating a vision-language model's verbalized confidence as perceptual testimony, an honest model should grow less certain as its evidence dissolves. Under escalating Gaussian noise, faithful scenes track that ideal &mdash; while other items confabulate a specific, wrong class at high confidence.</p>
+    <p class="project-desc"><strong>Confidence as testimony.</strong> As perceptual evidence decays under noise and occlusion, a faithful model should lose confidence &mdash; yet some confabulate a confident, wrong class instead.</p>
     <div class="media-row">
       <figure>
-        <img src="viz/ai/uncertainty-noise-strip.png" alt="VLM confidence under increasing image noise" style="height:300px">
-        <figcaption>Verbalized confidence under increasing Gaussian noise (&sigma;). It decays gracefully as the subject dissolves (snow: 97&rarr;35%), but a redundant scene stays legible and confident (lion). <a href="https://openreview.net/forum?id=oqwK9nd8AP">paper</a></figcaption>
+        <img src="viz/ai/uncertainty-defeater-grid.jpg" alt="VLM class and confidence across six images under increasing noise and occlusion" style="height:190px;width:auto">
+        <figcaption>Six items &times; seven defeater levels (noise + occlusion): the model's class (<em>italic</em> = wrong) and verbalized confidence. Faithful items abstain; others confabulate (cup&rarr;&ldquo;tambourine&rdquo;, clock&rarr;&ldquo;mirror&rdquo;). <a href="https://openreview.net/pdf?id=oqwK9nd8AP">paper</a></figcaption>
       </figure>
     </div>
   </div>
@@ -64,13 +64,11 @@
     <h2>AI Ethics &amp; Governance</h2>
     <p class="project-desc">Where regulation meets the pace of AI &mdash; measuring how governance actually works, and where it stalls.</p>
 
-    <p class="project-desc"><strong>Bridging AI development and regulation.</strong> AI capability is outpacing the law: of U.S. AI bills introduced from 2017&ndash;2025, only 4.23% reach any terminal outcome. This position paper traces the institutional, economic, political, and informational barriers behind the stall &mdash; committee bottlenecks, multi-sponsor coordination, and knowledge gaps &mdash; and argues for adaptive, anticipatory legislation with independent oversight so governance can keep pace with the technology. <a href="https://icml.cc/virtual/2026/poster/67243">position paper</a></p>
-
-    <p class="project-desc"><strong>Where AI laws stall.</strong> Tracing 1,419 U.S. state bills from introduction to enactment surfaces the procedural bottleneck.</p>
+    <p class="project-desc"><strong>Bridging AI development and regulation.</strong> Only 4.23% of U.S. AI bills (2017&ndash;2025) reach a terminal outcome; a position paper argues for adaptive, anticipatory legislation with independent oversight. <a href="https://icml.cc/virtual/2026/poster/67243">position paper</a></p>
     <div class="media-row">
       <figure>
         <img src="viz/ai/governance-billflow.png" alt="bill-flow funnel" style="height:150px">
-        <figcaption>Flow of 1,419 state AI bills (2017&ndash;2026) from introduction through committee, floor vote, and final outcome. <a href="https://openreview.net/pdf?id=5A76rIANSP">paper</a></figcaption>
+        <figcaption>Flow of 1,419 state AI bills (2017&ndash;2025) from introduction through committee, floor vote, and final outcome. <a href="https://openreview.net/pdf?id=5A76rIANSP">paper</a></figcaption>
       </figure>
     </div>
   </div>
