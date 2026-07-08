@@ -10,3 +10,7 @@ Thumbs.db
 
 # Temporary preview files (work-in-progress, not part of the live site)
 *-preview.html
+
+# Derived artifact — publications live inline in publications.html (#bibtex-data).
+# Regenerate a portable copy anytime with ./scripts/extract-bib.sh
+publications/publications.bib

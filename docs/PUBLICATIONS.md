@@ -1,20 +1,32 @@
 # Managing publications
 
-All publications live in one file: **`publications/publications.bib`**. It is the
-single source of truth. `publications.html` fetches it directly in the browser and
-renders it — there is **no build step and no generated data file** to keep in sync.
+All publications live **inline in `publications.html`**, inside the
+`<script type="application/x-bibtex" id="bibtex-data">` block near the bottom of the
+file. That block is the single source of truth — it holds plain BibTeX. The page reads
+it directly, so there is **no build step, no fetch, and no separate data file** to keep
+in sync, and the page renders whether you **double-click it** or serve it over HTTP.
 
 ## Add a publication
 
-1. Open `publications/publications.bib`.
+1. Open `publications.html` and scroll to the `id="bibtex-data"` block.
 2. Copy an existing entry of the same type and edit its fields (see below).
+   Append it inside the block, before the closing `</script>`.
 3. Commit and push. The live site updates itself.
 
-To preview locally first, serve over HTTP (a browser blocks `fetch()` on `file://`):
+To preview, just open `publications.html` in your browser (double-click works) or serve
+it over HTTP — both render identically.
+
+## Extract a portable `.bib`
+
+The inline block *is* valid BibTeX, so a standalone file is one command away:
 
 ```bash
-python3 -m http.server          # then open http://localhost:8000/publications.html
+./scripts/extract-bib.sh                  # writes publications/publications.bib
+./scripts/extract-bib.sh path/to/out.bib  # or a custom path
 ```
+
+The extracted file is a derived artifact (git-ignored) — regenerate it anytime; don't
+hand-edit it as a source.
 
 ## Examples
 
@@ -77,13 +89,15 @@ conference each get their own link:
 
 ## Don't
 
-- Don't hand-edit the rendered list in `publications.html` or add a separate data
-  file — everything lives in the `.bib`.
+- Don't put a literal `</script>` inside the block — it would end it early. (Normal
+  BibTeX never contains this.)
+- Don't hand-edit the JS-rendered list or treat an extracted `publications.bib` as a
+  source — everything lives in the `#bibtex-data` block.
 - `js/bibtex-parser.js` only needs editing to change layout/formatting.
 
 ## Troubleshooting
 
-- **Nothing shows / blank list** — if previewing locally, use `http://localhost`
-  (not a `file://` path); the page fetches the `.bib`, which `file://` blocks.
 - **A paper is missing or malformed** — check the entry for balanced braces and
   commas, and that required fields are present.
+- **Whole list vanished** — you likely left a stray `</script>` or an unbalanced brace
+  inside the block; the parser stops at the first break.
