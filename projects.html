@@ -212,7 +212,14 @@
     </div>
   </div>
 
-  <footer>// © 2026 Ahmad A. Rushdi · last_updated 2026-05</footer>
+  <footer>// © 2026 Ahmad A. Rushdi · last_updated <span id="last-updated">2026-07</span></footer>
+  <script>
+    (function () {
+      var d = new Date(document.lastModified);
+      if (!isNaN(d)) document.getElementById('last-updated').textContent =
+        d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+    })();
+  </script>
 </div>
 
 <div id="lightbox" class="lightbox"></div>
