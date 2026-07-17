@@ -16,9 +16,12 @@ path is a git-ignored, regenerable artifact.
 - **Add / edit a paper:** edit the `@entry` inside the `#bibtex-data` block. That's it.
 - **Ordering:** the page sorts by `year` (newest first); within a year, entries render
   in block order. To pin a paper to the very top, make it the first entry in the block.
-- **Status badges:** an optional `status={...}` field renders a pill. `spotlight` is
-  styled slate-blue (`.pub-status--spotlight`); other values use the green accent. Omit
-  `status` for already-published papers (no badge).
+- **Status badges:** an optional `status={...}` field renders a pill. The slug is
+  `status.toLowerCase().replace(/[^a-z0-9]+/g,'-')`, used as `.pub-status--<slug>`.
+  `spotlight` is a bright-blue outline pill; `Best Paper · Societal Impact` is a gold
+  outline pill (with 🏆, `.pub-status--best-paper-societal-impact`). All badges share the
+  same outline-pill shape — only the color differs. Any other value falls back to green. Add CSS for a new named badge if you want custom
+  styling. Omit `status` for already-published papers (no badge).
 - **Never** reintroduce `fetch('publications/publications.bib')` — it breaks `file://`.
 - **Extract a portable `.bib`:** `./scripts/extract-bib.sh` (writes
   `publications/publications.bib`; round-trips exactly). Don't treat that file as a source.

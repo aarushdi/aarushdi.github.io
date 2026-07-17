@@ -236,9 +236,14 @@ ul.activities li:last-child { border-bottom: none; }
   vertical-align: 0.1em; margin-left: 0.5rem; padding: 0.1rem 0.45rem;
   border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); white-space: nowrap;
 }
-/* Spotlight: a slate blue that mirrors the green accent (same R/G, blue raised). */
-.pub-status--spotlight { border-color: #3a5a7a; color: #3a5a7a; }
-.spotlight-tag { color: #3a5a7a; }
+/* Spotlight: brighter blue, but same outline-pill shape as the other badges. */
+.pub-status--spotlight { border-color: #2f6fb0; color: #2f6fb0; }
+/* Award: gold outline pill (with 🏆) for best-paper / honors. Same shape, not filled. */
+.pub-status--best-paper-societal-impact { border-color: #c8901f; color: #a5720f; }
+.pub-status--best-paper-societal-impact::before { content: "\1F3C6\00A0"; }
+/* Home-page inline tags: subtle trailing parentheticals, light on the eye. */
+.spotlight-tag { color: #2f6fb0; font-weight: 500; }
+.award-tag { color: #a5720f; font-weight: 500; }
 .pub-authors { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.25rem; line-height: 1.5; }
 .me { color: var(--ink); font-weight: 600; }
 .pub-venue { color: var(--muted); font-size: 0.9rem; margin: 0; font-style: italic; }
