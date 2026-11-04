@@ -39,6 +39,14 @@
     <h2>LLM Evaluation: Uncertainty &amp; Trust</h2>
     <p class="project-desc">Recent work stress-testing large language and vision-language models &mdash; whether they genuinely reason about numerical functions or merely recall, and whether a model's stated confidence stays warranted as its perceptual evidence degrades.</p>
 
+    <p class="project-desc"><strong>Many agents, how many independent witnesses?</strong> When several LLM agents agree, the agreement is read as corroboration &mdash; as if each were an independent measurement. Agents built from similar models make correlated mistakes, and debate makes them more alike, so a five-agent panel is worth barely more than one independent witness. Only mixing models from different developers buys real independence.</p>
+    <div class="media-row">
+      <figure>
+        <video autoplay loop muted playsinline style="height:auto"><source src="viz/ai/witnesses.mp4" type="video/mp4"></video>
+        <figcaption>Five ways to build a five-agent panel, from the assumption (five independent votes) to round&nbsp;0 to one round of debate. Edge darkness is the agents' error correlation &rho;<sub>c</sub>; the meter is the effective number of independent agents, N<sub>eff</sub> = N / (1 + (N&minus;1)&rho;<sub>c</sub>). MMLU-Pro, measured values. Paper at the AIMS Workshop, COLM 2026.</figcaption>
+      </figure>
+    </div>
+
     <p class="project-desc"><strong>Reasoning or recall?</strong> A blind protocol hides the identity of a function and asks LLMs to predict, integrate, and optimize it from sampled points alone &mdash; separating genuine numerical reasoning from memorized recall.</p>
     <div class="media-row cols-2">
       <figure>
@@ -58,6 +66,27 @@
         <figcaption>Six items &times; seven defeater levels (noise + occlusion): the model's class (<em>italic</em> = wrong) and verbalized confidence. Faithful items abstain; others confabulate (cup&rarr;&ldquo;tambourine&rdquo;, clock&rarr;&ldquo;mirror&rdquo;). <a href="https://openreview.net/pdf?id=oqwK9nd8AP">paper</a></figcaption>
       </figure>
     </div>
+  </div>
+
+  <div class="project">
+    <h2>Robot Learning: World Models &amp; Failure Detection</h2>
+    <p class="project-desc">Does uncertainty-aware machinery around a generative robot policy actually help it succeed? Testing world-model selection and runtime failure monitors over whole episodes, not single decisions.</p>
+
+    <p class="project-desc"><strong>Best-of-K world-model selection.</strong> A diffusion policy proposes K candidate actions, a world model predicts each outcome, and a scoring rule executes the best. Across five world models and K from 5 to 100, selection that improves single decisions can lower success over whole episodes &mdash; on Push-T, from 56.7% to as low as 32.5%. <a href="https://openreview.net/pdf?id=mNxPDwrq0P">paper</a></p>
+    <div class="media-row">
+      <figure>
+        <video autoplay loop muted playsinline style="height:auto"><source src="viz/robotics/bestofk-loop.mp4" type="video/mp4"></video>
+        <figcaption>One Push-T episode, decision by decision: the policy proposes K candidates (gray), the world model picks one (purple), the robot executes it.</figcaption>
+      </figure>
+    </div>
+    <div class="media-row">
+      <figure>
+        <video autoplay loop muted playsinline style="height:auto"><source src="viz/robotics/bestofk-six-ways.mp4" type="video/mp4"></video>
+        <figcaption>One episode, six ways to choose: the policy alone and the policy with each of five world models, from the same start and seed. Barcodes show each model's 20 candidates sorted by true score and shaded by predicted score. Paper at the UncertainWM Workshop, CoRL 2026.</figcaption>
+      </figure>
+    </div>
+
+    <p class="project-desc"><strong>Beyond AND and OR.</strong> Runtime monitors join several failure scores with a fixed rule &mdash; alarm if any fires, or only if all do. Calibrating the scores jointly instead learns one no-alarm region in score space that keeps the false-alarm guarantee; a diagonal region catches more out-of-distribution failures on Push-T (0.79 vs.&nbsp;0.60 at the same alarm rate). With L.&nbsp;L&uuml;tzow and M.&nbsp;J.&nbsp;Kochenderfer, UncertainWM Workshop, CoRL 2026.</p>
   </div>
 
   <div class="project">
