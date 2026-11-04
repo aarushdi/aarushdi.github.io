@@ -35,8 +35,8 @@
     <p class="page-intro">Selected research projects. For projects without linked papers, more details can be shared on request.</p>
   </div>
 
-  <div class="project">
-    <h2>LLM Evaluation: Uncertainty &amp; Trust</h2>
+  <div class="project" id="llm-eval" style="--c:#2f6fb0">
+    <h2><span class="glyph" aria-hidden="true">⚖︎</span>LLM Evaluation: Uncertainty &amp; Trust</h2>
     <p class="project-desc">Recent work stress-testing large language and vision-language models &mdash; whether they genuinely reason about numerical functions or merely recall, and whether a model's stated confidence stays warranted as its perceptual evidence degrades.</p>
 
     <p class="project-desc"><strong>Many agents, how many independent witnesses?</strong> When several LLM agents agree, the agreement is read as corroboration &mdash; as if each were an independent measurement. Agents built from similar models make correlated mistakes, and debate makes them more alike, so a five-agent panel is worth barely more than one independent witness. Only mixing models from different developers buys real independence.</p>
@@ -68,8 +68,8 @@
     </div>
   </div>
 
-  <div class="project">
-    <h2>Robot Learning: World Models &amp; Failure Detection</h2>
+  <div class="project" id="robot-learning" style="--c:#4a5bb0">
+    <h2><span class="glyph" aria-hidden="true">⚙︎</span>Robot Learning: World Models &amp; Failure Detection</h2>
     <p class="project-desc">Does uncertainty-aware machinery around a generative robot policy actually help it succeed? Testing world-model selection and runtime failure monitors over whole episodes, not single decisions.</p>
 
     <p class="project-desc"><strong>Best-of-K world-model selection.</strong> A diffusion policy proposes K candidate actions, a world model predicts each outcome, and a scoring rule executes the best. Across five world models and K from 5 to 100, selection that improves single decisions can lower success over whole episodes &mdash; on Push-T, from 56.7% to as low as 32.5%. <a href="https://openreview.net/pdf?id=mNxPDwrq0P">paper</a></p>
@@ -89,8 +89,8 @@
     <p class="project-desc"><strong>Beyond AND and OR.</strong> Runtime monitors join several failure scores with a fixed rule &mdash; alarm if any fires, or only if all do. Calibrating the scores jointly instead learns one no-alarm region in score space that keeps the false-alarm guarantee; a diagonal region catches more out-of-distribution failures on Push-T (0.79 vs.&nbsp;0.60 at the same alarm rate). With L.&nbsp;L&uuml;tzow and M.&nbsp;J.&nbsp;Kochenderfer, UncertainWM Workshop, CoRL 2026.</p>
   </div>
 
-  <div class="project">
-    <h2>AI Ethics &amp; Governance</h2>
+  <div class="project" id="governance" style="--c:#6a4fa3">
+    <h2><span class="glyph" aria-hidden="true">§</span>AI Ethics &amp; Governance</h2>
     <p class="project-desc">Where regulation meets the pace of AI &mdash; measuring how governance actually works, and where it stalls.</p>
 
     <p class="project-desc"><strong>Bridging AI development and regulation.</strong> Only 4.23% of U.S. AI bills (2017&ndash;2025) reach a terminal outcome; a position paper argues for adaptive, anticipatory legislation with independent oversight. <a href="https://icml.cc/virtual/2026/poster/67243">position paper</a></p>
@@ -102,14 +102,14 @@
     </div>
   </div>
 
-  <div class="project">
-    <h2>High-d sampling &amp; visualization</h2>
+  <div class="project" id="high-d" style="--c:#2e7d7b">
+    <h2><span class="glyph" aria-hidden="true">✦</span>High-d sampling &amp; visualization</h2>
     <p class="project-desc">A library of high-dimensional test functions for optimization, uncertainty quantification, and numerical integration problems.</p>
     <div class="media-row cols-8"><video autoplay loop muted playsinline><source src="viz/library/vid-bukin.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-cone.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-cross.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-rosenbrock.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-franke.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-egg-holder.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-herbie.mp4" type="video/mp4"></video><video autoplay loop muted playsinline><source src="viz/library/vid-rastrigin.mp4" type="video/mp4"></video></div>
   </div>
 
-  <div class="project">
-    <h2>Model evaluation &amp; UQ for AI/ML</h2>
+  <div class="project" id="uq" style="--c:#3a5a40">
+    <h2><span class="glyph" aria-hidden="true">σ</span>Model evaluation &amp; UQ for AI/ML</h2>
     <p class="project-desc">Quantifying uncertainty in AI/ML predictive estimates, decomposing it into aleatoric and epistemic components, and using it to guide active learning. Applications across vision, image classification, regression, and time-series.</p>
 
     <p class="project-desc"><strong>Vision.</strong> Uncertainty in object detection, segmentation, and image generation/captioning workflows.</p>
@@ -165,8 +165,8 @@
     </div>
   </div>
 
-  <div class="project">
-    <h2>Voronoi Piecewise Surrogate (VPS) models</h2>
+  <div class="project" id="vps" style="--c:#6b8a2e">
+    <h2><span class="glyph" aria-hidden="true">⬡</span>Voronoi Piecewise Surrogate (VPS) models</h2>
     <p class="project-desc">Leveraging Voronoi diagrams and Delaunay graphs for global surrogate modeling in high-dimensional UQ and adaptive sampling under limited sample budgets (multifidelity / costly / high-stakes simulations).</p>
     <div class="media-row cols-4">
       <figure>
@@ -188,8 +188,8 @@
     </div>
   </div>
 
-  <div class="project">
-    <h2>Meshing &amp; mesh tuning</h2>
+  <div class="project" id="meshing" style="--c:#b08a2e">
+    <h2><span class="glyph" aria-hidden="true">△</span>Meshing &amp; mesh tuning</h2>
     <p class="project-desc">Creating and tuning 2-d / 3-d meshes with guaranteed quality properties.</p>
     <div class="media-row cols-2">
       <figure>
@@ -203,8 +203,8 @@
     </div>
   </div>
 
-  <div class="project">
-    <h2>Fourier &amp; signal processing in bio / bioinformatics</h2>
+  <div class="project" id="signal" style="--c:#b23a48">
+    <h2><span class="glyph" aria-hidden="true">∿</span>Fourier &amp; signal processing in bio / bioinformatics</h2>
     <p class="project-desc">Feature extraction (e.g., period-3 in DNA), object localization (e.g., echoes in ultrasound), and spectral analysis of high-d sampling techniques via Nd-FFT.</p>
     <div class="media-row cols-4">
       <figure>
@@ -226,8 +226,8 @@
     </div>
   </div>
 
-  <div class="project">
-    <h2>From computational methods to engineering applications</h2>
+  <div class="project" id="engineering" style="--c:#c2683c">
+    <h2><span class="glyph" aria-hidden="true">◈</span>From computational methods to engineering applications</h2>
     <p class="project-desc">Extending mesh-tuning methods (e.g., non-obtuse triangulation, <a href="https://dl.acm.org/doi/10.1111/cgf.12981">paper</a>) to model fiber-reinforced polymers for elastic &amp; failure simulations; and ML for collision detection and motion planning.</p>
     <div class="media-row cols-2">
       <figure>

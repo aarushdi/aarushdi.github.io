@@ -276,6 +276,28 @@ ul.talks li:last-child { border-bottom: none; }
 }
 .project:last-of-type { border-bottom: none; }
 .project h2 { font-size: 1.05rem; margin: 3.5rem 0 0.8rem; }
+
+/* ---------- Color-coded project sections ----------
+   Each .project carries its own --c (set inline in projects.html); its heading
+   shows a glyph in a tinted circle and takes that color. */
+.glyph {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 50%;
+  color: var(--c, var(--accent));
+  background: color-mix(in srgb, var(--c, var(--accent)) 14%, white);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+.project { scroll-margin-top: calc(var(--topbar-h, 58px) + 7rem); }
+.project[id] h2 { display: flex; align-items: center; gap: 0.6rem; color: var(--c); }
+.project[id] h2::before { content: none; }   /* the glyph replaces the '## ' prefix */
+.project[id] h2 .glyph { width: 1.9rem; height: 1.9rem; font-size: 1.05rem; }
+
 .project-desc { color: var(--ink); margin: 0 0 1.2rem; max-width: 72ch; }
 
 .media-row { display: grid; gap: 0.6rem; margin: 1rem 0; }
