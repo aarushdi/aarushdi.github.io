@@ -5,19 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Ahmad A. Rushdi — Personal</title>
-<meta name="robots" content="noindex, nofollow">
-
 <link rel="shortcut icon" href="../assets/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
-
-<!-- GoatCounter analytics -->
+<style>
+  ul.posts { list-style: none; padding: 0; margin: 0; }
+  ul.posts li { display: grid; grid-template-columns: 96px 1.5rem 1fr auto; gap: 0.8rem; align-items: baseline;
+                padding: 0.75rem 0; border-bottom: 1px dashed var(--rule); }
+  ul.posts li:last-child { border-bottom: none; }
+  .lock { font-size: 0.85rem; }
+  .post-title { font-weight: 500; color: var(--ink); text-decoration: none; }
+  .post-title:hover { color: var(--accent); }
+  li.locked .post-title { color: #555; }
+  .post-title[lang="ar"] { font-family: 'Noto Naskh Arabic', serif; font-size: 1.08rem; justify-self: left; }
+  .lang { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); border: 1px solid var(--rule);
+          border-radius: 999px; padding: 0.05rem 0.5rem; white-space: nowrap; }
+  .legend { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); margin: -0.5rem 0 1.5rem; }
+  @media (max-width: 700px) { ul.posts li { grid-template-columns: 76px 1.3rem 1fr auto; gap: 0.5rem; } }
+</style>
 <script data-goatcounter="https://aarushdi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-
 <div class="topbar">
   <div class="inner">
     <a class="name" href="../index.html">Ahmad A. Rushdi</a>
@@ -34,9 +44,15 @@
 <div class="wrap">
   <div class="page-header">
     <h1>Personal</h1>
-    <p class="page-intro">Occasional personal notes, in English and Arabic, shared privately. There is no public list: if I sent you a post, open the link I gave you and enter its password.</p>
-    <p class="page-intro" dir="rtl" lang="ar" style="font-family:'Noto Naskh Arabic',serif;font-size:1.05rem;">تدوينات شخصية بالعربية والإنجليزية، أشاركها بشكل خاص. لا توجد قائمة عامة: إن أرسلتُ إليك تدوينة، فافتح الرابط الذي وصلك وأدخل كلمة المرور.</p>
+    <p class="page-intro">Occasional personal notes, in English and Arabic. Open posts are for anyone; locked ones are shared privately, with a password.</p>
+    <p class="page-intro" dir="rtl" lang="ar" style="font-family:'Noto Naskh Arabic',serif;font-size:1.05rem;">تدوينات شخصية بالعربية والإنجليزية. المفتوح منها للجميع، والمقفل أشاركه بشكل خاص مع كلمة مرور.</p>
   </div>
+  <p class="legend">🔒 password needed</p>
+  <ul class="posts">
+    <li class="open"><span class="when">2026-11-04</span><span class="lock" title="open"></span><a class="post-title" href="demo-1-week-of-conferences.html">Demo · A week of conferences, and what stayed with me</a><span class="lang">EN</span></li>
+    <li class="locked"><span class="when">2026-11-04</span><span class="lock" title="password needed">🔒</span><a class="post-title" href="demo-2-reading-slowly-ar.html" lang="ar" dir="rtl">تجربة · في مديح القراءة البطيئة</a><span class="lang">عربي</span></li>
+    <li class="locked"><span class="when">2026-11-04</span><span class="lock" title="password needed">🔒</span><a class="post-title" href="demo-3-five-agents-math.html">Demo · Why five agents can be worth one</a><span class="lang">EN</span></li>
+  </ul>
   <footer>// <a href="../index.html">back to the site</a></footer>
 </div>
 </body>
