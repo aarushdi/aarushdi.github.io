@@ -14,3 +14,8 @@ Thumbs.db
 # Derived artifact — publications live inline in publications.html (#bibtex-data).
 # Regenerate a portable copy anytime with ./scripts/extract-bib.sh
 publications/publications.bib
+
+# personal blog: only encrypted pages are ever committed (source lives in ../personal-src)
+personal/*.md
+personal/_rendered/
+_preview_personal/
