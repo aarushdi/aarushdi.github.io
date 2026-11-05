@@ -310,35 +310,84 @@
   })();
 </script>
 <script>
-  // Two-layer project nav. Layer 1: three research areas. Layer 2: the sections of
-  // the area currently in view (the bar sets data-active; CSS hides the others).
+  // Two-layer project nav, used as tabs. Layer 1 (area cards) chooses which area is
+  // shown: <html data-area="..."> + CSS hide the other areas' sections, so the page
+  // stays short. Layer 2 chips jump within the shown area and track the section in
+  // view. Deep links (#robot-learning, #area-geo) and back/forward pick the right
+  // area. Without JS, nothing is hidden.
   (function () {
+    const root = document.documentElement;
     const nav = document.getElementById('proj-nav');
     const bar = document.querySelector('.topbar');
-    const setTop = () => document.documentElement.style.setProperty('--topbar-h', bar.offsetHeight + 'px');
-    setTop(); window.addEventListener('resize', setTop);
+    const setTop = () => root.style.setProperty('--topbar-h', bar.offsetHeight + 'px');
+    setTop(); addEventListener('resize', setTop);
     const areaLinks = [...nav.querySelectorAll('.areas a')];
     const subLinks = [...nav.querySelectorAll('.subs a')];
+    const areas = areaLinks.map(a => a.dataset.area);
+    const titleOf = id => nav.querySelector(`.areas a[data-area="${id}"] .area-name`).textContent;
+
+    // "Next area" link after each area's last section
+    areas.forEach((id, i) => {
+      const secs = document.querySelectorAll(`.project[data-area="${id}"]`);
+      const next = areas[(i + 1) % areas.length];
+      const a = document.createElement('a');
+      a.className = 'area-next'; a.dataset.area = id; a.href = '#area-' + next;
+      a.style.setProperty('--c', nav.querySelector(`.areas a[data-area="${next}"]`).style.getPropertyValue('--c'));
+      a.innerHTML = `<span>Next area</span> ${titleOf(next)} &rarr;`;
+      secs[secs.length - 1].after(a);
+    });
+
     function activate(areaId, sectionId) {
       nav.dataset.active = areaId;
       areaLinks.forEach(a => a.classList.toggle('active', a.dataset.area === areaId));
       subLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + sectionId));
     }
-    // Active = the last area header / section whose top has passed 40% of the viewport.
-    const marks = [...document.querySelectorAll('.area-head, .project[id]')];
+    function firstSection(areaId) { return document.querySelector(`.project[data-area="${areaId}"]`).id; }
+
+    // Show one area; optionally scroll to a section (or the area's top).
+    function show(areaId, sectionId, scroll) {
+      root.dataset.area = areaId;
+      activate(areaId, sectionId || firstSection(areaId));
+      if (scroll) {
+        const target = document.getElementById(sectionId || 'area-' + areaId);
+        target.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }
+    }
+    function fromHash(scroll) {
+      const el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (el && el.dataset.area) show(el.dataset.area, el.classList.contains('project') ? el.id : null, scroll);
+      else show(areas[0], null, false);
+    }
+
+    nav.addEventListener('click', e => {
+      const a = e.target.closest('a'); if (!a) return;
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      history.pushState(null, '', '#' + id);
+      fromHash(true);
+    });
+    document.addEventListener('click', e => {
+      const a = e.target.closest('a.area-next'); if (!a) return;
+      e.preventDefault();
+      history.pushState(null, '', a.getAttribute('href'));
+      fromHash(true);
+    });
+    addEventListener('popstate', () => fromHash(true));
+
+    // Within the shown area: highlight the section whose top has passed 40% of the viewport.
     let ticking = false;
     function update() {
       ticking = false;
+      const area = root.dataset.area;
+      const marks = [...document.querySelectorAll(`.project[data-area="${area}"]`)];
       const line = innerHeight * 0.4;
       let cur = marks[0];
       for (const m of marks) { if (m.getBoundingClientRect().top <= line) cur = m; else break; }
-      const sec = cur.classList.contains('project') ? cur.id
-                : (cur.nextElementSibling && cur.nextElementSibling.id) || null;
-      activate(cur.dataset.area, sec);
+      activate(area, cur.id);
     }
     addEventListener('scroll', () => { if (!ticking) { ticking = true; setTimeout(update, 50); } }, { passive: true });
-    addEventListener('resize', update);
-    update();
+
+    fromHash(!!location.hash);
   })();
 </script>
 </body>

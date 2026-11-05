@@ -499,3 +499,19 @@ ul.activities.typed li { grid-template-columns: 76px 1.5rem 1fr; gap: 0.9rem; }
 @media (max-width: 700px) {
   ul.activities.typed li { grid-template-columns: 62px 1.4rem 1fr; gap: 0.6rem; }
 }
+
+/* ---------- Projects as tabs: show only the chosen area ----------
+   The nav script sets <html data-area="...">; with JS off nothing is hidden. */
+html[data-area] :is(.project, .area-head, .area-next)[data-area] { display: none; }
+html[data-area="trust"] :is(.project, .area-head, .area-next)[data-area="trust"],
+html[data-area="uncertainty"] :is(.project, .area-head, .area-next)[data-area="uncertainty"],
+html[data-area="geo"] :is(.project, .area-head, .area-next)[data-area="geo"] { display: block; }
+html[data-area] .area-head { margin-top: 2.5rem; }
+.area-next {
+  display: block; margin: 0.5rem 0 1rem; padding: 0.9rem 1.1rem;
+  border: 1px solid var(--rule); border-left: 4px solid var(--c); border-radius: 8px;
+  background: white; color: var(--c); font-weight: 600; text-decoration: none;
+}
+.area-next span { display: block; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 400;
+  color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.area-next:hover { border-color: var(--c); }
