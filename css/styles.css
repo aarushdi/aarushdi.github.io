@@ -476,7 +476,7 @@ footer {
   .media-row.cols-8 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
-/* ---------- Recent: type glyphs + "Find me at" strip ----------
+/* ---------- Recent: type glyphs ----------
    Policy for what goes in Recent: something with an artifact or a role (paper,
    talk/panel given, organizing, award, new position), one line per event,
    ~8 visible; attendance alone does not count. */
@@ -494,18 +494,6 @@ ul.activities.typed li { grid-template-columns: 76px 1.5rem 1fr; gap: 0.9rem; }
 .kind--award { --k: #a5720f; }
 .kind--role  { --k: #5c667a; }
 
-.findme { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0 0 1.1rem; }
-.findme-label { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); margin-right: 0.2rem; }
-.findme-label::after { content: ' →'; }
-.findme-chip {
-  font-size: 0.84rem; color: var(--ink); text-decoration: none;
-  padding: 0.3rem 0.8rem; border-radius: 999px; background: white;
-  border: 1px solid color-mix(in srgb, var(--c) 45%, white);
-  border-left: 4px solid var(--c);
-}
-.findme-chip strong { color: var(--c); }
-.findme-chip span { color: var(--muted); font-size: 0.78rem; margin-left: 0.25rem; }
-.findme-chip:hover { border-color: var(--c); }
 @media (max-width: 700px) {
   ul.activities.typed li { grid-template-columns: 62px 1.4rem 1fr; gap: 0.6rem; }
 }

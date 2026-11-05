@@ -53,11 +53,6 @@
 
   <section>
     <h2 id="recent">Recent</h2>
-    <div class="findme" id="findme">
-      <span class="findme-label">Find me at</span>
-      <a class="findme-chip" href="https://uncertainwm2026.github.io/" data-until="2026-11-12" style="--c:#c2683c"><strong>CoRL 2026</strong> · Austin · Nov 12 <span>2 posters</span></a>
-      <a class="findme-chip" href="https://neurips2026haic.com/" data-until="2026-12-13" style="--c:#2f6fb0"><strong>NeurIPS 2026</strong> · Atlanta · Dec 12–13 <span>HAIC workshop + 2 posters</span></a>
-    </div>
     <ul class="activities typed">
       <li><span class="when">2026-12</span><span class="kind kind--org" title="organizing" aria-label="organizing">✦</span><span class="what">Co-organizing the second <a href="https://neurips2026haic.com/">Human-AI Coevolution (HAIC) workshop</a> at <a href="https://neurips.cc/">NeurIPS 2026</a>, Atlanta, GA.</span></li>
       <li><span class="when">2026-12</span><span class="kind kind--paper" title="paper" aria-label="paper">¶</span><span class="what">Two papers at <a href="https://neurips.cc/">NeurIPS 2026</a> workshops: <em>What Does a Random Agent Score? Null Baselines for Continual Learning Agents</em> (<a href="https://ttcl-agents.github.io">TTCL</a>) and <em>Good Rankings, Bad Cutoffs: What AUROC Misses in AI Scores for DNA Variants</em> (<a href="https://aiscik.github.io">AI &amp; Science</a>).</span></li>
@@ -75,15 +70,6 @@
       <li class="more hidden"><span class="when">older</span><span class="kind"></span><span class="what">Earlier talks and organizing are on the <a href="talks.html">Talks</a> and <a href="service.html">Service</a> pages.</span></li>
     </ul>
     <button class="seemore" onclick="this.parentElement.querySelectorAll('.more').forEach(e=>e.classList.toggle('hidden')); this.textContent = this.textContent.includes('less') ? 'show all activity' : 'show less';">show all activity</button>
-    <script>
-      // "Find me at": hide each event the day after it ends; hide the strip when none are left.
-      (function () {
-        const today = new Date().toISOString().slice(0, 10);
-        const box = document.getElementById('findme');
-        box.querySelectorAll('[data-until]').forEach(a => { if (a.dataset.until < today) a.remove(); });
-        if (!box.querySelector('[data-until]')) box.remove();
-      })();
-    </script>
   </section>
 
   <blockquote class="epigraph epigraph--closing">
